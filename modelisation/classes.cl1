@@ -1,0 +1,122 @@
+--=========================================================================
+--                          Modèle de classe
+---------------------------------------------------------------------------
+-- Ce modèle de classe est exprimé en ClassScript1.
+-- Voir https://modelscript.readthedocs.io/en/latest/languages/classes1/index.html
+-- ClassScript1 est une version annotée du langage USE OCL.
+-- Les annotations sont en commentaires et commencent par :
+--    "@" pour les annotations d'instructions,
+--    "|" pour les annotations de documentation.
+--=========================================================================
+--
+
+model VePick
+
+enum VTypePrime {
+    Vplus,
+    Vmoins,
+    Vnul
+}
+
+enum Etat {
+    OK,
+    HS
+}
+
+enum ModeleVelo {
+    Velo
+}
+
+enum Sexe {
+    M,
+    F,
+    NB
+}
+
+class Station
+    attributes
+        adresse : String
+        vType : VTypePrime
+end
+
+class Bornette
+    attributes
+        numero : Integer
+        etat : Etat
+
+end
+
+class Velo
+    attributes
+        id : Integer
+        modele : ModeleVelo
+        miseEnSevice : String --@ {Date}
+        etat : Etat
+end
+
+--Location = trajet
+class Location
+    attributes
+        heureDebut : String --@ {DateTime}
+        heureFin : String --@ {DateTime}
+        montant : Integer
+        prime : Boolean
+end
+
+class Client
+    attributes
+        numeroCB : Integer
+        codeSecret : String
+end
+
+class ClientAbonne < Client
+    attributes
+        nom : String
+        prenom : String
+        dateNaissance : String --@ {Date}
+        adresse : String
+        sexe : Sexe
+        dateSouscription : String --@ {Date}
+        --Doit-on conserver l'historique des abonnements ?
+        --(Création d'une nouvelle entité ClientAbonne à chaque abonnement du même client,
+        --ou faut-il créer une nouvelle classe Abonnement pour conserver l'historique ?)
+end
+
+association Appartient
+    between
+        Bornette[0..1] role bornettes
+        Station[1] role station
+end
+
+association EstAccrocheA
+    between
+        Velo[0..1] role veloAccroche
+        Bornette[0..1] role bornette
+end
+
+association AEteOuEstLoueSuivant
+    between
+        Velo[1..*] role velos
+        Location[0..*] role locations
+end
+
+association AEteOuEstEffectuePar
+    between
+        Location[0..*] role locations
+        Client[1] role locataire
+end
+
+association CommenceALaStation
+    between
+        Location[0..*] role debutLocations
+        Station[1] role stationDepart
+end
+
+association FinitALaStation
+    between
+        --Au départ, le client ne renseigne par la station d'arrivée
+        --c'est pour ça que la cardinalité est 0..1 puisque stationArrivee 
+        --n'existe pas au  moment de la création de la location
+        Location[0..*] role finLocations
+        Station[0..1] role stationArrivee
+end
