@@ -5,17 +5,51 @@
  */
 package model;
 
+import java.util.List;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import model.enumeration.vType;
+
 /**
  *
  * @author emerik
  */
+@Entity
 public class Station {
+    
+    @Id
+    private Long id;
+    
+    private vType vType;
+    
+    @OneToMany
+    private List<Bornette> bornettes;
+    
+    private String adresse;
+    
+    public Long getId(){
+        return this.id;
+    }
+    
+    public String getAdresse(){
+        return this.adresse;
+    }
+    
+    public List<Bornette> getBornettes(){
+        return bornettes;
+    }
+    
+    public void setBornette(List<Bornette> newList){
+        bornettes = newList;
+    }
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    public vType getvType() {
+        return vType;
+    }
+
+    public void setvType(vType vType) {
+        this.vType = vType;
     }
     
 }
