@@ -1,15 +1,15 @@
-package fr.uga.im2ag.l3.miage.db.repository;
+package repository;
 
-import fr.uga.im2ag.l3.miage.db.repository.api.GradeRepository;
-import fr.uga.im2ag.l3.miage.db.repository.api.GraduationClassRepository;
-import fr.uga.im2ag.l3.miage.db.repository.api.StudentRepository;
-import fr.uga.im2ag.l3.miage.db.repository.api.SubjectRepository;
-import fr.uga.im2ag.l3.miage.db.repository.api.TeacherRepository;
-import fr.uga.im2ag.l3.miage.db.repository.impl.GradeRepositoryImpl;
-import fr.uga.im2ag.l3.miage.db.repository.impl.GraduationClassRepositoryImpl;
-import fr.uga.im2ag.l3.miage.db.repository.impl.StudentRepositoryImpl;
-import fr.uga.im2ag.l3.miage.db.repository.impl.SubjectRepositoryImpl;
-import fr.uga.im2ag.l3.miage.db.repository.impl.TeacherRepositoryImpl;
+import repository.api.GradeRepository;
+import repository.api.GraduationClassRepository;
+import repository.api.StudentRepository;
+import repository.api.SubjectRepository;
+import repository.api.TeacherRepository;
+import repository.impl.GradeRepositoryImpl;
+import repository.impl.GraduationClassRepositoryImpl;
+import repository.impl.StudentRepositoryImpl;
+import repository.impl.SubjectRepositoryImpl;
+import repository.impl.TeacherRepositoryImpl;
 
 import javax.persistence.EntityManager;
 
@@ -19,20 +19,5 @@ public class RepositoryFactory {
         return new SubjectRepositoryImpl(entityManager);
     }
 
-    public StudentRepository newStudentRepository(EntityManager entityManager) {
-        return new StudentRepositoryImpl(entityManager);
-    }
-
-    public GradeRepository newGradeRepository(EntityManager entityManager) {
-        return new GradeRepositoryImpl(entityManager);
-    }
-
-    public GraduationClassRepository newGraduationClassRepository(EntityManager entityManager) {
-        return new GraduationClassRepositoryImpl(entityManager);
-    }
-
-    public TeacherRepository newTeacherRepository(EntityManager entityManager) {
-        return new TeacherRepositoryImpl(entityManager);
-    }
 
 }

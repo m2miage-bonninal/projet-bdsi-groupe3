@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package model;
+package repository.impl;
 
 /**
  *
  * @author emerik
  */
-public class Station {
+public class StationRepositoryImpl {
 
     /**
      * @param args the command line arguments
