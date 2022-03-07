@@ -12,80 +12,80 @@
     <node id="Station" sizeCalculated="true" type="Class">
         <name>Station</name>
         <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
-            <x>668.202293497241</x>
-            <y>43.47907228129628</y>
+            <x>680.0</x>
+            <y>38.0</y>
         </strategy>
         <hidden>false</hidden>
     </node>
     <node id="ClientAbonne" sizeCalculated="true" type="Class">
         <name>ClientAbonne</name>
         <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
-            <x>102.4384363824116</x>
-            <y>270.8512964608335</y>
+            <x>150.0</x>
+            <y>239.0</y>
         </strategy>
         <hidden>false</hidden>
     </node>
     <node id="Velo" sizeCalculated="true" type="Class">
         <name>Velo</name>
         <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
-            <x>1028.1595061355674</x>
-            <y>287.2167288873967</y>
+            <x>985.0</x>
+            <y>257.0</y>
         </strategy>
         <hidden>false</hidden>
     </node>
     <node id="Client" sizeCalculated="true" type="Class">
         <name>Client</name>
         <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
-            <x>394.7483871715299</x>
-            <y>305.0904711130027</y>
+            <x>367.0</x>
+            <y>273.0</y>
         </strategy>
         <hidden>false</hidden>
     </node>
     <node id="Bornette" sizeCalculated="true" type="Class">
         <name>Bornette</name>
         <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
-            <x>1042.121744880653</x>
-            <y>43.239417667055136</y>
+            <x>999.0</x>
+            <y>39.0</y>
         </strategy>
         <hidden>false</hidden>
     </node>
     <node id="Location" sizeCalculated="true" type="Class">
         <name>Location</name>
         <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
-            <x>670.7985609992329</x>
-            <y>287.4663236679409</y>
+            <x>671.0</x>
+            <y>256.0</y>
         </strategy>
         <hidden>false</hidden>
     </node>
     <node id="VTypePrime" sizeCalculated="true" type="Enumeration">
         <name>VTypePrime</name>
         <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
-            <x>98.0</x>
-            <y>51.92310841457703</y>
+            <x>322.0</x>
+            <y>37.0</y>
         </strategy>
         <hidden>false</hidden>
     </node>
     <node id="Etat" sizeCalculated="true" type="Enumeration">
         <name>Etat</name>
         <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
-            <x>438.38354171724006</x>
-            <y>53.0</y>
+            <x>432.0</x>
+            <y>139.0</y>
         </strategy>
         <hidden>false</hidden>
     </node>
     <node id="Sexe" sizeCalculated="true" type="Enumeration">
         <name>Sexe</name>
         <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
-            <x>211.04474492648757</x>
-            <y>52.0</y>
+            <x>432.0</x>
+            <y>37.0</y>
         </strategy>
         <hidden>false</hidden>
     </node>
     <node id="ModeleVelo" sizeCalculated="true" type="Enumeration">
         <name>ModeleVelo</name>
         <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
-            <x>324.7114259531113</x>
-            <y>53.29379457610071</y>
+            <x>322.0</x>
+            <y>140.0</y>
         </strategy>
         <hidden>false</hidden>
     </node>
@@ -94,10 +94,48 @@
         <target>Station</target>
         <name>CommenceALaStation</name>
         <properties>
+            <edgeproperty id="CommenceALaStation::target::rolename" sizeCalculated="true" type="rolename" userDefined="true" visible="true">
+                <name>stationDepart</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+                    <userOffsetX>86.0</userOffsetX>
+                    <userOffsetY>2.0</userOffsetY>
+                    <attached>CommenceALaStation::WayPoint::1</attached>
+                    <offset_x>8</offset_x>
+                    <offset_y>8</offset_y>
+                    <placement>TOP</placement>
+                </strategy>
+                <hidden>false</hidden>
+            </edgeproperty>
+            <edgeproperty id="CommenceALaStation::target::multiplicity" sizeCalculated="true" type="multiplicity" userDefined="true" visible="true">
+                <name>1</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+                    <userOffsetX>6.0</userOffsetX>
+                    <userOffsetY>1.0</userOffsetY>
+                    <attached>CommenceALaStation::WayPoint::1</attached>
+                    <offset_x>8</offset_x>
+                    <offset_y>8</offset_y>
+                    <placement>BOTTOM</placement>
+                </strategy>
+                <hidden>false</hidden>
+            </edgeproperty>
+            <edgeproperty id="CommenceALaStation::AssociationName" sizeCalculated="true" type="associationName" userDefined="true" visible="true">
+                <name>CommenceALaStation</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
+                    <userOffsetX>59.0</userOffsetX>
+                    <userOffsetY>-5.0</userOffsetY>
+                    <offsetX>0.0</offsetX>
+                    <offsetY>-10.0</offsetY>
+                    <related length="2">
+                        <related0>CommenceALaStation::WayPoint::0</related0>
+                        <related1>CommenceALaStation::WayPoint::1</related1>
+                    </related>
+                </strategy>
+                <hidden>false</hidden>
+            </edgeproperty>
             <edgeproperty id="CommenceALaStation::source::multiplicity" sizeCalculated="true" type="multiplicity" userDefined="true" visible="true">
                 <name>*</name>
                 <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-                    <userOffsetX>4.0</userOffsetX>
+                    <userOffsetX>5.0</userOffsetX>
                     <userOffsetY>8.0</userOffsetY>
                     <attached>CommenceALaStation::WayPoint::0</attached>
                     <offset_x>8</offset_x>
@@ -109,50 +147,12 @@
             <edgeproperty id="CommenceALaStation::source::rolename" sizeCalculated="true" type="rolename" userDefined="true" visible="true">
                 <name>debutLocations</name>
                 <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-                    <userOffsetX>95.0</userOffsetX>
-                    <userOffsetY>3.0</userOffsetY>
+                    <userOffsetX>94.0</userOffsetX>
+                    <userOffsetY>4.0</userOffsetY>
                     <attached>CommenceALaStation::WayPoint::0</attached>
                     <offset_x>8</offset_x>
                     <offset_y>8</offset_y>
                     <placement>TOP</placement>
-                </strategy>
-                <hidden>false</hidden>
-            </edgeproperty>
-            <edgeproperty id="CommenceALaStation::target::multiplicity" sizeCalculated="true" type="multiplicity" userDefined="true" visible="true">
-                <name>1</name>
-                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-                    <userOffsetX>6.0</userOffsetX>
-                    <userOffsetY>3.0</userOffsetY>
-                    <attached>CommenceALaStation::WayPoint::1</attached>
-                    <offset_x>8</offset_x>
-                    <offset_y>8</offset_y>
-                    <placement>BOTTOM</placement>
-                </strategy>
-                <hidden>false</hidden>
-            </edgeproperty>
-            <edgeproperty id="CommenceALaStation::target::rolename" sizeCalculated="true" type="rolename" userDefined="true" visible="true">
-                <name>stationDepart</name>
-                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-                    <userOffsetX>83.0</userOffsetX>
-                    <userOffsetY>5.0</userOffsetY>
-                    <attached>CommenceALaStation::WayPoint::1</attached>
-                    <offset_x>8</offset_x>
-                    <offset_y>8</offset_y>
-                    <placement>TOP</placement>
-                </strategy>
-                <hidden>false</hidden>
-            </edgeproperty>
-            <edgeproperty id="CommenceALaStation::AssociationName" sizeCalculated="true" type="associationName" userDefined="true" visible="true">
-                <name>CommenceALaStation</name>
-                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
-                    <userOffsetX>60.0</userOffsetX>
-                    <userOffsetY>-10.0</userOffsetY>
-                    <offsetX>0.0</offsetX>
-                    <offsetY>-10.0</offsetY>
-                    <related length="2">
-                        <related0>CommenceALaStation::WayPoint::0</related0>
-                        <related1>CommenceALaStation::WayPoint::1</related1>
-                    </related>
                 </strategy>
                 <hidden>false</hidden>
             </edgeproperty>
@@ -186,30 +186,6 @@
         <target>Station</target>
         <name>Appartient</name>
         <properties>
-            <edgeproperty id="Appartient::source::rolename" sizeCalculated="true" type="rolename" userDefined="true" visible="true">
-                <name>bornettes</name>
-                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-                    <userOffsetX>7.0</userOffsetX>
-                    <userOffsetY>-18.0</userOffsetY>
-                    <attached>Appartient::WayPoint::0</attached>
-                    <offset_x>8</offset_x>
-                    <offset_y>8</offset_y>
-                    <placement>TOP</placement>
-                </strategy>
-                <hidden>false</hidden>
-            </edgeproperty>
-            <edgeproperty id="Appartient::source::multiplicity" sizeCalculated="true" type="multiplicity" userDefined="true" visible="true">
-                <name>0..1</name>
-                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-                    <userOffsetX>7.0</userOffsetX>
-                    <userOffsetY>-6.0</userOffsetY>
-                    <attached>Appartient::WayPoint::0</attached>
-                    <offset_x>8</offset_x>
-                    <offset_y>8</offset_y>
-                    <placement>BOTTOM</placement>
-                </strategy>
-                <hidden>false</hidden>
-            </edgeproperty>
             <edgeproperty id="Appartient::target::rolename" sizeCalculated="true" type="rolename" userDefined="true" visible="true">
                 <name>station</name>
                 <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
@@ -248,6 +224,30 @@
                 </strategy>
                 <hidden>false</hidden>
             </edgeproperty>
+            <edgeproperty id="Appartient::source::rolename" sizeCalculated="true" type="rolename" userDefined="true" visible="true">
+                <name>bornettes</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+                    <userOffsetX>7.0</userOffsetX>
+                    <userOffsetY>-18.0</userOffsetY>
+                    <attached>Appartient::WayPoint::0</attached>
+                    <offset_x>8</offset_x>
+                    <offset_y>8</offset_y>
+                    <placement>TOP</placement>
+                </strategy>
+                <hidden>false</hidden>
+            </edgeproperty>
+            <edgeproperty id="Appartient::source::multiplicity" sizeCalculated="true" type="multiplicity" userDefined="true" visible="true">
+                <name>0..1</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+                    <userOffsetX>7.0</userOffsetX>
+                    <userOffsetY>-6.0</userOffsetY>
+                    <attached>Appartient::WayPoint::0</attached>
+                    <offset_x>8</offset_x>
+                    <offset_y>8</offset_y>
+                    <placement>BOTTOM</placement>
+                </strategy>
+                <hidden>false</hidden>
+            </edgeproperty>
         </properties>
         <waypoints>
             <edgeproperty id="Appartient::WayPoint::0" sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
@@ -278,35 +278,23 @@
         <target>Client</target>
         <name>AEteOuEstEffectuePar</name>
         <properties>
-            <edgeproperty id="AEteOuEstEffectuePar::source::rolename" sizeCalculated="true" type="rolename" userDefined="true" visible="true">
-                <name>locations</name>
+            <edgeproperty id="AEteOuEstEffectuePar::target::rolename" sizeCalculated="true" type="rolename" userDefined="true" visible="true">
+                <name>locataire</name>
                 <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-                    <userOffsetX>7.0</userOffsetX>
-                    <userOffsetY>12.0</userOffsetY>
-                    <attached>AEteOuEstEffectuePar::WayPoint::0</attached>
+                    <userOffsetX>2.0</userOffsetX>
+                    <userOffsetY>10.0</userOffsetY>
+                    <attached>AEteOuEstEffectuePar::WayPoint::1</attached>
                     <offset_x>8</offset_x>
                     <offset_y>8</offset_y>
                     <placement>TOP</placement>
-                </strategy>
-                <hidden>false</hidden>
-            </edgeproperty>
-            <edgeproperty id="AEteOuEstEffectuePar::source::multiplicity" sizeCalculated="true" type="multiplicity" userDefined="true" visible="true">
-                <name>*</name>
-                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-                    <userOffsetX>1.0</userOffsetX>
-                    <userOffsetY>-5.0</userOffsetY>
-                    <attached>AEteOuEstEffectuePar::WayPoint::0</attached>
-                    <offset_x>8</offset_x>
-                    <offset_y>8</offset_y>
-                    <placement>BOTTOM</placement>
                 </strategy>
                 <hidden>false</hidden>
             </edgeproperty>
             <edgeproperty id="AEteOuEstEffectuePar::target::multiplicity" sizeCalculated="true" type="multiplicity" userDefined="true" visible="true">
                 <name>1</name>
                 <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-                    <userOffsetX>2.0</userOffsetX>
-                    <userOffsetY>-6.0</userOffsetY>
+                    <userOffsetX>3.0</userOffsetX>
+                    <userOffsetY>-7.0</userOffsetY>
                     <attached>AEteOuEstEffectuePar::WayPoint::1</attached>
                     <offset_x>8</offset_x>
                     <offset_y>8</offset_y>
@@ -314,29 +302,41 @@
                 </strategy>
                 <hidden>false</hidden>
             </edgeproperty>
-            <edgeproperty id="AEteOuEstEffectuePar::target::rolename" sizeCalculated="true" type="rolename" userDefined="true" visible="true">
-                <name>locataire</name>
-                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-                    <userOffsetX>3.0</userOffsetX>
-                    <userOffsetY>12.0</userOffsetY>
-                    <attached>AEteOuEstEffectuePar::WayPoint::1</attached>
-                    <offset_x>8</offset_x>
-                    <offset_y>8</offset_y>
-                    <placement>TOP</placement>
-                </strategy>
-                <hidden>false</hidden>
-            </edgeproperty>
-            <edgeproperty id="AEteOuEstEffectuePar::AssociationName" sizeCalculated="true" type="associationName" userDefined="true" visible="true">
+            <edgeproperty id="AEteOuEstEffectuePar::AssociationName" sizeCalculated="true" type="associationName" userDefined="false" visible="true">
                 <name>AEteOuEstEffectuePar</name>
                 <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
-                    <userOffsetX>-2.0</userOffsetX>
-                    <userOffsetY>-4.0</userOffsetY>
+                    <userOffsetX>0.0</userOffsetX>
+                    <userOffsetY>0.0</userOffsetY>
                     <offsetX>0.0</offsetX>
                     <offsetY>-10.0</offsetY>
                     <related length="2">
                         <related0>AEteOuEstEffectuePar::WayPoint::0</related0>
                         <related1>AEteOuEstEffectuePar::WayPoint::1</related1>
                     </related>
+                </strategy>
+                <hidden>false</hidden>
+            </edgeproperty>
+            <edgeproperty id="AEteOuEstEffectuePar::source::multiplicity" sizeCalculated="true" type="multiplicity" userDefined="true" visible="true">
+                <name>*</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+                    <userOffsetX>3.0</userOffsetX>
+                    <userOffsetY>-4.0</userOffsetY>
+                    <attached>AEteOuEstEffectuePar::WayPoint::0</attached>
+                    <offset_x>8</offset_x>
+                    <offset_y>8</offset_y>
+                    <placement>BOTTOM</placement>
+                </strategy>
+                <hidden>false</hidden>
+            </edgeproperty>
+            <edgeproperty id="AEteOuEstEffectuePar::source::rolename" sizeCalculated="true" type="rolename" userDefined="true" visible="true">
+                <name>locations</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+                    <userOffsetX>6.0</userOffsetX>
+                    <userOffsetY>8.0</userOffsetY>
+                    <attached>AEteOuEstEffectuePar::WayPoint::0</attached>
+                    <offset_x>8</offset_x>
+                    <offset_y>8</offset_y>
+                    <placement>TOP</placement>
                 </strategy>
                 <hidden>false</hidden>
             </edgeproperty>
@@ -370,35 +370,11 @@
         <target>Station</target>
         <name>FinitALaStation</name>
         <properties>
-            <edgeproperty id="FinitALaStation::source::multiplicity" sizeCalculated="true" type="multiplicity" userDefined="true" visible="true">
-                <name>*</name>
-                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-                    <userOffsetX>3.0</userOffsetX>
-                    <userOffsetY>9.0</userOffsetY>
-                    <attached>FinitALaStation::WayPoint::0</attached>
-                    <offset_x>8</offset_x>
-                    <offset_y>8</offset_y>
-                    <placement>BOTTOM</placement>
-                </strategy>
-                <hidden>false</hidden>
-            </edgeproperty>
-            <edgeproperty id="FinitALaStation::source::rolename" sizeCalculated="true" type="rolename" userDefined="true" visible="true">
-                <name>finLocations</name>
-                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-                    <userOffsetX>-4.0</userOffsetX>
-                    <userOffsetY>3.0</userOffsetY>
-                    <attached>FinitALaStation::WayPoint::0</attached>
-                    <offset_x>8</offset_x>
-                    <offset_y>8</offset_y>
-                    <placement>TOP</placement>
-                </strategy>
-                <hidden>false</hidden>
-            </edgeproperty>
             <edgeproperty id="FinitALaStation::target::rolename" sizeCalculated="true" type="rolename" userDefined="true" visible="true">
                 <name>stationArrivee</name>
                 <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-                    <userOffsetX>-2.0</userOffsetX>
-                    <userOffsetY>11.0</userOffsetY>
+                    <userOffsetX>-22.0</userOffsetX>
+                    <userOffsetY>3.0</userOffsetY>
                     <attached>FinitALaStation::WayPoint::1</attached>
                     <offset_x>8</offset_x>
                     <offset_y>8</offset_y>
@@ -406,10 +382,10 @@
                 </strategy>
                 <hidden>false</hidden>
             </edgeproperty>
-            <edgeproperty id="FinitALaStation::target::multiplicity" sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
+            <edgeproperty id="FinitALaStation::target::multiplicity" sizeCalculated="true" type="multiplicity" userDefined="true" visible="true">
                 <name>0..1</name>
                 <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-                    <userOffsetX>0.0</userOffsetX>
+                    <userOffsetX>5.0</userOffsetX>
                     <userOffsetY>0.0</userOffsetY>
                     <attached>FinitALaStation::WayPoint::1</attached>
                     <offset_x>8</offset_x>
@@ -421,14 +397,38 @@
             <edgeproperty id="FinitALaStation::AssociationName" sizeCalculated="true" type="associationName" userDefined="true" visible="true">
                 <name>FinitALaStation</name>
                 <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
-                    <userOffsetX>-42.0</userOffsetX>
-                    <userOffsetY>5.0</userOffsetY>
+                    <userOffsetX>-43.0</userOffsetX>
+                    <userOffsetY>7.0</userOffsetY>
                     <offsetX>0.0</offsetX>
                     <offsetY>-10.0</offsetY>
                     <related length="2">
                         <related0>FinitALaStation::WayPoint::0</related0>
                         <related1>FinitALaStation::WayPoint::1</related1>
                     </related>
+                </strategy>
+                <hidden>false</hidden>
+            </edgeproperty>
+            <edgeproperty id="FinitALaStation::source::rolename" sizeCalculated="true" type="rolename" userDefined="true" visible="true">
+                <name>finLocations</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+                    <userOffsetX>-1.0</userOffsetX>
+                    <userOffsetY>-3.0</userOffsetY>
+                    <attached>FinitALaStation::WayPoint::0</attached>
+                    <offset_x>8</offset_x>
+                    <offset_y>8</offset_y>
+                    <placement>TOP</placement>
+                </strategy>
+                <hidden>false</hidden>
+            </edgeproperty>
+            <edgeproperty id="FinitALaStation::source::multiplicity" sizeCalculated="true" type="multiplicity" userDefined="true" visible="true">
+                <name>*</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+                    <userOffsetX>3.0</userOffsetX>
+                    <userOffsetY>10.0</userOffsetY>
+                    <attached>FinitALaStation::WayPoint::0</attached>
+                    <offset_x>8</offset_x>
+                    <offset_y>8</offset_y>
+                    <placement>BOTTOM</placement>
                 </strategy>
                 <hidden>false</hidden>
             </edgeproperty>
@@ -462,24 +462,12 @@
         <target>Bornette</target>
         <name>EstAccrocheA</name>
         <properties>
-            <edgeproperty id="EstAccrocheA::source::rolename" sizeCalculated="true" type="rolename" userDefined="true" visible="true">
-                <name>veloAccroche</name>
-                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-                    <userOffsetX>87.0</userOffsetX>
-                    <userOffsetY>5.0</userOffsetY>
-                    <attached>EstAccrocheA::WayPoint::0</attached>
-                    <offset_x>8</offset_x>
-                    <offset_y>8</offset_y>
-                    <placement>TOP</placement>
-                </strategy>
-                <hidden>false</hidden>
-            </edgeproperty>
-            <edgeproperty id="EstAccrocheA::source::multiplicity" sizeCalculated="true" type="multiplicity" userDefined="true" visible="true">
+            <edgeproperty id="EstAccrocheA::target::multiplicity" sizeCalculated="true" type="multiplicity" userDefined="true" visible="true">
                 <name>0..1</name>
                 <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-                    <userOffsetX>8.0</userOffsetX>
-                    <userOffsetY>5.0</userOffsetY>
-                    <attached>EstAccrocheA::WayPoint::0</attached>
+                    <userOffsetX>2.0</userOffsetX>
+                    <userOffsetY>0.0</userOffsetY>
+                    <attached>EstAccrocheA::WayPoint::1</attached>
                     <offset_x>8</offset_x>
                     <offset_y>8</offset_y>
                     <placement>BOTTOM</placement>
@@ -498,29 +486,41 @@
                 </strategy>
                 <hidden>false</hidden>
             </edgeproperty>
-            <edgeproperty id="EstAccrocheA::target::multiplicity" sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
-                <name>0..1</name>
-                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-                    <userOffsetX>0.0</userOffsetX>
-                    <userOffsetY>0.0</userOffsetY>
-                    <attached>EstAccrocheA::WayPoint::1</attached>
-                    <offset_x>8</offset_x>
-                    <offset_y>8</offset_y>
-                    <placement>BOTTOM</placement>
-                </strategy>
-                <hidden>false</hidden>
-            </edgeproperty>
-            <edgeproperty id="EstAccrocheA::AssociationName" sizeCalculated="true" type="associationName" userDefined="true" visible="true">
+            <edgeproperty id="EstAccrocheA::AssociationName" sizeCalculated="true" type="associationName" userDefined="false" visible="true">
                 <name>EstAccrocheA</name>
                 <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
-                    <userOffsetX>41.0</userOffsetX>
-                    <userOffsetY>1.0</userOffsetY>
+                    <userOffsetX>0.0</userOffsetX>
+                    <userOffsetY>0.0</userOffsetY>
                     <offsetX>0.0</offsetX>
                     <offsetY>-10.0</offsetY>
                     <related length="2">
                         <related0>EstAccrocheA::WayPoint::0</related0>
                         <related1>EstAccrocheA::WayPoint::1</related1>
                     </related>
+                </strategy>
+                <hidden>false</hidden>
+            </edgeproperty>
+            <edgeproperty id="EstAccrocheA::source::rolename" sizeCalculated="true" type="rolename" userDefined="true" visible="true">
+                <name>veloAccroche</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+                    <userOffsetX>82.0</userOffsetX>
+                    <userOffsetY>4.0</userOffsetY>
+                    <attached>EstAccrocheA::WayPoint::0</attached>
+                    <offset_x>8</offset_x>
+                    <offset_y>8</offset_y>
+                    <placement>TOP</placement>
+                </strategy>
+                <hidden>false</hidden>
+            </edgeproperty>
+            <edgeproperty id="EstAccrocheA::source::multiplicity" sizeCalculated="true" type="multiplicity" userDefined="true" visible="true">
+                <name>0..1</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+                    <userOffsetX>8.0</userOffsetX>
+                    <userOffsetY>4.0</userOffsetY>
+                    <attached>EstAccrocheA::WayPoint::0</attached>
+                    <offset_x>8</offset_x>
+                    <offset_y>8</offset_y>
+                    <placement>BOTTOM</placement>
                 </strategy>
                 <hidden>false</hidden>
             </edgeproperty>
@@ -554,24 +554,12 @@
         <target>Location</target>
         <name>AEteOuEstLoueSuivant</name>
         <properties>
-            <edgeproperty id="AEteOuEstLoueSuivant::source::multiplicity" sizeCalculated="true" type="multiplicity" userDefined="true" visible="true">
-                <name>1..*</name>
+            <edgeproperty id="AEteOuEstLoueSuivant::target::rolename" sizeCalculated="true" type="rolename" userDefined="true" visible="true">
+                <name>locations</name>
                 <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-                    <userOffsetX>5.0</userOffsetX>
-                    <userOffsetY>11.0</userOffsetY>
-                    <attached>AEteOuEstLoueSuivant::WayPoint::0</attached>
-                    <offset_x>8</offset_x>
-                    <offset_y>8</offset_y>
-                    <placement>BOTTOM</placement>
-                </strategy>
-                <hidden>false</hidden>
-            </edgeproperty>
-            <edgeproperty id="AEteOuEstLoueSuivant::source::rolename" sizeCalculated="true" type="rolename" userDefined="true" visible="true">
-                <name>velos</name>
-                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-                    <userOffsetX>5.0</userOffsetX>
-                    <userOffsetY>-10.0</userOffsetY>
-                    <attached>AEteOuEstLoueSuivant::WayPoint::0</attached>
+                    <userOffsetX>1.0</userOffsetX>
+                    <userOffsetY>8.0</userOffsetY>
+                    <attached>AEteOuEstLoueSuivant::WayPoint::1</attached>
                     <offset_x>8</offset_x>
                     <offset_y>8</offset_y>
                     <placement>TOP</placement>
@@ -582,7 +570,7 @@
                 <name>*</name>
                 <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
                     <userOffsetX>3.0</userOffsetX>
-                    <userOffsetY>-8.0</userOffsetY>
+                    <userOffsetY>-4.0</userOffsetY>
                     <attached>AEteOuEstLoueSuivant::WayPoint::1</attached>
                     <offset_x>8</offset_x>
                     <offset_y>8</offset_y>
@@ -590,29 +578,41 @@
                 </strategy>
                 <hidden>false</hidden>
             </edgeproperty>
-            <edgeproperty id="AEteOuEstLoueSuivant::target::rolename" sizeCalculated="true" type="rolename" userDefined="true" visible="true">
-                <name>locations</name>
-                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-                    <userOffsetX>2.0</userOffsetX>
-                    <userOffsetY>8.0</userOffsetY>
-                    <attached>AEteOuEstLoueSuivant::WayPoint::1</attached>
-                    <offset_x>8</offset_x>
-                    <offset_y>8</offset_y>
-                    <placement>TOP</placement>
-                </strategy>
-                <hidden>false</hidden>
-            </edgeproperty>
             <edgeproperty id="AEteOuEstLoueSuivant::AssociationName" sizeCalculated="true" type="associationName" userDefined="true" visible="true">
                 <name>AEteOuEstLoueSuivant</name>
                 <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
-                    <userOffsetX>19.0</userOffsetX>
-                    <userOffsetY>27.0</userOffsetY>
+                    <userOffsetX>16.0</userOffsetX>
+                    <userOffsetY>28.0</userOffsetY>
                     <offsetX>0.0</offsetX>
                     <offsetY>-10.0</offsetY>
                     <related length="2">
                         <related0>AEteOuEstLoueSuivant::WayPoint::0</related0>
                         <related1>AEteOuEstLoueSuivant::WayPoint::1</related1>
                     </related>
+                </strategy>
+                <hidden>false</hidden>
+            </edgeproperty>
+            <edgeproperty id="AEteOuEstLoueSuivant::source::rolename" sizeCalculated="true" type="rolename" userDefined="true" visible="true">
+                <name>velos</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+                    <userOffsetX>4.0</userOffsetX>
+                    <userOffsetY>-12.0</userOffsetY>
+                    <attached>AEteOuEstLoueSuivant::WayPoint::0</attached>
+                    <offset_x>8</offset_x>
+                    <offset_y>8</offset_y>
+                    <placement>TOP</placement>
+                </strategy>
+                <hidden>false</hidden>
+            </edgeproperty>
+            <edgeproperty id="AEteOuEstLoueSuivant::source::multiplicity" sizeCalculated="true" type="multiplicity" userDefined="true" visible="true">
+                <name>1..*</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+                    <userOffsetX>5.0</userOffsetX>
+                    <userOffsetY>10.0</userOffsetY>
+                    <attached>AEteOuEstLoueSuivant::WayPoint::0</attached>
+                    <offset_x>8</offset_x>
+                    <offset_y>8</offset_y>
+                    <placement>BOTTOM</placement>
                 </strategy>
                 <hidden>false</hidden>
             </edgeproperty>
