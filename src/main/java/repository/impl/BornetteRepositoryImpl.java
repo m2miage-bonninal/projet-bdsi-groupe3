@@ -1,43 +1,43 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package repository.impl;
 
 import java.util.List;
+import model.Bornette;
 import model.Station;
-import repository.api.StationRepository;
+import model.enumeration.Modele;
+import repository.api.BornetteRepository;
 
 /**
  *
- * @author emerik
+ * @author aliceb
  */
-public class StationRepositoryImpl implements StationRepository{
-
+public class BornetteRepositoryImpl implements BornetteRepository{
 
     @Override
-    public void save(Station entity) {
+    public List<Bornette> bornetteAvecModele(Station station, Modele modele, int nbVelo) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public void delete(Station entity) {
+    public void save(Bornette entity) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public Station findById(Long id) {
+    public void delete(Bornette entity) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public List<Station> getAll() {
+    public Bornette findById(Long id) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public List<Station> recupStations() {
+    public List<Bornette> getAll() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

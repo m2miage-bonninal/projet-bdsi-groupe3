@@ -1,43 +1,41 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package repository.impl;
 
 import java.util.List;
-import model.Station;
-import repository.api.StationRepository;
+import model.ClientAbonne;
+import repository.api.ClientAbonneRepository;
 
 /**
  *
- * @author emerik
+ * @author aliceb
  */
-public class StationRepositoryImpl implements StationRepository{
-
+public class ClientAbonneRepositoryImpl implements ClientAbonneRepository{
 
     @Override
-    public void save(Station entity) {
+    public void save(ClientAbonne entity) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public void delete(Station entity) {
+    public void delete(ClientAbonne entity) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public Station findById(Long id) {
+    public ClientAbonne findById(Long id) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public List<Station> getAll() {
+    public List<ClientAbonne> getAll() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public List<Station> recupStations() {
+    public ClientAbonne abonneFromCode(String code) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
