@@ -9,7 +9,7 @@ package model.enumeration;
  *
  * @author emerik
  */
-public enum vType {
+public enum VType {
     
     VPLUS, VMOINS, VNUL
     

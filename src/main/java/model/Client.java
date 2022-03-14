@@ -5,26 +5,29 @@
  */
 package model;
 
+import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
 import javax.persistence.OneToMany;
 
 /**
  *
  * @author emerik
  */
+@Inheritance (strategy = InheritanceType.JOINED)
+@DiscriminatorColumn(name="type")
 @Entity
-public class Client {
-    
-    @Id
-    private String id;
-    
-    private String codeSecret;
+public abstract class Client {
 
     public String getId() {
         return id;
     }
 
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public String getCodeSecret() {
         return codeSecret;
@@ -50,6 +53,11 @@ public class Client {
         this.locations = locations;
     }
     
+    @Id
+    private String id;
+    
+    private String codeSecret;
+
     private Integer numeroCB;
     
     @OneToMany

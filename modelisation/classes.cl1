@@ -27,7 +27,6 @@ enum Etat {
 class Station
     attributes
         adresse : String
-        vType : VTypePrime
 end
 
 class Bornette
@@ -38,10 +37,7 @@ end
 
 class Location
     attributes
-        dateHeureDebut : String
-        duree : Integer
         montant : Real
-        prime : Boolean
 end
 
 class Velo
@@ -52,7 +48,7 @@ class Velo
         etat : Etat
 end
 
-class Client
+abstract class Client
     attributes
         numeroCB : Integer
         codeSecret : String
@@ -68,10 +64,45 @@ class ClientAbonne < Client
         dateSouscription : String
 end
 
+class Trajet
+    attributes
+        duree : Integer
+        dateHeureDebut : String
+        prime : Boolean
+end
+
+class ClientNonAbonne < Client
+end
+
+class HistoriqueVType
+    attributes
+        vType : VTypePrime
+        dateHeureDebut : String
+        dateHeureFin : String
+end
+
 association Appartient
     between
-        Bornette[0..1] role bornettes
+        Bornette[1..*] role bornettes
         Station[1] role station
+end
+
+association CommenceALaStation
+    between
+        Trajet[0..*] role debutTrajets
+        Station[1] role stationDepart
+end
+
+association FinitALaStation
+    between
+        Trajet[0..*] role finTrajets
+        Station[0..1] role stationArrivee
+end
+
+association EstEffectueePar
+    between
+        Location[0..*] role locations
+        Client[1] role locataire
 end
 
 association EstAccrocheA
@@ -80,27 +111,21 @@ association EstAccrocheA
         Bornette[0..1] role bornette
 end
 
-association EstLoueeSuivant
+association EstLouePour
     between
-        Velo[1..*] role velos
-        Location[0..*] role locations
+        Velo[1] role velo
+        Trajet[0..*] role locations
 end
 
-association CommenceALaStation
+association Comprend
     between
-        Location[0..*] role debutLocations
-        Station[1] role stationDepart
+        Location[1] role location
+        Trajet[1..*] role trajets
 end
 
-association FinitALaStation
+association Sauvegarde
     between
-        Location[0..*] role finLocations
-        Station[0..1] role stationArrivee
-end
-
-association EstEffectueePar
-    between
-        Location[0..*] role locations
-        Client[1] role locataire
+        Station[1] role station
+        HistoriqueVType[1..*] role historiques
 end
 

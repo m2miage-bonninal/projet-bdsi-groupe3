@@ -5,12 +5,17 @@
  */
 package model;
 
+import javax.persistence.DiscriminatorValue;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import model.enumeration.Sexe;
 
 /**
  *
  * @author emerik
  */
+@Entity
+@DiscriminatorValue (value = "abonne")
 public class ClientAbonne extends Client{
     
     private String nom;

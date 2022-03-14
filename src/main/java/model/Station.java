@@ -9,7 +9,7 @@ import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
-import model.enumeration.vType;
+import model.enumeration.VType;
 
 /**
  *
@@ -20,13 +20,22 @@ public class Station {
     
     @Id
     private Long id;
-    
-    private vType vType;
-    
+        
     @OneToMany
     private List<Bornette> bornettes;
     
-    private String adresse;
+    private String adresse;    
+    
+    @OneToMany
+    private List<HistoriqueVType> historiques;
+
+    public List<HistoriqueVType> getHistoriques() {
+        return historiques;
+    }
+
+    public void setHistoriques(List<HistoriqueVType> historiques) {
+        this.historiques = historiques;
+    }
     
     public Long getId(){
         return this.id;
@@ -44,12 +53,4 @@ public class Station {
         bornettes = newList;
     }
 
-    public vType getvType() {
-        return vType;
-    }
-
-    public void setvType(vType vType) {
-        this.vType = vType;
-    }
-    
 }

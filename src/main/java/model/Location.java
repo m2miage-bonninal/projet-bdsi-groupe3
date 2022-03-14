@@ -13,6 +13,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 
 /**
@@ -21,88 +22,28 @@ import javax.persistence.OneToOne;
  */
 @Entity
 public class Location {
-    
+
     @Id
-    private Long id;
-            
-    private LocalDateTime dateHeureDebut;
+    private int id;
     
-    private Long duree; // durée en minute
-    
-    private float montant;
-    
-    private Boolean prime;
-    
-    @ManyToOne
-    private Station stationDepart;
-    
-    @ManyToOne
-    private Station stationArrivee;
-    
-    @ManyToMany
-    private List<Velo> velo;
+    private Float montant;
     
     @ManyToOne
     private Client locataire;
+    
+    @OneToMany
+    private List<Trajet> trajets;
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public LocalDateTime getDateDebut() {
-        return dateHeureDebut;
-    }
-
-    public void setDateDebut(LocalDateTime dateDebut) {
-        this.dateHeureDebut = dateDebut;
-    }
-
-    public Long getDuree() {
-        return duree;
-    }
-
-    public void setDuree(Long duree) {
-        this.duree = duree;
-    }
-
-    public float getMontant() {
+    public Float getMontant() {
         return montant;
     }
 
-    public void setMontant(float montant) {
+    public void setMontant(Float montant) {
         this.montant = montant;
-    }
-
-    public Boolean getPrime() {
-        return prime;
-    }
-
-    public void setPrime(Boolean prime) {
-        this.prime = prime;
-    }
-
-    public Station getStationDepart() {
-        return stationDepart;
-    }
-
-    public void setStationDepart(Station stationDepart) {
-        this.stationDepart = stationDepart;
-    }
-
-    public Station getStationArrivee() {
-        return stationArrivee;
-    }
-
-    public void setStationArrivee(Station stationArrivee) {
-        this.stationArrivee = stationArrivee;
-    }
-
-    public List<Velo> getVelo() {
-        return velo;
-    }
-
-    public void setVelo(List<Velo> velo) {
-        this.velo = velo;
     }
 
     public Client getLocataire() {
@@ -111,6 +52,14 @@ public class Location {
 
     public void setLocataire(Client locataire) {
         this.locataire = locataire;
+    }
+
+    public List<Trajet> getTrajets() {
+        return trajets;
+    }
+
+    public void setTrajets(List<Trajet> trajets) {
+        this.trajets = trajets;
     }
     
     
