@@ -1,43 +1,42 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package repository.impl;
 
 import java.util.List;
-import model.Station;
-import repository.api.StationRepository;
+import model.Trajet;
+import model.Velo;
+import repository.api.TrajetRepository;
 
 /**
  *
- * @author emerik
+ * @author aliceb
  */
-public class StationRepositoryImpl implements StationRepository{
-
+public class TrajetRepositoryImpl implements TrajetRepository{
 
     @Override
-    public void save(Station entity) {
+    public Trajet trajetFromVelo(Velo velo) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public void delete(Station entity) {
+    public void save(Trajet entity) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public Station findById(Long id) {
+    public void delete(Trajet entity) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public List<Station> getAll() {
+    public Trajet findById(Long id) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public List<Station> recupStations() {
+    public List<Trajet> getAll() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

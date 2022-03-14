@@ -5,17 +5,15 @@
  */
 package repository.api;
 
+import java.util.List;
+import model.Station;
+
 /**
  *
  * @author emerik
  */
-public class StationRepository {
+public interface StationRepository extends Repository<Station, Long>{
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
+    List<Station> recupStations();
     
 }
