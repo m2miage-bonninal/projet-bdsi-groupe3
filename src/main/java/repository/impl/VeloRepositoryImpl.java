@@ -5,6 +5,7 @@
 package repository.impl;
 
 import java.util.List;
+import javax.persistence.EntityManager;
 import model.Station;
 import model.Velo;
 import repository.api.VeloRepository;
@@ -13,8 +14,12 @@ import repository.api.VeloRepository;
  *
  * @author aliceb
  */
-public class VeloRepositoryImpl implements VeloRepository{
-
+public class VeloRepositoryImpl extends BaseRepositoryImpl implements VeloRepository{
+    
+    public VeloRepositoryImpl(EntityManager entityManager) {
+        super(entityManager);
+    }
+        
     @Override
     public List<Velo> velosAtStation(Station station) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
@@ -22,22 +27,28 @@ public class VeloRepositoryImpl implements VeloRepository{
 
     @Override
     public void save(Velo entity) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        entityManager.persist(entity);
     }
 
     @Override
     public void delete(Velo entity) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        entityManager.remove(entity);
     }
 
     @Override
     public Velo findById(Long id) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+        String jql = "select v from velo s where v.id = :id";
+        Velo retour = entityManager.createQuery(jql, Velo.class)
+                            .setParameter("id", id)
+                            .getSingleResult();
+
+        return retour;    }
 
     @Override
     public List<Velo> getAll() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+        String jql = "select v from velo v";
+        List<Velo> retour = (List<Velo>) entityManager.createQuery(jql, Velo.class)
+                                                .getResultList();
+        return retour;    }
     
 }

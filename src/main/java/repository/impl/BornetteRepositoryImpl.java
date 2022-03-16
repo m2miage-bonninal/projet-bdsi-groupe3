@@ -5,6 +5,7 @@
 package repository.impl;
 
 import java.util.List;
+import javax.persistence.EntityManager;
 import model.Bornette;
 import model.Station;
 import model.enumeration.Modele;
@@ -14,8 +15,12 @@ import repository.api.BornetteRepository;
  *
  * @author aliceb
  */
-public class BornetteRepositoryImpl implements BornetteRepository{
+public class BornetteRepositoryImpl extends BaseRepositoryImpl implements BornetteRepository{
 
+    public BornetteRepositoryImpl(EntityManager entityManager) {
+        super(entityManager);
+    }
+        
     @Override
     public List<Bornette> bornetteAvecModele(Station station, Modele modele, int nbVelo) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
@@ -23,22 +28,28 @@ public class BornetteRepositoryImpl implements BornetteRepository{
 
     @Override
     public void save(Bornette entity) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        entityManager.persist(entity);
     }
 
     @Override
     public void delete(Bornette entity) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        entityManager.remove(entity);
     }
 
     @Override
     public Bornette findById(Long id) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+        String jql = "select b from bornette b where b.id = :id";
+        Bornette retour = entityManager.createQuery(jql, Bornette.class)
+                            .setParameter("id", id)
+                            .getSingleResult();
+
+        return retour;    }
 
     @Override
     public List<Bornette> getAll() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+        String jql = "select b from bornette b";
+        List<Bornette> retour = (List<Bornette>) entityManager.createQuery(jql, Bornette.class)
+                                                .getResultList();
+        return retour;    }
     
 }

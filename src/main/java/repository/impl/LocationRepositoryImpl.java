@@ -5,6 +5,7 @@
 package repository.impl;
 
 import java.util.List;
+import javax.persistence.EntityManager;
 import model.Client;
 import model.Location;
 import repository.api.LocationRepository;
@@ -13,8 +14,12 @@ import repository.api.LocationRepository;
  *
  * @author aliceb
  */
-public class LocationRepositoryImpl implements LocationRepository{
+public class LocationRepositoryImpl extends BaseRepositoryImpl implements LocationRepository{
 
+    public LocationRepositoryImpl(EntityManager entityManager) {
+        super(entityManager);
+    }
+        
     @Override
     public Location locationEnCoursFromClient(Client client) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
@@ -22,22 +27,28 @@ public class LocationRepositoryImpl implements LocationRepository{
 
     @Override
     public void save(Location entity) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        entityManager.persist(entity);
     }
 
     @Override
     public void delete(Location entity) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        entityManager.remove(entity);
     }
 
     @Override
     public Location findById(Long id) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+        String jql = "select l from Location l where l.id = :id";
+        Location retour = entityManager.createQuery(jql, Location.class)
+                            .setParameter("id", id)
+                            .getSingleResult();
+
+        return retour;    }
 
     @Override
     public List<Location> getAll() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+        String jql = "select l from Location l";
+        List<Location> retour = (List<Location>) entityManager.createQuery(jql, Location.class)
+                                                .getResultList();
+        return retour;    }
     
 }
