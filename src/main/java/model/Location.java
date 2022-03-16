@@ -62,5 +62,10 @@ public class Location {
         this.trajets = trajets;
     }
     
+    // TODO
+    boolean verifTrajetEnCours(){
+        return false;
+    }
+    
     
 }
