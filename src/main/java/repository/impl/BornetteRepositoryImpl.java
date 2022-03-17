@@ -43,13 +43,15 @@ public class BornetteRepositoryImpl extends BaseRepositoryImpl implements Bornet
                             .setParameter("id", id)
                             .getSingleResult();
 
-        return retour;    }
+        return retour;    
+    }
 
     @Override
     public List<Bornette> getAll() {
         String jql = "select b from bornette b";
         List<Bornette> retour = (List<Bornette>) entityManager.createQuery(jql, Bornette.class)
                                                 .getResultList();
-        return retour;    }
+        return retour;    
+    }
     
 }
