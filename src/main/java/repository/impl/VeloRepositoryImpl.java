@@ -20,6 +20,11 @@ public class VeloRepositoryImpl extends BaseRepositoryImpl implements VeloReposi
         super(entityManager);
     }
         
+    /**
+     * Liste de tous les vélos disponbles (pas HS) à une station
+     * @param station
+     * @return 
+     */
     @Override
     public List<Velo> velosAtStation(Station station) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.

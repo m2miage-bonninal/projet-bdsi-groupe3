@@ -20,6 +20,11 @@ public class TrajetRepositoryImpl extends BaseRepositoryImpl implements TrajetRe
         super(entityManager);
     }
         
+    /**
+     * Retourne le trajet en cours d'un vélo
+     * @param velo
+     * @return 
+     */
     @Override
     public Trajet trajetFromVelo(Velo velo) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.

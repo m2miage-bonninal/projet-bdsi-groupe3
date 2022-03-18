@@ -47,9 +47,4 @@ public class StationRepositoryImpl extends BaseRepositoryImpl implements Station
                                                 .getResultList();
         return retour;    }
 
-    @Override
-    public List<Station> recupStations() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    
 }

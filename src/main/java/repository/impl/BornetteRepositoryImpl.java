@@ -21,6 +21,13 @@ public class BornetteRepositoryImpl extends BaseRepositoryImpl implements Bornet
         super(entityManager);
     }
         
+    /**
+     * Renvoie la liste des bornettes d'une station auxquelles sont rattachés des vélos utilisables (état OK) du type donné
+     * @param station
+     * @param modele
+     * @param nbVelo
+     * @return 
+     */
     @Override
     public List<Bornette> bornetteAvecModele(Station station, Modele modele, int nbVelo) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.

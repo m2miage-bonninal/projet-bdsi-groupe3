@@ -20,6 +20,11 @@ public class LocationRepositoryImpl extends BaseRepositoryImpl implements Locati
         super(entityManager);
     }
         
+    /**
+     * Retourne la location en cours (vélo pris et non rendu) d'un client s'il en a une
+     * @param client
+     * @return 
+     */
     @Override
     public Location locationEnCoursFromClient(Client client) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.

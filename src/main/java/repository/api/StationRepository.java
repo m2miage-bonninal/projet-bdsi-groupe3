@@ -14,6 +14,5 @@ import model.Station;
  */
 public interface StationRepository extends Repository<Station, Long>{
 
-    List<Station> recupStations();
     
 }
