@@ -5,43 +5,62 @@
 package repository.impl;
 
 import java.util.List;
-import model.Client;
-import repository.api.ClientRepository;
+import javax.persistence.EntityManager;
+import model.ClientNonAbonne;
+import repository.api.ClientNonAbonneRepository;
 
 /**
  *
  * @author aliceb
  */
-public class ClientNonAbonneRepositoryImpl implements ClientRepository{
+public class ClientNonAbonneRepositoryImpl extends BaseRepositoryImpl implements ClientNonAbonneRepository{
 
+    public ClientNonAbonneRepositoryImpl(EntityManager entityManager) {
+        super(entityManager);
+    }
     /**
      * Retourne le client à partir de son code "secret"
      * @param code
      * @return 
      */
     @Override
-    public Client clientFromCode(String code) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public ClientNonAbonne clientFromCode(String code) {
+
+        String jql = "select c from ClientNonAbonne c where c.codeSecret = :code";
+        ClientNonAbonne retour = entityManager.createQuery(jql, ClientNonAbonne.class)
+                            .setParameter("code", code)
+                            .getSingleResult();
+
+        return retour; 
+    }
+
+    public void save(ClientNonAbonne entity) {
+        entityManager.persist(entity);
+    }
+
+    public void delete(ClientNonAbonne entity) {
+        entityManager.remove(entity);
     }
 
     @Override
-    public void save(Client entity) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public ClientNonAbonne findById(Long id) {
+        String jql = "select c from ClientNonAbonne c where c.id = :id";
+        ClientNonAbonne retour = entityManager.createQuery(jql, ClientNonAbonne.class)
+                            .setParameter("id", id)
+                            .getSingleResult();
+
+        return retour; 
     }
 
-    @Override
-    public void delete(Client entity) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public Client findById(Long id) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public List<Client> getAll() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    /**
+     *
+     * @return
+     */
+    public List<ClientNonAbonne> getAll() {
+        String jql = "select c from ClientNonAbonne c";
+        List<ClientNonAbonne> retour = (List<ClientNonAbonne>) entityManager.createQuery(jql, ClientNonAbonne.class)
+                                                .getResultList();
+        return retour;      
     }
     
 }
