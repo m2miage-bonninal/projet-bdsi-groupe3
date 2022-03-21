@@ -2,6 +2,7 @@ package repository;
 
 import repository.RepositoryFactory;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.AfterEach;
 
 import javax.persistence.EntityManager;
 import javax.persistence.Persistence;
@@ -19,4 +20,9 @@ public abstract class Base {
         entityManager = Persistence.createEntityManagerFactory("TEST")
                 .createEntityManager();
     }
+    @AfterEach
+    public final void close() {
+        entityManager.close();
+    }
+
 }
