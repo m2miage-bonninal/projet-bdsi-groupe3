@@ -5,6 +5,7 @@
  */
 package model;
 
+import java.time.LocalDateTime;
 import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -61,6 +62,22 @@ public class Station {
     
     public void setBornette(List<Bornette> newList){
         bornettes = newList;
+    }
+    
+    public VType getVTypeAt(LocalDateTime ldt){
+        VType retour = VType.VNUL;
+        
+        int i = 0;
+        boolean trouve = false;
+        while(i < this.getHistoriques().size() && !trouve){
+            HistoriqueVType histo = this.getHistoriques().get(i);
+            if(histo.getDateHeureDebut().isBefore(ldt) && histo.getDateHeureFin().isAfter(ldt)){
+                retour = histo.getvType();
+                trouve = true;
+            }
+            i++;
+        }
+        return retour;
     }
 
 }
