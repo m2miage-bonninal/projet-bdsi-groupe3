@@ -1,19 +1,19 @@
 package repository;
-import model.Station ;
-import repository.api.StationRepository ;
-import repository.impl.StationRepositoryImpl;
+import model.Velo ;
+import repository.api.VeloRepository ;
+import repository.impl.VeloRepositoryImpl;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
-public class StationTest extends Base {
-    StationRepository stationRepository;
+public class VeloTest extends Base {
+    VeloRepository veloRepository;
 
     @BeforeEach
     void before() {
-        stationRepository = daoFactory.newStationRepository(entityManager);
+        veloRepository = daoFactory.newVeloRepository(entityManager);
     }
 
     @AfterEach
