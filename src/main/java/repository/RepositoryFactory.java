@@ -2,6 +2,7 @@ package repository;
 
 import repository.api.BornetteRepository;
 import repository.api.ClientAbonneRepository;
+import repository.api.ClientNonAbonneRepository;
 import repository.api.ClientRepository;
 import repository.api.LocationRepository;
 import repository.api.StationRepository;
@@ -9,6 +10,7 @@ import repository.api.TrajetRepository;
 import repository.api.VeloRepository;
 import repository.impl.BornetteRepositoryImpl;
 import repository.impl.ClientAbonneRepositoryImpl;
+import repository.impl.ClientNonAbonneRepositoryImpl;
 import repository.impl.ClientRepositoryImpl;
 import repository.impl.LocationRepositoryImpl;
 import repository.impl.StationRepositoryImpl;
@@ -26,7 +28,7 @@ public class RepositoryFactory {
         return new ClientAbonneRepositoryImpl(entityManager) ;
     }
     public ClientRepository newClientRepository(EntityManager entityManager){
-        return new ClientRepositoryImpl() ;
+        return new ClientRepositoryImpl(entityManager) ;
     }
     public LocationRepository newLocationRepository(EntityManager entityManager){
         return new LocationRepositoryImpl(entityManager) ;
@@ -39,6 +41,9 @@ public class RepositoryFactory {
     }
     public StationRepository newStationRepository(EntityManager entityManager){
         return new StationRepositoryImpl(entityManager);
+    }
+    public ClientNonAbonneRepository newClientNonAbonneRepository(EntityManager entityManager){
+        return new ClientNonAbonneRepositoryImpl(entityManager) ;
     }
 
 }
