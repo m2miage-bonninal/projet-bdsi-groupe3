@@ -13,8 +13,10 @@ import java.util.Date;
 import javax.persistence.GeneratedValue;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
+import model.enumeration.VType;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.ManyToAny;
+import repository.impl.TrajetRepositoryImpl;
 /**
  *
  * @author emerik
@@ -112,5 +114,15 @@ public class Trajet {
         this.velo = velo;
     }
     
+    public void setPrimeFromDate(LocalDateTime ldt){
+        VType typeDebut = this.getStationDebut().getVTypeAt(this.getDateheureDebut());
+        VType typeFin = this.getStationFin().getVTypeAt(ldt);
+        if(typeDebut == VType.VMOINS && typeFin == VType.VPLUS){
+            this.prime = true;
+        }
+        else{
+            this.prime = false;
+        }
+    }
     
 }

@@ -20,6 +20,46 @@ import org.hibernate.annotations.GenericGenerator;
 public class HistoriqueVType {
     
     public HistoriqueVType(){};
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public VType getvType() {
+        return vType;
+    }
+
+    public void setvType(VType vType) {
+        this.vType = vType;
+    }
+
+    public LocalDateTime getDateHeureDebut() {
+        return dateHeureDebut;
+    }
+
+    public void setDateHeureDebut(LocalDateTime dateHeureDebut) {
+        this.dateHeureDebut = dateHeureDebut;
+    }
+
+    public LocalDateTime getDateHeureFin() {
+        return dateHeureFin;
+    }
+
+    public void setDateHeureFin(LocalDateTime dateHeureFin) {
+        this.dateHeureFin = dateHeureFin;
+    }
+
+    public Station getStation() {
+        return station;
+    }
+
+    public void setStation(Station station) {
+        this.station = station;
+    }
     
     public HistoriqueVType(VType vType, Station station, LocalDateTime ldt){
         this.vType = vType;
