@@ -15,5 +15,8 @@ import javax.persistence.Entity;
 @Entity
 @DiscriminatorValue (value = "nonAbonne")
 public class ClientNonAbonne extends Client{
-    
+    public ClientNonAbonne(){};
+    public ClientNonAbonne(String numCB, String codeSecret){
+        super(numCB, codeSecret);
+    }
 }

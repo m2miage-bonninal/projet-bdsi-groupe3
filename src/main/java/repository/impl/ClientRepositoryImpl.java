@@ -16,7 +16,7 @@ import repository.api.ClientRepository;
  */
 public class ClientRepositoryImpl extends BaseRepositoryImpl implements ClientRepository{
 
-        public ClientRepositoryImpl(EntityManager entityManager) {
+    public ClientRepositoryImpl(EntityManager entityManager) {
         super(entityManager);
     }
     /**
@@ -60,6 +60,14 @@ public class ClientRepositoryImpl extends BaseRepositoryImpl implements ClientRe
         List<Client> retour = (List<Client>) entityManager.createQuery(jql, Client.class)
                                                 .getResultList();
         return retour; 
+    }
+
+    @Override
+    public boolean existsCode(String code) {
+       String jql = "select count(*) from Client c where c.code = :code";
+       Integer nbCode = entityManager.createQuery(jql, Integer.class).getSingleResult();
+       
+       return nbCode.intValue() > 0;
     }
     
 }

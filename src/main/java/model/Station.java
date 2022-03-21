@@ -7,9 +7,11 @@ package model;
 
 import java.util.List;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import model.enumeration.VType;
+import org.hibernate.annotations.GenericGenerator;
 
 /**
  *
@@ -18,7 +20,15 @@ import model.enumeration.VType;
 @Entity
 public class Station {
     
+    public Station(){};
+    
+    public Station(String adresse){
+        this.adresse = adresse;
+    }
+    
     @Id
+    @GenericGenerator(name = "kaugen1", strategy = "increment")
+    @GeneratedValue(generator = "kaugen1")
     private Long id;
         
     @OneToMany
