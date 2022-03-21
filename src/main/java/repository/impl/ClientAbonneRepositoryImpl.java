@@ -41,7 +41,7 @@ public class ClientAbonneRepositoryImpl extends BaseRepositoryImpl implements Cl
 
     @Override
     public List<ClientAbonne> getAll() {
-        String jql = "select c from Client c";
+        String jql = "select c from ClientAbonne c";
         List<ClientAbonne> retour = (List<ClientAbonne>) entityManager.createQuery(jql, ClientAbonne.class)
                                                 .getResultList();
         return retour;    
