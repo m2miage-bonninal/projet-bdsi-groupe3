@@ -26,7 +26,7 @@ public abstract class Client {
     
     private String codeSecret;
 
-    private Integer numeroCB;
+    private String numeroCB;
     
     @OneToMany
     private Location locations;
