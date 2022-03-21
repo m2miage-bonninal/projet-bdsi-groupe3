@@ -8,6 +8,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
+
+import org.apache.commons.lang3.ObjectUtils.Null;
 public class ClientAbonneTest extends Base {
     ClientAbonneRepository ClientAbonneRepository;
 
@@ -22,7 +24,6 @@ public class ClientAbonneTest extends Base {
             entityManager.getTransaction().rollback();
         }
     }
-
 
     
 }
