@@ -5,12 +5,15 @@
  */
 package model;
 
+import java.util.ArrayList;
 import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import model.enumeration.VType;
+import net.bytebuddy.dynamic.loading.PackageDefinitionStrategy.Definition.Undefined;
+
 import org.hibernate.annotations.GenericGenerator;
 
 /**
@@ -59,6 +62,16 @@ public class Station {
     
     public void setBornette(List<Bornette> newList){
         bornettes = newList;
+    }
+
+    public List<Bornette> getBornettesLibres() {
+        List<Bornette> bornettesLibres = new ArrayList<Bornette>();
+        for(Bornette b : bornettes) {
+            if(b.getVelo() == null) {
+                bornettesLibres.add(b);
+            }
+        }
+        return bornettesLibres;
     }
 
 }

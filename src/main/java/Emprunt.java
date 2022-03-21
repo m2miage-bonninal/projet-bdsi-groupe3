@@ -10,7 +10,7 @@ public class Emprunt {
         // renvoie les bornettes des nbVelo premiers vélos du modèle choisit à la station.
         // ou bien : renvoie les numéros des bornes.
 
-        // afficher les vélos empruntés en guise de la simulation (à partir de la liste des bornettes)
+        // Afficher les numéros des vélos empruntés en guise de la simulation (à partir de la liste des bornettes)
         */
     }
 }
