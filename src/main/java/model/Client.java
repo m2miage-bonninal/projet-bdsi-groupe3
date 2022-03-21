@@ -8,10 +8,12 @@ package model;
 import com.github.javafaker.Faker;
 import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 import javax.persistence.OneToMany;
+import org.hibernate.annotations.GenericGenerator;
 import repository.impl.ClientRepositoryImpl;
 
 /**
@@ -22,6 +24,11 @@ import repository.impl.ClientRepositoryImpl;
 @DiscriminatorColumn(name="type")
 @Entity
 public abstract class Client {
+    
+    public Client(String numCB, String codeSecret){
+        this.setCodeSecret(codeSecret);
+        this.setNumeroCB(numCB);
+    }
     
     public static String generateCode(ClientRepositoryImpl clientRepo){
         String code = Faker.instance().bothify("??????");
@@ -34,6 +41,8 @@ public abstract class Client {
     }
     
     @Id
+    @GenericGenerator(name = "kaugen1", strategy = "increment")
+    @GeneratedValue(generator = "kaugen1")
     private String id;
     
     private String codeSecret;

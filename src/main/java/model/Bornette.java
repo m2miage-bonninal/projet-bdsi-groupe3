@@ -6,10 +6,12 @@
 package model;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import model.enumeration.Etat;
+import org.hibernate.annotations.GenericGenerator;
 
 /**
  *
@@ -18,7 +20,13 @@ import model.enumeration.Etat;
 @Entity
 public class Bornette {
     
+    public Bornette(Station station){
+        this.setStation(station);
+    }
+    
     @Id
+    @GenericGenerator(name = "kaugen1", strategy = "increment")
+    @GeneratedValue(generator = "kaugen1")
     private Long numero;
     
     private Etat etat;
