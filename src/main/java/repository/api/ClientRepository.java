@@ -13,4 +13,6 @@ import model.Client;
 public interface ClientRepository extends Repository<Client,Long>{
     Client clientFromCode(String code);
     
+    boolean existsCode(String code);
+    
 }

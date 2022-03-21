@@ -5,12 +5,14 @@
  */
 package model;
 
+import com.github.javafaker.Faker;
 import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 import javax.persistence.OneToMany;
+import repository.impl.ClientRepositoryImpl;
 
 /**
  *
@@ -20,6 +22,16 @@ import javax.persistence.OneToMany;
 @DiscriminatorColumn(name="type")
 @Entity
 public abstract class Client {
+    
+    public static String generateCode(ClientRepositoryImpl clientRepo){
+        String code = Faker.instance().bothify("??????");
+        
+        while(clientRepo.existsCode(code)){
+            code = Faker.instance().bothify("??????");
+        }
+        
+        return code;
+    }
     
     @Id
     private String id;
