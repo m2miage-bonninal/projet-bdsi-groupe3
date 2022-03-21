@@ -10,9 +10,13 @@ import javax.persistence.Id;
 import java.sql.Time;
 import java.time.LocalDateTime;
 import java.util.Date;
+import javax.persistence.GeneratedValue;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
+import model.enumeration.VType;
+import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.ManyToAny;
+import repository.impl.TrajetRepositoryImpl;
 /**
  *
  * @author emerik
@@ -20,7 +24,17 @@ import org.hibernate.annotations.ManyToAny;
 @Entity
 public class Trajet {
     
+    public Trajet(){};
+    
+    public Trajet(Location location, Station stationDebut){
+        this.setLocation(location);
+        this.setStationDebut(stationDebut);
+        this.setDateheureDebut(LocalDateTime.now());
+    }
+    
     @Id
+    @GenericGenerator(name = "kaugen1", strategy = "increment")
+    @GeneratedValue(generator = "kaugen1")
     private int id;
     
     private int duree;
@@ -100,5 +114,15 @@ public class Trajet {
         this.velo = velo;
     }
     
+    public void setPrimeFromDate(LocalDateTime ldt){
+        VType typeDebut = this.getStationDebut().getVTypeAt(this.getDateheureDebut());
+        VType typeFin = this.getStationFin().getVTypeAt(ldt);
+        if(typeDebut == VType.VMOINS && typeFin == VType.VPLUS){
+            this.prime = true;
+        }
+        else{
+            this.prime = false;
+        }
+    }
     
 }

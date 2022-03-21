@@ -5,6 +5,9 @@
  */
 package model;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -17,6 +20,20 @@ import model.enumeration.Sexe;
 @Entity
 @DiscriminatorValue (value = "abonne")
 public class ClientAbonne extends Client{
+    public ClientAbonne(){
+        super();
+    }
+    
+    public ClientAbonne(String numCB, String codeSecret, String nom, String prenom, String dateNaissance, String adresse, Sexe sexe){
+        super(numCB, codeSecret);
+        this.setNom(nom);
+        this.setPrenom(prenom);
+        this.setDateNaissance(dateNaissance);
+        this.setAdresse(adresse);
+        this.setSexe(sexe);
+        SimpleDateFormat sdf = new SimpleDateFormat("YYYY-MM-DD");
+        this.setDateSouscription(sdf.format(new Date()));
+    }
     
     private String nom;
     

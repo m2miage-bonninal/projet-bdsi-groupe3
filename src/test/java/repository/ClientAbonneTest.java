@@ -24,6 +24,32 @@ public class ClientAbonneTest extends Base {
             entityManager.getTransaction().rollback();
         }
     }
+    
+    @Test
+    void saveClientAbonne(){
+        final ClientAbonne client = Fixtures.createClientAbonne(null);
+        
+        entityManager.getTransaction().begin();
+        ClientAbonneRepository.save(client);
+        entityManager.getTransaction().commit();
+        entityManager.detach(client);
+        
+        final ClientAbonne pClient = ClientAbonneRepository.findById(client.getId());
+        assertThat(pClient.getId()).isEqualTo(client.getId());
+    }
+    
+      
+    @Test
+    void abonneFromCode(){
+        final ClientAbonne client = Fixtures.createClientAbonne(null);
+        entityManager.getTransaction().begin();
+        ClientAbonneRepository.save(client);
+        entityManager.getTransaction().commit();
+        entityManager.detach(client);
+        
+        final ClientAbonne pClient = ClientAbonneRepository.findById(client.getId());
+        assertThat(ClientAbonneRepository.abonneFromCode(client.getCodeSecret())).isEqualTo(pClient);
+    }
 
     
 }

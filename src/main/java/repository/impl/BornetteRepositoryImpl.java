@@ -57,7 +57,7 @@ public class BornetteRepositoryImpl extends BaseRepositoryImpl implements Bornet
 
     @Override
     public Bornette findById(Long id) {
-        String jql = "select b from bornette b where b.id = :id";
+        String jql = "select b from bornette b where b.numero = :id";
         Bornette retour = entityManager.createQuery(jql, Bornette.class)
                             .setParameter("id", id)
                             .getSingleResult();

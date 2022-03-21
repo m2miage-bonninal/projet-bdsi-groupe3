@@ -5,12 +5,16 @@
  */
 package model;
 
+import com.github.javafaker.Faker;
 import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 import javax.persistence.OneToMany;
+import org.hibernate.annotations.GenericGenerator;
+import repository.impl.ClientRepositoryImpl;
 
 /**
  *
@@ -21,8 +25,28 @@ import javax.persistence.OneToMany;
 @Entity
 public abstract class Client {
     
+    public Client(){};
+    
+    public Client(String numCB, String codeSecret){
+        this.setCodeSecret(codeSecret);
+        this.setNumeroCB(numCB);
+    }
+    
+    public static String generateCode(ClientRepositoryImpl clientRepo){
+        String code = Faker.instance().bothify("??????");
+        
+        while(clientRepo.existsCode(code)){
+            code = Faker.instance().bothify("??????");
+        }
+        
+        return code;
+    }
+    
     @Id
-    private String id;
+
+    @GenericGenerator(name = "kaugen1", strategy = "increment")
+    @GeneratedValue(generator = "kaugen1")
+    private Long id;
     
     private String codeSecret;
 
@@ -31,12 +55,8 @@ public abstract class Client {
     @OneToMany
     private Location locations;
 
-    public String getId() {
+    public Long getId() {
         return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
     }
 
     public String getCodeSecret() {

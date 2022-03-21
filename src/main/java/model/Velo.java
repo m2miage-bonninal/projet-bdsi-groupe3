@@ -8,11 +8,13 @@ package model;
 import java.util.Date;
 import java.util.List;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 import javax.persistence.OneToOne;
 import model.enumeration.Etat;
 import model.enumeration.Modele;
+import org.hibernate.annotations.GenericGenerator;
 
 /**
  *
@@ -20,8 +22,18 @@ import model.enumeration.Modele;
  */
 @Entity
 public class Velo {
+    public Velo(){};
+    
+    public Velo(Modele modele, Date misEnService){
+        this.setModele(modele);
+        this.setMisEnService(misEnService);
+        this.setEtat(Etat.OK);
+    }
     
     @Id
+    @GenericGenerator(name = "kaugen1", strategy = "increment")
+    @GeneratedValue(generator = "kaugen1")
+    
     private Long numero;
     
     private Modele modele;
