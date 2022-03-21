@@ -25,7 +25,7 @@ public class Fixtures {
         bornette.setVelo(velo);
         return bornette;
     }
-    public static ClientNonAbonne createClientNonAbonne(Location location) {
+    public static ClientNonAbonne createClientNonAbonne(List<Location> location) {
         ClientNonAbonne clientNA = new ClientNonAbonne();
         clientNA.setCodeSecret("123");
         clientNA.setLocations(location);
@@ -33,7 +33,7 @@ public class Fixtures {
         return clientNA;
     }
 
-    public static ClientAbonne createClientAbonne(Location location){
+    public static ClientAbonne createClientAbonne(List<Location> location){
         ClientAbonne clientA = new ClientAbonne();
         clientA.setCodeSecret("234");
         clientA.setLocations(location);

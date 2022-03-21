@@ -49,7 +49,7 @@ public class TrajetRepositoryImpl extends BaseRepositoryImpl implements TrajetRe
 
     @Override
     public Trajet findById(Long id) {
-        String jql = "select t from trajet t where t.id = :id";
+        String jql = "select t from Trajet t where t.id = :id";
         Trajet retour = entityManager.createQuery(jql, Trajet.class)
                             .setParameter("id", id)
                             .getSingleResult();
@@ -59,7 +59,7 @@ public class TrajetRepositoryImpl extends BaseRepositoryImpl implements TrajetRe
 
     @Override
     public List<Trajet> getAll() {
-        String jql = "select t from trajet t";
+        String jql = "select t from Trajet t";
         List<Trajet> retour = (List<Trajet>) entityManager.createQuery(jql, Trajet.class)
                                                 .getResultList();
         return retour;    

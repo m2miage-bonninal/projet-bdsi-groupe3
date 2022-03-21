@@ -6,6 +6,8 @@
 package model;
 
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
@@ -31,6 +33,7 @@ public class Bornette {
     @GeneratedValue(generator = "kaugen1")
     private Long numero;
     
+    @Enumerated(EnumType.STRING)
     private Etat etat;
     
     @ManyToOne
