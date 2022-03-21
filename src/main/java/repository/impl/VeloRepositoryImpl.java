@@ -27,7 +27,12 @@ public class VeloRepositoryImpl extends BaseRepositoryImpl implements VeloReposi
      */
     @Override
     public List<Velo> velosAtStation(Station station) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        String jql = "select v from Velo v and v join v.bornette b join b.station s where s.id = :idStation where etat != 'HS'";
+        List<Velo> retour = (List<Velo>) entityManager.createQuery(jql, Velo.class)
+                                .setParameter("idStation", station.getId())
+                                .getResultList();
+        return retour;
+        //attention, il faut revoir ca. Pourquoi ne pas partir de la station directement ???
     }
 
     @Override
@@ -42,7 +47,7 @@ public class VeloRepositoryImpl extends BaseRepositoryImpl implements VeloReposi
 
     @Override
     public Velo findById(Long id) {
-        String jql = "select v from velo s where v.id = :id";
+        String jql = "select v from Velo s where v.id = :id";
         Velo retour = entityManager.createQuery(jql, Velo.class)
                             .setParameter("id", id)
                             .getSingleResult();

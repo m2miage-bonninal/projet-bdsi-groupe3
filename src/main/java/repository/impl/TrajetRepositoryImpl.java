@@ -27,7 +27,14 @@ public class TrajetRepositoryImpl extends BaseRepositoryImpl implements TrajetRe
      */
     @Override
     public Trajet trajetFromVelo(Velo velo) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+
+        String jql = "select t from Trajet t where t.duree > -1 an t.velo = :velo";
+        Trajet retour = entityManager.createQuery(jql, Trajet.class)
+                        .setParameter("velo", velo)
+                        .getSingleResult();
+        
+        return retour;
+        
     }
 
     @Override
@@ -47,13 +54,15 @@ public class TrajetRepositoryImpl extends BaseRepositoryImpl implements TrajetRe
                             .setParameter("id", id)
                             .getSingleResult();
 
-        return retour;    }
+        return retour;    
+    }
 
     @Override
     public List<Trajet> getAll() {
         String jql = "select t from trajet t";
         List<Trajet> retour = (List<Trajet>) entityManager.createQuery(jql, Trajet.class)
                                                 .getResultList();
-        return retour;    }
+        return retour;    
+    }
     
 }
