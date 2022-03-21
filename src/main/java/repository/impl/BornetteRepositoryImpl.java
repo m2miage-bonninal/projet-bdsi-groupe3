@@ -31,7 +31,11 @@ public class BornetteRepositoryImpl extends BaseRepositoryImpl implements Bornet
     @Override
     public List<Bornette> bornetteAvecModele(Station station, Modele modele, int nbVelo) {
 
-        String jql = "select b from Bornette b join b.station s join b.veloAccroche v where b.station = :station and v.modele = :modele";
+        String jql = "select b "
+                + "from Bornette b join b.station s join b.veloAccroche v "
+                + "where b.station = :station "
+                + "and v.modele = :modele "
+                + "and v.etat = 'OK'";
         List<Bornette> retour = entityManager.createQuery(jql, Bornette.class)
                             .setParameter("station", station)
                             .setParameter("modele", modele)
