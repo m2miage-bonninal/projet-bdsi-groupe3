@@ -27,7 +27,13 @@ public class LocationRepositoryImpl extends BaseRepositoryImpl implements Locati
      */
     @Override
     public Location locationEnCoursFromClient(Client client) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+
+        String jql = "select l from Location join l.locataire loc join l.trajets t where loc.id = :idClient and t.duree > -1";
+        Location retour = entityManager.createQuery(jql, Location.class)
+                            .setParameter("idClient", client.getId())
+                            .getSingleResult();
+        
+        return retour;
     }
 
     @Override
@@ -47,13 +53,15 @@ public class LocationRepositoryImpl extends BaseRepositoryImpl implements Locati
                             .setParameter("id", id)
                             .getSingleResult();
 
-        return retour;    }
+        return retour;    
+    }
 
     @Override
     public List<Location> getAll() {
         String jql = "select l from Location l";
         List<Location> retour = (List<Location>) entityManager.createQuery(jql, Location.class)
                                                 .getResultList();
-        return retour;    }
+        return retour;    
+    }
     
 }

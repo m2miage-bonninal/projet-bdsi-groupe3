@@ -5,15 +5,20 @@
 package repository.impl;
 
 import java.util.List;
+import javax.persistence.EntityManager;
 import model.Client;
+import model.ClientAbonne;
 import repository.api.ClientRepository;
 
 /**
  *
  * @author aliceb
  */
-public class ClientRepositoryImpl implements ClientRepository{
+public class ClientRepositoryImpl extends BaseRepositoryImpl implements ClientRepository{
 
+        public ClientRepositoryImpl(EntityManager entityManager) {
+        super(entityManager);
+    }
     /**
      * Retourne le client à partir de son code "secret"
      * @param code
@@ -21,27 +26,40 @@ public class ClientRepositoryImpl implements ClientRepository{
      */
     @Override
     public Client clientFromCode(String code) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        String jql = "select c from Client c where c.codeSecret = :code";
+        Client retour = entityManager.createQuery(jql, Client.class)
+                            .setParameter("code", code)
+                            .getSingleResult();
+
+        return retour;   
     }
 
     @Override
     public void save(Client entity) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        entityManager.persist(entity);
     }
 
     @Override
     public void delete(Client entity) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        entityManager.remove(entity);
     }
 
     @Override
     public Client findById(Long id) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        String jql = "select c from Client c where c.id = :id";
+        Client retour = entityManager.createQuery(jql, Client.class)
+                            .setParameter("id", id)
+                            .getSingleResult();
+
+        return retour;     
     }
 
     @Override
     public List<Client> getAll() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        String jql = "select c from Client c";
+        List<Client> retour = (List<Client>) entityManager.createQuery(jql, Client.class)
+                                                .getResultList();
+        return retour; 
     }
     
 }
