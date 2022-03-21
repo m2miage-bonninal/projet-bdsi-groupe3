@@ -64,7 +64,16 @@ public class Location {
     
     // TODO
     boolean verifTrajetEnCours(){
-        return false;
+        boolean trouver = false;
+        int i = 0;
+        while(i < trajets.size() && trouver == false)
+        {
+            if(trajets.get(i).getStationFin() != null)
+                trouver = true;
+            
+            i++;
+        }
+        return trouver;
     }
     
     

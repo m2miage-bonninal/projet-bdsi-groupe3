@@ -1,5 +1,6 @@
 package repository;
 
+import repository.RepositoryFactory;
 import org.junit.jupiter.api.BeforeEach;
 
 import javax.persistence.EntityManager;

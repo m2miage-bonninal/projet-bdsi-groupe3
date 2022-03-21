@@ -16,7 +16,7 @@ import model.enumeration.VType;
  * @author emerik
  */
 @Entity
-class HistoriqueVType {
+public class HistoriqueVType {
     
     @Id
     private int id;
