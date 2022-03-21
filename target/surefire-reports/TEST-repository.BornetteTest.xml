@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="repository.BornetteTest" time="2.044" tests="2" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/emerik/Documents/BDD/projet/projet-bdsi-groupe3/target/test-classes:/home/emerik/Documents/BDD/projet/projet-bdsi-groupe3/target/classes:/home/emerik/.m2/repository/org/hibernate/hibernate-core/5.6.3.Final/hibernate-core-5.6.3.Final.jar:/home/emerik/.m2/repository/org/jboss/logging/jboss-logging/3.4.2.Final/jboss-logging-3.4.2.Final.jar:/home/emerik/.m2/repository/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar:/home/emerik/.m2/repository/net/bytebuddy/byte-buddy/1.11.20/byte-buddy-1.11.20.jar:/home/emerik/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/home/emerik/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.1.1.Final/jboss-transaction-api_1.2_spec-1.1.1.Final.jar:/home/emerik/.m2/repository/org/jboss/jandex/2.2.3.Final/jandex-2.2.3.Final.jar:/home/emerik/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/home/emerik/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/home/emerik/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.2.Final/hibernate-commons-annotations-5.1.2.Final.jar:/home/emerik/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/home/emerik/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-runtime-2.3.1.jar:/home/emerik/.m2/repository/org/glassfish/jaxb/txw2/2.3.1/txw2-2.3.1.jar:/home/emerik/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.7/istack-commons-runtime-3.0.7.jar:/home/emerik/.m2/repository/org/jvnet/staxex/stax-ex/1.8/stax-ex-1.8.jar:/home/emerik/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.15/FastInfoset-1.2.15.jar:/home/emerik/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.2.Final/hibernate-jpa-2.1-api-1.0.2.Final.jar:/home/emerik/.m2/repository/org/mariadb/jdbc/mariadb-java-client/2.7.3/mariadb-java-client-2.7.3.jar:/home/emerik/.m2/repository/com/h2database/h2/2.1.210/h2-2.1.210.jar:/home/emerik/.m2/repository/org/junit/jupiter/junit-jupiter/5.8.2/junit-jupiter-5.8.2.jar:/home/emerik/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/home/emerik/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/emerik/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/home/emerik/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/emerik/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.2/junit-jupiter-params-5.8.2.jar:/home/emerik/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/home/emerik/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:/home/emerik/.m2/repository/com/github/javafaker/javafaker/1.0.2/javafaker-1.0.2.jar:/home/emerik/.m2/repository/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar:/home/emerik/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23-android.jar:/home/emerik/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/home/emerik/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:/home/emerik/.m2/repository/org/assertj/assertj-core/3.22.0/assertj-core-3.22.0.jar:"/>
+    <property name="java.vm.vendor" value="Ubuntu"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://ubuntu.com/"/>
+    <property name="user.timezone" value="Europe/Paris"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Linux"/>
+    <property name="user.country" value="FR"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-11-openjdk-amd64/lib"/>
+    <property name="sun.java.command" value="/home/emerik/Documents/BDD/projet/projet-bdsi-groupe3/target/surefire/surefirebooter8891194062334210485.jar /home/emerik/Documents/BDD/projet/projet-bdsi-groupe3/target/surefire 2022-03-21T18-11-41_122-jvmRun1 surefire17821581222382302815tmp surefire_016924287834714898199tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="test" value="repository.BornetteTest"/>
+    <property name="surefire.test.class.path" value="/home/emerik/Documents/BDD/projet/projet-bdsi-groupe3/target/test-classes:/home/emerik/Documents/BDD/projet/projet-bdsi-groupe3/target/classes:/home/emerik/.m2/repository/org/hibernate/hibernate-core/5.6.3.Final/hibernate-core-5.6.3.Final.jar:/home/emerik/.m2/repository/org/jboss/logging/jboss-logging/3.4.2.Final/jboss-logging-3.4.2.Final.jar:/home/emerik/.m2/repository/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar:/home/emerik/.m2/repository/net/bytebuddy/byte-buddy/1.11.20/byte-buddy-1.11.20.jar:/home/emerik/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/home/emerik/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.1.1.Final/jboss-transaction-api_1.2_spec-1.1.1.Final.jar:/home/emerik/.m2/repository/org/jboss/jandex/2.2.3.Final/jandex-2.2.3.Final.jar:/home/emerik/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/home/emerik/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/home/emerik/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.2.Final/hibernate-commons-annotations-5.1.2.Final.jar:/home/emerik/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/home/emerik/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-runtime-2.3.1.jar:/home/emerik/.m2/repository/org/glassfish/jaxb/txw2/2.3.1/txw2-2.3.1.jar:/home/emerik/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.7/istack-commons-runtime-3.0.7.jar:/home/emerik/.m2/repository/org/jvnet/staxex/stax-ex/1.8/stax-ex-1.8.jar:/home/emerik/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.15/FastInfoset-1.2.15.jar:/home/emerik/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.2.Final/hibernate-jpa-2.1-api-1.0.2.Final.jar:/home/emerik/.m2/repository/org/mariadb/jdbc/mariadb-java-client/2.7.3/mariadb-java-client-2.7.3.jar:/home/emerik/.m2/repository/com/h2database/h2/2.1.210/h2-2.1.210.jar:/home/emerik/.m2/repository/org/junit/jupiter/junit-jupiter/5.8.2/junit-jupiter-5.8.2.jar:/home/emerik/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/home/emerik/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/emerik/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/home/emerik/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/emerik/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.2/junit-jupiter-params-5.8.2.jar:/home/emerik/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/home/emerik/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:/home/emerik/.m2/repository/com/github/javafaker/javafaker/1.0.2/javafaker-1.0.2.jar:/home/emerik/.m2/repository/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar:/home/emerik/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23-android.jar:/home/emerik/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/home/emerik/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:/home/emerik/.m2/repository/org/assertj/assertj-core/3.22.0/assertj-core-3.22.0.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/emerik"/>
+    <property name="user.language" value="fr"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-01-18"/>
+    <property name="java.home" value="/usr/lib/jvm/java-11-openjdk-amd64"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/emerik/Documents/BDD/projet/projet-bdsi-groupe3"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/home/emerik/Documents/BDD/projet/projet-bdsi-groupe3/target/surefire/surefirebooter8891194062334210485.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.14+9-Ubuntu-0ubuntu2.18.04"/>
+    <property name="user.name" value="emerik"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="5.4.0-100-generic"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="maven.ext.class.path" value="/opt/netbeans/java/maven-nblib/netbeans-eventspy.jar"/>
+    <property name="localRepository" value="/home/emerik/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-lts"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="11.0.14"/>
+    <property name="user.dir" value="/home/emerik/Documents/BDD/projet/projet-bdsi-groupe3"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Ubuntu"/>
+    <property name="java.vm.version" value="11.0.14+9-Ubuntu-0ubuntu2.18.04"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="bornetteAvecModele" classname="repository.BornetteTest" time="1.819">
+    <system-out><![CDATA[Hibernate: drop table if exists Bornette CASCADE 
+Hibernate: drop table if exists Client CASCADE 
+Hibernate: drop table if exists Client_Location CASCADE 
+Hibernate: drop table if exists ClientAbonne CASCADE 
+Hibernate: drop table if exists ClientNonAbonne CASCADE 
+Hibernate: drop table if exists HistoriqueVType CASCADE 
+Hibernate: drop table if exists Location CASCADE 
+Hibernate: drop table if exists Location_Trajet CASCADE 
+Hibernate: drop table if exists Station CASCADE 
+Hibernate: drop table if exists Station_Bornette CASCADE 
+Hibernate: drop table if exists Station_HistoriqueVType CASCADE 
+Hibernate: drop table if exists Trajet CASCADE 
+Hibernate: drop table if exists Velo CASCADE 
+Hibernate: drop table if exists Velo_Location CASCADE 
+Hibernate: create table Bornette (numero bigint not null, etat varchar(255), station_id bigint, veloAccroche_numero bigint, primary key (numero))
+Hibernate: create table Client (type varchar(31) not null, id bigint not null, codeSecret varchar(255), numeroCB varchar(255), primary key (id))
+Hibernate: create table Client_Location (Client_id bigint not null, locations_id integer not null)
+Hibernate: create table ClientAbonne (adresse varchar(255), dateNaissance varchar(255), dateSouscription varchar(255), nom varchar(255), prenom varchar(255), sexe integer, id bigint not null, primary key (id))
+Hibernate: create table ClientNonAbonne (id bigint not null, primary key (id))
+Hibernate: create table HistoriqueVType (id integer not null, dateHeureDebut timestamp, dateHeureFin timestamp, vType varchar(255), station_id bigint, primary key (id))
+Hibernate: create table Location (id integer not null, montant float, locataire_id bigint, primary key (id))
+Hibernate: create table Location_Trajet (Location_id integer not null, trajets_id integer not null)
+Hibernate: create table Station (id bigint not null, adresse varchar(255), primary key (id))
+Hibernate: create table Station_Bornette (Station_id bigint not null, bornettes_numero bigint not null)
+Hibernate: create table Station_HistoriqueVType (Station_id bigint not null, historiques_id integer not null)
+Hibernate: create table Trajet (id integer not null, dateheureDebut timestamp, duree integer not null, prime boolean, location_id integer, stationDebut_id bigint, stationFin_id bigint, velo_numero bigint, primary key (id))
+Hibernate: create table Velo (numero bigint not null, etat varchar(255), misEnService timestamp, modele varchar(255), bornette_numero bigint, primary key (numero))
+Hibernate: create table Velo_Location (Velo_numero bigint not null, locations_id integer not null)
+Hibernate: alter table Client_Location add constraint UK_4jiuf949hhra55x7up9gwbfsc unique (locations_id)
+Hibernate: alter table Location_Trajet add constraint UK_2qfxg5ysusq9eeexb2xlfuk8w unique (trajets_id)
+Hibernate: alter table Station_Bornette add constraint UK_1kw97k75qkpnimlgn5f9cq24m unique (bornettes_numero)
+Hibernate: alter table Station_HistoriqueVType add constraint UK_gnki6plm67xebfdbvxxvhyfst unique (historiques_id)
+Hibernate: alter table Bornette add constraint FKaarjkb6vauam3pv9l9lec12ra foreign key (station_id) references Station
+Hibernate: alter table Bornette add constraint FKnvggs4fmg75dg94st1v8afafj foreign key (veloAccroche_numero) references Velo
+Hibernate: alter table Client_Location add constraint FK1v7vx60g3hnud206wjb237vkh foreign key (locations_id) references Location
+Hibernate: alter table Client_Location add constraint FKps7o2okwp1dwwp2tks2buv11b foreign key (Client_id) references Client
+Hibernate: alter table ClientAbonne add constraint FKtcak1b9ckqxpev1br51t5xpir foreign key (id) references Client
+Hibernate: alter table ClientNonAbonne add constraint FK9v39oe4a8li8f95q5y5jmvee1 foreign key (id) references Client
+Hibernate: alter table HistoriqueVType add constraint FKp75bc83wv7f3ibqo8ubtlxtpi foreign key (station_id) references Station
+Hibernate: alter table Location add constraint FKrhspdo8jpn46tir75au23gh3d foreign key (locataire_id) references Client
+Hibernate: alter table Location_Trajet add constraint FKtfufjttijflhbfw6e3o63g1yw foreign key (trajets_id) references Trajet
+Hibernate: alter table Location_Trajet add constraint FKbol3bcrasqr64dx28m6m4w097 foreign key (Location_id) references Location
+Hibernate: alter table Station_Bornette add constraint FKqejsd8345diwtx06qwmb9hm5f foreign key (bornettes_numero) references Bornette
+Hibernate: alter table Station_Bornette add constraint FKi3bbypyol6esfwaih7rqggh0h foreign key (Station_id) references Station
+Hibernate: alter table Station_HistoriqueVType add constraint FK6ktw470ncfynjxjts7w83pi2m foreign key (historiques_id) references HistoriqueVType
+Hibernate: alter table Station_HistoriqueVType add constraint FKl91qwgua33y17tefeesd2gvie foreign key (Station_id) references Station
+Hibernate: alter table Trajet add constraint FKxbmdbtnj9hr9u11gwolsub0w foreign key (location_id) references Location
+Hibernate: alter table Trajet add constraint FKrkttw2833q9yj5g0hdgshsd5r foreign key (stationDebut_id) references Station
+Hibernate: alter table Trajet add constraint FK8cy7a8f10qw3bkrgv25ymilc3 foreign key (stationFin_id) references Station
+Hibernate: alter table Trajet add constraint FKcxad9wmuqlgxc3igk2bvyfila foreign key (velo_numero) references Velo
+Hibernate: alter table Velo add constraint FKaukp4xw5ljdrhq3k42mapnstu foreign key (bornette_numero) references Bornette
+Hibernate: alter table Velo_Location add constraint FK63sc6f13ta1wt5cwynmu6oetf foreign key (locations_id) references Location
+Hibernate: alter table Velo_Location add constraint FK25ixbco2aotqiogr70swb4ibm foreign key (Velo_numero) references Velo
+Hibernate: select max(numero) from Velo
+Hibernate: select max(id) from Station
+Hibernate: select max(numero) from Bornette
+Hibernate: insert into Velo (bornette_numero, etat, misEnService, modele, numero) values (?, ?, ?, ?, ?)
+Hibernate: insert into Velo (bornette_numero, etat, misEnService, modele, numero) values (?, ?, ?, ?, ?)
+Hibernate: insert into Velo (bornette_numero, etat, misEnService, modele, numero) values (?, ?, ?, ?, ?)
+Hibernate: insert into Velo (bornette_numero, etat, misEnService, modele, numero) values (?, ?, ?, ?, ?)
+Hibernate: insert into Station (adresse, id) values (?, ?)
+Hibernate: insert into Station (adresse, id) values (?, ?)
+Hibernate: insert into Bornette (etat, station_id, veloAccroche_numero, numero) values (?, ?, ?, ?)
+Hibernate: insert into Bornette (etat, station_id, veloAccroche_numero, numero) values (?, ?, ?, ?)
+Hibernate: insert into Bornette (etat, station_id, veloAccroche_numero, numero) values (?, ?, ?, ?)
+Hibernate: insert into Bornette (etat, station_id, veloAccroche_numero, numero) values (?, ?, ?, ?)
+Hibernate: update Velo set bornette_numero=?, etat=?, misEnService=?, modele=? where numero=?
+Hibernate: update Velo set bornette_numero=?, etat=?, misEnService=?, modele=? where numero=?
+Hibernate: update Velo set bornette_numero=?, etat=?, misEnService=?, modele=? where numero=?
+Hibernate: update Velo set bornette_numero=?, etat=?, misEnService=?, modele=? where numero=?
+Hibernate: insert into Station_Bornette (Station_id, bornettes_numero) values (?, ?)
+Hibernate: insert into Station_Bornette (Station_id, bornettes_numero) values (?, ?)
+Hibernate: insert into Station_Bornette (Station_id, bornettes_numero) values (?, ?)
+Hibernate: insert into Station_Bornette (Station_id, bornettes_numero) values (?, ?)
+Hibernate: select bornette0_.numero as numero1_0_, bornette0_.etat as etat2_0_, bornette0_.station_id as station_3_0_, bornette0_.veloAccroche_numero as veloaccr4_0_ from Bornette bornette0_ where bornette0_.numero=?
+Hibernate: select station0_.id as id1_8_0_, station0_.adresse as adresse2_8_0_ from Station station0_ where station0_.id=?
+Hibernate: select velo0_.numero as numero1_12_0_, velo0_.bornette_numero as bornette5_12_0_, velo0_.etat as etat2_12_0_, velo0_.misEnService as misenser3_12_0_, velo0_.modele as modele4_12_0_, bornette1_.numero as numero1_0_1_, bornette1_.etat as etat2_0_1_, bornette1_.station_id as station_3_0_1_, bornette1_.veloAccroche_numero as veloaccr4_0_1_, station2_.id as id1_8_2_, station2_.adresse as adresse2_8_2_, velo3_.numero as numero1_12_3_, velo3_.bornette_numero as bornette5_12_3_, velo3_.etat as etat2_12_3_, velo3_.misEnService as misenser3_12_3_, velo3_.modele as modele4_12_3_ from Velo velo0_ left outer join Bornette bornette1_ on velo0_.bornette_numero=bornette1_.numero left outer join Station station2_ on bornette1_.station_id=station2_.id left outer join Velo velo3_ on bornette1_.veloAccroche_numero=velo3_.numero where velo0_.numero=?
+Hibernate: select bornette0_.numero as numero1_0_, bornette0_.etat as etat2_0_, bornette0_.station_id as station_3_0_, bornette0_.veloAccroche_numero as veloaccr4_0_ from Bornette bornette0_ inner join Station station1_ on bornette0_.station_id=station1_.id inner join Velo velo2_ on bornette0_.veloAccroche_numero=velo2_.numero where bornette0_.station_id=? and velo2_.modele=? and velo2_.etat='OK' limit ?
+]]></system-out>
+    <system-err><![CDATA[mars 21, 2022 6:11:42 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
+INFO: HHH000204: Processing PersistenceUnitInfo [name: TEST]
+mars 21, 2022 6:11:42 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate ORM core version 5.6.3.Final
+mars 21, 2022 6:11:42 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+INFO: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+mars 21, 2022 6:11:42 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+mars 21, 2022 6:11:42 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:db1;DB_CLOSE_DELAY=-1;]
+mars 21, 2022 6:11:42 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001001: Connection properties: {password=****, user=sa}
+mars 21, 2022 6:11:42 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001003: Autocommit mode: false
+mars 21, 2022 6:11:42 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
+mars 21, 2022 6:11:42 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+mars 21, 2022 6:11:42 PM org.hibernate.cfg.AnnotationBinder processJoinedDiscriminatorProperties
+WARN: HHH000457: Joined inheritance hierarchy [model.Client] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+mars 21, 2022 6:11:43 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@687e6293] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+mars 21, 2022 6:11:43 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1c067c0d] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+mars 21, 2022 6:11:43 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+INFO: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+]]></system-err>
+  </testcase>
+  <testcase name="saveBornette" classname="repository.BornetteTest" time="0.203">
+    <system-out><![CDATA[Hibernate: drop table if exists Bornette CASCADE 
+Hibernate: drop table if exists Client CASCADE 
+Hibernate: drop table if exists Client_Location CASCADE 
+Hibernate: drop table if exists ClientAbonne CASCADE 
+Hibernate: drop table if exists ClientNonAbonne CASCADE 
+Hibernate: drop table if exists HistoriqueVType CASCADE 
+Hibernate: drop table if exists Location CASCADE 
+Hibernate: drop table if exists Location_Trajet CASCADE 
+Hibernate: drop table if exists Station CASCADE 
+Hibernate: drop table if exists Station_Bornette CASCADE 
+Hibernate: drop table if exists Station_HistoriqueVType CASCADE 
+Hibernate: drop table if exists Trajet CASCADE 
+Hibernate: drop table if exists Velo CASCADE 
+Hibernate: drop table if exists Velo_Location CASCADE 
+Hibernate: create table Bornette (numero bigint not null, etat varchar(255), station_id bigint, veloAccroche_numero bigint, primary key (numero))
+Hibernate: create table Client (type varchar(31) not null, id bigint not null, codeSecret varchar(255), numeroCB varchar(255), primary key (id))
+Hibernate: create table Client_Location (Client_id bigint not null, locations_id integer not null)
+Hibernate: create table ClientAbonne (adresse varchar(255), dateNaissance varchar(255), dateSouscription varchar(255), nom varchar(255), prenom varchar(255), sexe integer, id bigint not null, primary key (id))
+Hibernate: create table ClientNonAbonne (id bigint not null, primary key (id))
+Hibernate: create table HistoriqueVType (id integer not null, dateHeureDebut timestamp, dateHeureFin timestamp, vType varchar(255), station_id bigint, primary key (id))
+Hibernate: create table Location (id integer not null, montant float, locataire_id bigint, primary key (id))
+Hibernate: create table Location_Trajet (Location_id integer not null, trajets_id integer not null)
+Hibernate: create table Station (id bigint not null, adresse varchar(255), primary key (id))
+Hibernate: create table Station_Bornette (Station_id bigint not null, bornettes_numero bigint not null)
+Hibernate: create table Station_HistoriqueVType (Station_id bigint not null, historiques_id integer not null)
+Hibernate: create table Trajet (id integer not null, dateheureDebut timestamp, duree integer not null, prime boolean, location_id integer, stationDebut_id bigint, stationFin_id bigint, velo_numero bigint, primary key (id))
+Hibernate: create table Velo (numero bigint not null, etat varchar(255), misEnService timestamp, modele varchar(255), bornette_numero bigint, primary key (numero))
+Hibernate: create table Velo_Location (Velo_numero bigint not null, locations_id integer not null)
+Hibernate: alter table Client_Location add constraint UK_4jiuf949hhra55x7up9gwbfsc unique (locations_id)
+Hibernate: alter table Location_Trajet add constraint UK_2qfxg5ysusq9eeexb2xlfuk8w unique (trajets_id)
+Hibernate: alter table Station_Bornette add constraint UK_1kw97k75qkpnimlgn5f9cq24m unique (bornettes_numero)
+Hibernate: alter table Station_HistoriqueVType add constraint UK_gnki6plm67xebfdbvxxvhyfst unique (historiques_id)
+Hibernate: alter table Bornette add constraint FKaarjkb6vauam3pv9l9lec12ra foreign key (station_id) references Station
+Hibernate: alter table Bornette add constraint FKnvggs4fmg75dg94st1v8afafj foreign key (veloAccroche_numero) references Velo
+Hibernate: alter table Client_Location add constraint FK1v7vx60g3hnud206wjb237vkh foreign key (locations_id) references Location
+Hibernate: alter table Client_Location add constraint FKps7o2okwp1dwwp2tks2buv11b foreign key (Client_id) references Client
+Hibernate: alter table ClientAbonne add constraint FKtcak1b9ckqxpev1br51t5xpir foreign key (id) references Client
+Hibernate: alter table ClientNonAbonne add constraint FK9v39oe4a8li8f95q5y5jmvee1 foreign key (id) references Client
+Hibernate: alter table HistoriqueVType add constraint FKp75bc83wv7f3ibqo8ubtlxtpi foreign key (station_id) references Station
+Hibernate: alter table Location add constraint FKrhspdo8jpn46tir75au23gh3d foreign key (locataire_id) references Client
+Hibernate: alter table Location_Trajet add constraint FKtfufjttijflhbfw6e3o63g1yw foreign key (trajets_id) references Trajet
+Hibernate: alter table Location_Trajet add constraint FKbol3bcrasqr64dx28m6m4w097 foreign key (Location_id) references Location
+Hibernate: alter table Station_Bornette add constraint FKqejsd8345diwtx06qwmb9hm5f foreign key (bornettes_numero) references Bornette
+Hibernate: alter table Station_Bornette add constraint FKi3bbypyol6esfwaih7rqggh0h foreign key (Station_id) references Station
+Hibernate: alter table Station_HistoriqueVType add constraint FK6ktw470ncfynjxjts7w83pi2m foreign key (historiques_id) references HistoriqueVType
+Hibernate: alter table Station_HistoriqueVType add constraint FKl91qwgua33y17tefeesd2gvie foreign key (Station_id) references Station
+Hibernate: alter table Trajet add constraint FKxbmdbtnj9hr9u11gwolsub0w foreign key (location_id) references Location
+Hibernate: alter table Trajet add constraint FKrkttw2833q9yj5g0hdgshsd5r foreign key (stationDebut_id) references Station
+Hibernate: alter table Trajet add constraint FK8cy7a8f10qw3bkrgv25ymilc3 foreign key (stationFin_id) references Station
+Hibernate: alter table Trajet add constraint FKcxad9wmuqlgxc3igk2bvyfila foreign key (velo_numero) references Velo
+Hibernate: alter table Velo add constraint FKaukp4xw5ljdrhq3k42mapnstu foreign key (bornette_numero) references Bornette
+Hibernate: alter table Velo_Location add constraint FK63sc6f13ta1wt5cwynmu6oetf foreign key (locations_id) references Location
+Hibernate: alter table Velo_Location add constraint FK25ixbco2aotqiogr70swb4ibm foreign key (Velo_numero) references Velo
+Hibernate: select max(numero) from Velo
+Hibernate: select max(id) from Station
+Hibernate: select max(numero) from Bornette
+Hibernate: insert into Velo (bornette_numero, etat, misEnService, modele, numero) values (?, ?, ?, ?, ?)
+Hibernate: insert into Station (adresse, id) values (?, ?)
+Hibernate: insert into Bornette (etat, station_id, veloAccroche_numero, numero) values (?, ?, ?, ?)
+Hibernate: select bornette0_.numero as numero1_0_, bornette0_.etat as etat2_0_, bornette0_.station_id as station_3_0_, bornette0_.veloAccroche_numero as veloaccr4_0_ from Bornette bornette0_ where bornette0_.numero=?
+]]></system-out>
+    <system-err><![CDATA[mars 21, 2022 6:11:43 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
+INFO: HHH000204: Processing PersistenceUnitInfo [name: TEST]
+mars 21, 2022 6:11:43 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+mars 21, 2022 6:11:43 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:db1;DB_CLOSE_DELAY=-1;]
+mars 21, 2022 6:11:43 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001001: Connection properties: {password=****, user=sa}
+mars 21, 2022 6:11:43 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001003: Autocommit mode: false
+mars 21, 2022 6:11:43 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
+mars 21, 2022 6:11:43 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+mars 21, 2022 6:11:43 PM org.hibernate.cfg.AnnotationBinder processJoinedDiscriminatorProperties
+WARN: HHH000457: Joined inheritance hierarchy [model.Client] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+mars 21, 2022 6:11:43 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@52f8a6f4] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+mars 21, 2022 6:11:43 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3a0b6a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+mars 21, 2022 6:11:43 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+INFO: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+]]></system-err>
+  </testcase>
+</testsuite>

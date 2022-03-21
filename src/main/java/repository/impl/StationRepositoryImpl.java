@@ -33,7 +33,7 @@ public class StationRepositoryImpl extends BaseRepositoryImpl implements Station
 
     @Override
     public Station findById(Long id) {
-        String jql = "select s from station s where s.id = :id";
+        String jql = "select s from Station s where s.id = :id";
         Station retour = entityManager.createQuery(jql, Station.class)
                             .setParameter("id", id)
                             .getSingleResult();
@@ -42,7 +42,7 @@ public class StationRepositoryImpl extends BaseRepositoryImpl implements Station
 
     @Override
     public List<Station> getAll() {
-        String jql = "select s from station s";
+        String jql = "select s from Station s";
         List<Station> retour = (List<Station>) entityManager.createQuery(jql, Station.class)
                                                 .getResultList();
         return retour;    }

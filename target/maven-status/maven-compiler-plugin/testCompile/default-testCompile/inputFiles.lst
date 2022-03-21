@@ -1,7 +1,9 @@
-/home/emerik/Documents/BDD/etudiant/l3-miage-jpa/src/test/java/fr/uga/im2ag/l3/miage/db/repository/StudentTest.java
-/home/emerik/Documents/BDD/etudiant/l3-miage-jpa/src/test/java/fr/uga/im2ag/l3/miage/db/repository/TeacherTest.java
-/home/emerik/Documents/BDD/etudiant/l3-miage-jpa/src/test/java/fr/uga/im2ag/l3/miage/db/repository/Base.java
-/home/emerik/Documents/BDD/etudiant/l3-miage-jpa/src/test/java/fr/uga/im2ag/l3/miage/db/repository/GradeTest.java
-/home/emerik/Documents/BDD/etudiant/l3-miage-jpa/src/test/java/fr/uga/im2ag/l3/miage/db/repository/Fixtures.java
-/home/emerik/Documents/BDD/etudiant/l3-miage-jpa/src/test/java/fr/uga/im2ag/l3/miage/db/repository/SubjectTest.java
-/home/emerik/Documents/BDD/etudiant/l3-miage-jpa/src/test/java/fr/uga/im2ag/l3/miage/db/repository/GraduationClassTest.java
+/home/emerik/Documents/BDD/projet/projet-bdsi-groupe3/src/test/java/repository/ClientNonAbonneTest.java
+/home/emerik/Documents/BDD/projet/projet-bdsi-groupe3/src/test/java/repository/TrajetTest.java
+/home/emerik/Documents/BDD/projet/projet-bdsi-groupe3/src/test/java/repository/ClientAbonneTest.java
+/home/emerik/Documents/BDD/projet/projet-bdsi-groupe3/src/test/java/repository/Fixtures.java
+/home/emerik/Documents/BDD/projet/projet-bdsi-groupe3/src/test/java/repository/StationTest.java
+/home/emerik/Documents/BDD/projet/projet-bdsi-groupe3/src/test/java/repository/VeloTest.java
+/home/emerik/Documents/BDD/projet/projet-bdsi-groupe3/src/test/java/repository/Base.java
+/home/emerik/Documents/BDD/projet/projet-bdsi-groupe3/src/test/java/repository/LocationTest.java
+/home/emerik/Documents/BDD/projet/projet-bdsi-groupe3/src/test/java/repository/BornetteTest.java

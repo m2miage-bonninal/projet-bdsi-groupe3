@@ -20,6 +20,9 @@ import model.enumeration.Sexe;
 @Entity
 @DiscriminatorValue (value = "abonne")
 public class ClientAbonne extends Client{
+    public ClientAbonne(){
+        super();
+    }
     
     public ClientAbonne(String numCB, String codeSecret, String nom, String prenom, String dateNaissance, String adresse, Sexe sexe){
         super(numCB, codeSecret);

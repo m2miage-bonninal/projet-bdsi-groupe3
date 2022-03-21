@@ -6,13 +6,13 @@
 package model;
 
 import java.util.ArrayList;
+import java.time.LocalDateTime;
 import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import model.enumeration.VType;
-import net.bytebuddy.dynamic.loading.PackageDefinitionStrategy.Definition.Undefined;
 
 import org.hibernate.annotations.GenericGenerator;
 
@@ -22,6 +22,8 @@ import org.hibernate.annotations.GenericGenerator;
  */
 @Entity
 public class Station {
+    
+    public Station(){};
     
     public Station(String adresse){
         this.adresse = adresse;
@@ -62,6 +64,22 @@ public class Station {
     
     public void setBornette(List<Bornette> newList){
         bornettes = newList;
+    }
+    
+    public VType getVTypeAt(LocalDateTime ldt){
+        VType retour = VType.VNUL;
+        
+        int i = 0;
+        boolean trouve = false;
+        while(i < this.getHistoriques().size() && !trouve){
+            HistoriqueVType histo = this.getHistoriques().get(i);
+            if(histo.getDateHeureDebut().isBefore(ldt) && histo.getDateHeureFin().isAfter(ldt)){
+                retour = histo.getvType();
+                trouve = true;
+            }
+            i++;
+        }
+        return retour;
     }
 
     public List<Bornette> getBornettesLibres() {

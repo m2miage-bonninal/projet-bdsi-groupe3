@@ -24,5 +24,14 @@ public class StationTest extends Base {
     }
 
 
-    
+    void saveStation(){
+        final Station station = Fixtures.createStation(null, null);
+        entityManager.getTransaction().begin();
+        stationRepository.save(station);
+        entityManager.getTransaction().commit();
+        entityManager.detach(station);
+        
+        final Station pStation = stationRepository.findById(station.getId());
+        assertThat(pStation.getId()).isEqualTo(station.getId());
+    }
 }

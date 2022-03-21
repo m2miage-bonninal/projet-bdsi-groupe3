@@ -26,6 +26,8 @@ import org.hibernate.annotations.GenericGenerator;
 @Entity
 public class Location {
     
+    public Location(){};
+    
     public Location(Client locataire){
         this.setLocataire(locataire);
         this.setTrajets(new ArrayList<Trajet>());

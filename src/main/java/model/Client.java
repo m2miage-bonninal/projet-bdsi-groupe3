@@ -6,6 +6,7 @@
 package model;
 
 import com.github.javafaker.Faker;
+import java.util.List;
 import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -25,6 +26,8 @@ import repository.impl.ClientRepositoryImpl;
 @Entity
 public abstract class Client {
     
+    public Client(){};
+    
     public Client(String numCB, String codeSecret){
         this.setCodeSecret(codeSecret);
         this.setNumeroCB(numCB);
@@ -41,23 +44,20 @@ public abstract class Client {
     }
     
     @Id
+
     @GenericGenerator(name = "kaugen1", strategy = "increment")
     @GeneratedValue(generator = "kaugen1")
-    private String id;
+    private Long id;
     
     private String codeSecret;
 
     private String numeroCB;
     
     @OneToMany
-    private Location locations;
+    private List<Location> locations;
 
-    public String getId() {
+    public Long getId() {
         return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
     }
 
     public String getCodeSecret() {
@@ -72,15 +72,15 @@ public abstract class Client {
         return numeroCB;
     }
 
-    public void setNumeroCB(String string) {
-        this.numeroCB = string;
+    public void setNumeroCB(String numeroCB) {
+        this.numeroCB = numeroCB;
     }
 
-    public Location getLocations() {
+    public List<Location> getLocations() {
         return locations;
     }
 
-    public void setLocations(Location locations) {
+    public void setLocations(List<Location> locations) {
         this.locations = locations;
     }
     
