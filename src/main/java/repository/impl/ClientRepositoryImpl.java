@@ -14,6 +14,11 @@ import repository.api.ClientRepository;
  */
 public class ClientRepositoryImpl implements ClientRepository{
 
+    /**
+     * Retourne le client à partir de son code "secret"
+     * @param code
+     * @return 
+     */
     @Override
     public Client clientFromCode(String code) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.

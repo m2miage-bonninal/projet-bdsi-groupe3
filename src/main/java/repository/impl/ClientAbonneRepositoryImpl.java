@@ -5,6 +5,7 @@
 package repository.impl;
 
 import java.util.List;
+import javax.persistence.EntityManager;
 import model.ClientAbonne;
 import repository.api.ClientAbonneRepository;
 
@@ -12,31 +13,48 @@ import repository.api.ClientAbonneRepository;
  *
  * @author aliceb
  */
-public class ClientAbonneRepositoryImpl implements ClientAbonneRepository{
+public class ClientAbonneRepositoryImpl extends BaseRepositoryImpl implements ClientAbonneRepository{
 
+    public ClientAbonneRepositoryImpl(EntityManager entityManager) {
+        super(entityManager);
+    }
+        
     @Override
     public void save(ClientAbonne entity) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        entityManager.persist(entity);
     }
 
     @Override
     public void delete(ClientAbonne entity) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        entityManager.remove(entity);
     }
 
     @Override
     public ClientAbonne findById(Long id) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        String jql = "select c from ClientAbonne c where c.id = :id";
+        ClientAbonne retour = entityManager.createQuery(jql, ClientAbonne.class)
+                            .setParameter("id", id)
+                            .getSingleResult();
+
+        return retour;    
     }
 
     @Override
     public List<ClientAbonne> getAll() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        String jql = "select c from Client c";
+        List<ClientAbonne> retour = (List<ClientAbonne>) entityManager.createQuery(jql, ClientAbonne.class)
+                                                .getResultList();
+        return retour;    
     }
 
     @Override
     public ClientAbonne abonneFromCode(String code) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        String jql = "select c from ClientAbonne c where c.codeSecret = :codeSecret";
+        ClientAbonne retour = entityManager.createQuery(jql, ClientAbonne.class)
+                            .setParameter("codeSecret", code)
+                            .getSingleResult();
+
+        return retour; 
     }
     
 }

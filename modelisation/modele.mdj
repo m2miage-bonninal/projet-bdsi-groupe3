@@ -3112,6 +3112,25 @@
 											"height": 13,
 											"text": "dateSouscription: Date",
 											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAF/iP8p4blnm9k=",
+											"_parent": {
+												"$ref": "AAAAAAF/buNg9eNl498="
+											},
+											"model": {
+												"$ref": "AAAAAAF/iP8ptrlSsUw="
+											},
+											"lineColor": "#450f0f",
+											"fillColor": "#f6ec9f",
+											"font": "Arial;13;0",
+											"left": 13,
+											"top": 688,
+											"width": 139.115234375,
+											"height": 13,
+											"text": "accPrime: Integer",
+											"horizontalAlignment": 0
 										}
 									],
 									"lineColor": "#450f0f",
@@ -3120,7 +3139,7 @@
 									"left": 8,
 									"top": 593,
 									"width": 149.115234375,
-									"height": 98
+									"height": 113
 								},
 								{
 									"_type": "UMLOperationCompartmentView",
@@ -3184,7 +3203,7 @@
 							"left": 8,
 							"top": 568,
 							"width": 149.115234375,
-							"height": 133,
+							"height": 138,
 							"showVisibility": false,
 							"nameCompartment": {
 								"$ref": "AAAAAAF/buNg9ONg3H8="
@@ -6214,6 +6233,15 @@
 							},
 							"name": "dateSouscription",
 							"type": "Date"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAF/iP8ptrlSsUw=",
+							"_parent": {
+								"$ref": "AAAAAAF/buNg9ONdgGU="
+							},
+							"name": "accPrime",
+							"type": "Integer"
 						}
 					]
 				},

@@ -20,6 +20,16 @@ import javax.persistence.OneToMany;
 @DiscriminatorColumn(name="type")
 @Entity
 public abstract class Client {
+    
+    @Id
+    private String id;
+    
+    private String codeSecret;
+
+    private Integer numeroCB;
+    
+    @OneToMany
+    private Location locations;
 
     public String getId() {
         return id;
@@ -53,15 +63,6 @@ public abstract class Client {
         this.locations = locations;
     }
     
-    @Id
-    private String id;
-    
-    private String codeSecret;
-
-    private Integer numeroCB;
-    
-    @OneToMany
-    private Location locations;
     
     
 }

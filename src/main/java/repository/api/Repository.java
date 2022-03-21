@@ -1,5 +1,14 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package repository.api;
 
+/**
+ *
+ * @author emerik
+ */
 import java.util.List;
 
 /**
@@ -24,16 +33,16 @@ public interface Repository<T, I> {
     /**
      * Retrieve an entity by id.
      * @param entityClass class of the entity to retrieve
-     * @param id id of the entity to remove
-     * @return the entity of null
-     */
-    T findById(I id);
-
-    /**
-     * Retrieve all entities of a given type.
-     * @param entityClass class of the entity to retrieve
-     * @return all entities of a given type or an empty collection
-     */
-    List<T> getAll();
-
-}
+     * @param id id of the entity to remove                                                                                          
+     * @return the entity of null                                                                                                    
+     */                                                                                                                              
+    T findById(I id);                                                                                                                
+                                                                                                                                     
+    /**                                                                                                                              
+     * Retrieve all entities of a given type.                                                                                        
+     * @param entityClass class of the entity to retrieve                                                                            
+     * @return all entities of a given type or an empty collection                                                                   
+     */                                                                                                                              
+    List<T> getAll();                                                                                                                
+                                                                                                                                     
+}  

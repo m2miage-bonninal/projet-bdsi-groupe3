@@ -6,6 +6,7 @@
 package repository.impl;
 
 import java.util.List;
+import javax.persistence.EntityManager;
 import model.Station;
 import repository.api.StationRepository;
 
@@ -13,32 +14,37 @@ import repository.api.StationRepository;
  *
  * @author emerik
  */
-public class StationRepositoryImpl implements StationRepository{
+public class StationRepositoryImpl extends BaseRepositoryImpl implements StationRepository{
+
+        public StationRepositoryImpl(EntityManager entityManager) {
+        super(entityManager);
+    }
 
 
     @Override
     public void save(Station entity) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        entityManager.persist(entity);
     }
 
     @Override
     public void delete(Station entity) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        entityManager.remove(entity);
     }
 
     @Override
     public Station findById(Long id) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+        String jql = "select s from station s where s.id = :id";
+        Station retour = entityManager.createQuery(jql, Station.class)
+                            .setParameter("id", id)
+                            .getSingleResult();
+
+        return retour;    }
 
     @Override
     public List<Station> getAll() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+        String jql = "select s from station s";
+        List<Station> retour = (List<Station>) entityManager.createQuery(jql, Station.class)
+                                                .getResultList();
+        return retour;    }
 
-    @Override
-    public List<Station> recupStations() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    
 }

@@ -5,6 +5,7 @@
 package repository.impl;
 
 import java.util.List;
+import javax.persistence.EntityManager;
 import model.Trajet;
 import model.Velo;
 import repository.api.TrajetRepository;
@@ -13,8 +14,17 @@ import repository.api.TrajetRepository;
  *
  * @author aliceb
  */
-public class TrajetRepositoryImpl implements TrajetRepository{
-
+public class TrajetRepositoryImpl extends BaseRepositoryImpl implements TrajetRepository{   
+    
+    public TrajetRepositoryImpl(EntityManager entityManager) {
+        super(entityManager);
+    }
+        
+    /**
+     * Retourne le trajet en cours d'un vélo
+     * @param velo
+     * @return 
+     */
     @Override
     public Trajet trajetFromVelo(Velo velo) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
@@ -22,22 +32,28 @@ public class TrajetRepositoryImpl implements TrajetRepository{
 
     @Override
     public void save(Trajet entity) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        entityManager.persist(entity);
     }
 
     @Override
     public void delete(Trajet entity) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        entityManager.remove(entity);
     }
 
     @Override
     public Trajet findById(Long id) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+        String jql = "select t from trajet t where t.id = :id";
+        Trajet retour = entityManager.createQuery(jql, Trajet.class)
+                            .setParameter("id", id)
+                            .getSingleResult();
+
+        return retour;    }
 
     @Override
     public List<Trajet> getAll() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+        String jql = "select t from trajet t";
+        List<Trajet> retour = (List<Trajet>) entityManager.createQuery(jql, Trajet.class)
+                                                .getResultList();
+        return retour;    }
     
 }
