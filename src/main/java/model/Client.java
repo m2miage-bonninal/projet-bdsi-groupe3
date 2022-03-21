@@ -6,6 +6,7 @@
 package model;
 
 import com.github.javafaker.Faker;
+import java.util.List;
 import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -53,7 +54,7 @@ public abstract class Client {
     private String numeroCB;
     
     @OneToMany
-    private Location locations;
+    private List<Location> locations;
 
     public Long getId() {
         return id;
@@ -75,11 +76,11 @@ public abstract class Client {
         this.numeroCB = numeroCB;
     }
 
-    public Location getLocations() {
+    public List<Location> getLocations() {
         return locations;
     }
 
-    public void setLocations(Location locations) {
+    public void setLocations(List<Location> locations) {
         this.locations = locations;
     }
     

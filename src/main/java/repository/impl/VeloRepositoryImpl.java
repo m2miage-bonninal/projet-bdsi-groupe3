@@ -56,7 +56,7 @@ public class VeloRepositoryImpl extends BaseRepositoryImpl implements VeloReposi
 
     @Override
     public List<Velo> getAll() {
-        String jql = "select v from velo v";
+        String jql = "select v from Velo v";
         List<Velo> retour = (List<Velo>) entityManager.createQuery(jql, Velo.class)
                                                 .getResultList();
         return retour;    }

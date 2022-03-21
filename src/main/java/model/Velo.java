@@ -8,6 +8,8 @@ package model;
 import java.util.Date;
 import java.util.List;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
@@ -35,11 +37,13 @@ public class Velo {
     @GeneratedValue(generator = "kaugen1")
     
     private Long numero;
-    
+        
+    @Enumerated(EnumType.STRING)
     private Modele modele;
     
     private Date misEnService;
-    
+        
+    @Enumerated(EnumType.STRING)
     private Etat etat;
     
     @OneToOne

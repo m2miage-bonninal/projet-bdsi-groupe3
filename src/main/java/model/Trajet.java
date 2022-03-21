@@ -43,6 +43,7 @@ public class Trajet {
     
     private Boolean prime;
     
+    @ManyToOne
     private Location location;
     
     @ManyToOne

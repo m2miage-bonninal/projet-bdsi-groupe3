@@ -7,8 +7,11 @@ package model;
 
 import java.time.LocalDateTime;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import model.enumeration.VType;
 import org.hibernate.annotations.GenericGenerator;
 
@@ -72,11 +75,13 @@ public class HistoriqueVType {
     @GeneratedValue(generator = "kaugen1")
     private int id;
     
+    @Enumerated(EnumType.STRING)
     private VType vType;
     
     private LocalDateTime dateHeureDebut;
     
     private LocalDateTime dateHeureFin;
     
+    @ManyToOne
     private Station station;
 }

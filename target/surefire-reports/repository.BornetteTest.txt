@@ -1,10 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: repository.BornetteTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.991 s <<< FAILURE! - in repository.BornetteTest
-repository.BornetteTest.bornetteAvecModele  Time elapsed: 0.936 s  <<< ERROR!
-org.hibernate.AnnotationException: Illegal attempt to map a non collection as a @OneToMany, @ManyToMany or @CollectionOfElements: model.Client.locations
-
-repository.BornetteTest.saveBornette  Time elapsed: 0.029 s  <<< ERROR!
-org.hibernate.AnnotationException: Illegal attempt to map a non collection as a @OneToMany, @ManyToMany or @CollectionOfElements: model.Client.locations
-
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.044 s - in repository.BornetteTest
