@@ -33,6 +33,7 @@ public class Velo {
     @Id
     @GenericGenerator(name = "kaugen1", strategy = "increment")
     @GeneratedValue(generator = "kaugen1")
+    
     private Long numero;
     
     private Modele modele;

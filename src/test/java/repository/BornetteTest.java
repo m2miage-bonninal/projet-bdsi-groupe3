@@ -1,7 +1,7 @@
 package repository;
 import java.util.ArrayList;
 import java.util.List;
-import model.Bornette ;
+import model.Bornette;
 import model.Station;
 import model.Velo;
 import model.enumeration.Etat;
@@ -33,8 +33,12 @@ public class BornetteTest extends Base {
 
     @Test
     void saveBornette(){
-        final Bornette bornette = Fixtures.createBornette(Etat.OK, Fixtures.createStation(null, null), Fixtures.createVelo(null, Etat.OK, null, null, Modele.ROUTE));
+        Station station = Fixtures.createStation(null, null);
+        Velo velo = Fixtures.createVelo(null, Etat.OK, null, null, Modele.ROUTE);
+        final Bornette bornette = Fixtures.createBornette(Etat.OK, station, velo);
         entityManager.getTransaction().begin();
+        entityManager.persist(velo);
+        entityManager.persist(station);
         BornetteRepository.save(bornette);
         entityManager.getTransaction().commit();
         entityManager.detach(bornette);

@@ -35,6 +35,8 @@ public class ClientAbonneTest extends Base {
         final ClientAbonne pClient = ClientAbonneRepository.findById(client.getId());
         assertThat(pClient.getId()).isEqualTo(client.getId());
     }
+    
+      
     @Test
     void abonneFromCode(){
         final ClientAbonne client = Fixtures.createClientAbonne(null);
