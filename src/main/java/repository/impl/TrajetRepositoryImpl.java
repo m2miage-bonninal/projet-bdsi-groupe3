@@ -28,7 +28,7 @@ public class TrajetRepositoryImpl extends BaseRepositoryImpl implements TrajetRe
     @Override
     public Trajet trajetFromVelo(Velo velo) {
 
-        String jql = "select t from Trajet t where t.duree > -1 an t.velo = :velo";
+        String jql = "select t from Trajet t where t.duree > -1 and t.velo = :velo";
         Trajet retour = entityManager.createQuery(jql, Trajet.class)
                         .setParameter("velo", velo)
                         .getSingleResult();
