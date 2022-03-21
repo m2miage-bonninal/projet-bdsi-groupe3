@@ -22,7 +22,7 @@ import javax.persistence.OneToMany;
 public abstract class Client {
     
     @Id
-    private String id;
+    private Long id;
     
     private String codeSecret;
 
@@ -31,12 +31,8 @@ public abstract class Client {
     @OneToMany
     private Location locations;
 
-    public String getId() {
+    public Long getId() {
         return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
     }
 
     public String getCodeSecret() {
@@ -47,11 +43,11 @@ public abstract class Client {
         this.codeSecret = codeSecret;
     }
 
-    public Integer getNumeroCB() {
+    public String getNumeroCB() {
         return numeroCB;
     }
 
-    public void setNumeroCB(Integer numeroCB) {
+    public void setNumeroCB(String numeroCB) {
         this.numeroCB = numeroCB;
     }
 

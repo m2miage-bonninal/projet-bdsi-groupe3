@@ -47,7 +47,7 @@ public class VeloRepositoryImpl extends BaseRepositoryImpl implements VeloReposi
 
     @Override
     public Velo findById(Long id) {
-        String jql = "select v from Velo s where v.id = :id";
+        String jql = "select v from Velo s where v.numero = :id";
         Velo retour = entityManager.createQuery(jql, Velo.class)
                             .setParameter("id", id)
                             .getSingleResult();
