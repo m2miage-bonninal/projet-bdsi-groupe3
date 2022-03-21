@@ -25,19 +25,17 @@ public class Fixtures {
         bornette.setVelo(velo);
         return bornette;
     }
-    public static Client createClientNonAbonne(Location location) {
-        Client clientNA = new ClientNonAbonne();
+    public static ClientNonAbonne createClientNonAbonne(Location location) {
+        ClientNonAbonne clientNA = new ClientNonAbonne();
         clientNA.setCodeSecret("123");
-        clientNA.setId("zob");
         clientNA.setLocations(location);
         clientNA.setNumeroCB("3810502195706645");
         return clientNA;
     }
 
-    public static Client createClientAbonne(Location location){
-        Client clientA = new ClientAbonne();
+    public static ClientAbonne createClientAbonne(Location location){
+        ClientAbonne clientA = new ClientAbonne();
         clientA.setCodeSecret("234");
-        clientA.setId("hephep");
         clientA.setLocations(location);
         return clientA;
     }

@@ -43,9 +43,10 @@ public abstract class Client {
     }
     
     @Id
+
     @GenericGenerator(name = "kaugen1", strategy = "increment")
     @GeneratedValue(generator = "kaugen1")
-    private String id;
+    private Long id;
     
     private String codeSecret;
 
@@ -54,12 +55,8 @@ public abstract class Client {
     @OneToMany
     private Location locations;
 
-    public String getId() {
+    public Long getId() {
         return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
     }
 
     public String getCodeSecret() {
@@ -74,8 +71,8 @@ public abstract class Client {
         return numeroCB;
     }
 
-    public void setNumeroCB(String string) {
-        this.numeroCB = string;
+    public void setNumeroCB(String numeroCB) {
+        this.numeroCB = numeroCB;
     }
 
     public Location getLocations() {
