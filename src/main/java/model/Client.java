@@ -47,12 +47,12 @@ public abstract class Client {
         this.codeSecret = codeSecret;
     }
 
-    public Integer getNumeroCB() {
+    public String getNumeroCB() {
         return numeroCB;
     }
 
-    public void setNumeroCB(Integer numeroCB) {
-        this.numeroCB = numeroCB;
+    public void setNumeroCB(String string) {
+        this.numeroCB = string;
     }
 
     public Location getLocations() {
