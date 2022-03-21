@@ -22,6 +22,8 @@ import org.hibernate.annotations.ManyToAny;
 @Entity
 public class Trajet {
     
+    public Trajet(){};
+    
     public Trajet(Location location, Station stationDebut){
         this.setLocation(location);
         this.setStationDebut(stationDebut);

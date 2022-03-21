@@ -25,6 +25,8 @@ import repository.impl.ClientRepositoryImpl;
 @Entity
 public abstract class Client {
     
+    public Client(){};
+    
     public Client(String numCB, String codeSecret){
         this.setCodeSecret(codeSecret);
         this.setNumeroCB(numCB);

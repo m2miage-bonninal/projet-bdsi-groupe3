@@ -20,6 +20,8 @@ import org.hibernate.annotations.GenericGenerator;
 @Entity
 public class Bornette {
     
+    public Bornette(){};
+    
     public Bornette(Station station){
         this.setStation(station);
     }

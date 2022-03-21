@@ -20,6 +20,8 @@ import org.hibernate.annotations.GenericGenerator;
 @Entity
 public class Station {
     
+    public Station(){};
+    
     public Station(String adresse){
         this.adresse = adresse;
     }

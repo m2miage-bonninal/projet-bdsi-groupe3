@@ -19,6 +19,8 @@ import org.hibernate.annotations.GenericGenerator;
 @Entity
 public class HistoriqueVType {
     
+    public HistoriqueVType(){};
+    
     public HistoriqueVType(VType vType, Station station, LocalDateTime ldt){
         this.vType = vType;
         this.station = station;

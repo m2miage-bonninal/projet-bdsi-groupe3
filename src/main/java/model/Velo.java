@@ -22,6 +22,7 @@ import org.hibernate.annotations.GenericGenerator;
  */
 @Entity
 public class Velo {
+    public Velo(){};
     
     public Velo(Modele modele, Date misEnService){
         this.setModele(modele);
