@@ -1,6 +1,6 @@
-package fr.uga.im2ag.l3.miage.db.repository;
+package repository;
 
-import fr.uga.im2ag.l3.miage.db.repository.RepositoryFactory;
+import repository.RepositoryFactory;
 import org.junit.jupiter.api.BeforeEach;
 
 import javax.persistence.EntityManager;
