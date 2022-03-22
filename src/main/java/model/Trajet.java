@@ -89,6 +89,8 @@ public class Trajet {
 
     public void setLocation(Location location) {
         this.location = location;
+        if(location != null)
+            location.addTrajet(this);
     }
 
     public Station getStationDebut() {

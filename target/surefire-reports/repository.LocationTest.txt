@@ -1,8 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: repository.LocationTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.349 s <<< FAILURE! - in repository.LocationTest
-repository.LocationTest.shouldSaveLocation  Time elapsed: 0.342 s  <<< ERROR!
-java.lang.IllegalArgumentException: Parameter value [0] did not match expected type [java.lang.Integer (n/a)]
-	at repository.LocationTest.shouldSaveLocation(LocationTest.java:95)
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.519 s - in repository.LocationTest

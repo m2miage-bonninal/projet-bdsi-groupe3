@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="repository.LocationTest" time="0.349" tests="1" errors="1" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="repository.LocationTest" time="2.519" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
     <property name="java.specification.version" value="11"/>
@@ -15,8 +15,9 @@
     <property name="user.country" value="FR"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/jdk-11.0.12+7/lib"/>
-    <property name="sun.java.command" value="/home/aliceb/miage/bd/projet-bdsi-groupe3/target/surefire/surefirebooter15686069039049137874.jar /home/aliceb/miage/bd/projet-bdsi-groupe3/target/surefire 2022-03-22T11-28-35_102-jvmRun1 surefire15074245953722513215tmp surefire_09687543525466442480tmp"/>
+    <property name="sun.java.command" value="/home/aliceb/miage/bd/projet-bdsi-groupe3/target/surefire/surefirebooter17260784006934778785.jar /home/aliceb/miage/bd/projet-bdsi-groupe3/target/surefire 2022-03-22T12-05-09_725-jvmRun1 surefire9693452578358326608tmp surefire_0500571310712757372tmp"/>
     <property name="jdk.debug" value="release"/>
+    <property name="test" value="repository.LocationTest"/>
     <property name="surefire.test.class.path" value="/home/aliceb/miage/bd/projet-bdsi-groupe3/target/test-classes:/home/aliceb/miage/bd/projet-bdsi-groupe3/target/classes:/home/aliceb/.m2/repository/org/hibernate/hibernate-core/5.6.3.Final/hibernate-core-5.6.3.Final.jar:/home/aliceb/.m2/repository/org/jboss/logging/jboss-logging/3.4.2.Final/jboss-logging-3.4.2.Final.jar:/home/aliceb/.m2/repository/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar:/home/aliceb/.m2/repository/net/bytebuddy/byte-buddy/1.11.20/byte-buddy-1.11.20.jar:/home/aliceb/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/home/aliceb/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.1.1.Final/jboss-transaction-api_1.2_spec-1.1.1.Final.jar:/home/aliceb/.m2/repository/org/jboss/jandex/2.2.3.Final/jandex-2.2.3.Final.jar:/home/aliceb/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/home/aliceb/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/home/aliceb/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.2.Final/hibernate-commons-annotations-5.1.2.Final.jar:/home/aliceb/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/home/aliceb/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-runtime-2.3.1.jar:/home/aliceb/.m2/repository/org/glassfish/jaxb/txw2/2.3.1/txw2-2.3.1.jar:/home/aliceb/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.7/istack-commons-runtime-3.0.7.jar:/home/aliceb/.m2/repository/org/jvnet/staxex/stax-ex/1.8/stax-ex-1.8.jar:/home/aliceb/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.15/FastInfoset-1.2.15.jar:/home/aliceb/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.2.Final/hibernate-jpa-2.1-api-1.0.2.Final.jar:/home/aliceb/.m2/repository/com/h2database/h2/2.1.210/h2-2.1.210.jar:/home/aliceb/.m2/repository/org/junit/jupiter/junit-jupiter/5.8.2/junit-jupiter-5.8.2.jar:/home/aliceb/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/home/aliceb/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/aliceb/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/home/aliceb/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/aliceb/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.2/junit-jupiter-params-5.8.2.jar:/home/aliceb/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/home/aliceb/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:/home/aliceb/.m2/repository/com/github/javafaker/javafaker/1.0.2/javafaker-1.0.2.jar:/home/aliceb/.m2/repository/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar:/home/aliceb/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23-android.jar:/home/aliceb/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/home/aliceb/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:/home/aliceb/.m2/repository/org/assertj/assertj-core/3.22.0/assertj-core-3.22.0.jar:/home/aliceb/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.4.0.0.1/ojdbc8-21.4.0.0.1.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/home/aliceb"/>
@@ -31,7 +32,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/home/aliceb/miage/bd/projet-bdsi-groupe3/target/surefire/surefirebooter15686069039049137874.jar"/>
+    <property name="surefire.real.class.path" value="/home/aliceb/miage/bd/projet-bdsi-groupe3/target/surefire/surefirebooter17260784006934778785.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.12+7"/>
     <property name="user.name" value="aliceb"/>
@@ -58,10 +59,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="shouldSaveLocation" classname="repository.LocationTest" time="0.342">
-    <error type="java.lang.IllegalArgumentException"><![CDATA[java.lang.IllegalArgumentException: Parameter value [0] did not match expected type [java.lang.Integer (n/a)]
-	at repository.LocationTest.shouldSaveLocation(LocationTest.java:95)
-]]></error>
+  <testcase name="shouldSaveLocation" classname="repository.LocationTest" time="2.485">
     <system-out><![CDATA[Hibernate: drop table if exists Bornette CASCADE 
 Hibernate: drop table if exists Client CASCADE 
 Hibernate: drop table if exists Client_Location CASCADE 
@@ -78,18 +76,18 @@ Hibernate: drop table if exists Velo CASCADE
 Hibernate: drop table if exists Velo_Location CASCADE 
 Hibernate: create table Bornette (numero bigint not null, etat varchar(255), station_id bigint, veloAccroche_numero bigint, primary key (numero))
 Hibernate: create table Client (type varchar(31) not null, id bigint not null, codeSecret varchar(255), numeroCB varchar(255), primary key (id))
-Hibernate: create table Client_Location (Client_id bigint not null, locations_id integer not null)
+Hibernate: create table Client_Location (Client_id bigint not null, locations_id bigint not null)
 Hibernate: create table ClientAbonne (adresse varchar(255), dateNaissance varchar(255), dateSouscription varchar(255), nom varchar(255), prenom varchar(255), sexe integer, id bigint not null, primary key (id))
 Hibernate: create table ClientNonAbonne (id bigint not null, primary key (id))
 Hibernate: create table HistoriqueVType (id integer not null, dateHeureDebut timestamp, dateHeureFin timestamp, vType varchar(255), station_id bigint, primary key (id))
-Hibernate: create table Location (id integer not null, montant float, locataire_id bigint, primary key (id))
-Hibernate: create table Location_Trajet (Location_id integer not null, trajets_id integer not null)
+Hibernate: create table Location (id bigint not null, montant float, locataire_id bigint, primary key (id))
+Hibernate: create table Location_Trajet (Location_id bigint not null, trajets_id integer not null)
 Hibernate: create table Station (id bigint not null, adresse varchar(255), primary key (id))
 Hibernate: create table Station_Bornette (Station_id bigint not null, bornettes_numero bigint not null)
 Hibernate: create table Station_HistoriqueVType (Station_id bigint not null, historiques_id integer not null)
-Hibernate: create table Trajet (id integer not null, dateheureDebut timestamp, duree integer not null, prime boolean, location_id integer, stationDebut_id bigint, stationFin_id bigint, velo_numero bigint, primary key (id))
+Hibernate: create table Trajet (id integer not null, dateheureDebut timestamp, duree integer not null, prime boolean, location_id bigint, stationDebut_id bigint, stationFin_id bigint, velo_numero bigint, primary key (id))
 Hibernate: create table Velo (numero bigint not null, etat varchar(255), misEnService timestamp, modele varchar(255), bornette_numero bigint, primary key (numero))
-Hibernate: create table Velo_Location (Velo_numero bigint not null, locations_id integer not null)
+Hibernate: create table Velo_Location (Velo_numero bigint not null, locations_id bigint not null)
 Hibernate: alter table Client_Location add constraint UK_4jiuf949hhra55x7up9gwbfsc unique (locations_id)
 Hibernate: alter table Location_Trajet add constraint UK_2qfxg5ysusq9eeexb2xlfuk8w unique (trajets_id)
 Hibernate: alter table Station_Bornette add constraint UK_1kw97k75qkpnimlgn5f9cq24m unique (bornettes_numero)
@@ -133,28 +131,36 @@ Hibernate: update Bornette set etat=?, station_id=?, veloAccroche_numero=? where
 Hibernate: update Trajet set dateheureDebut=?, duree=?, location_id=?, prime=?, stationDebut_id=?, stationFin_id=?, velo_numero=? where id=?
 Hibernate: insert into Station_Bornette (Station_id, bornettes_numero) values (?, ?)
 Hibernate: insert into Station_Bornette (Station_id, bornettes_numero) values (?, ?)
+Hibernate: insert into Location_Trajet (Location_id, trajets_id) values (?, ?)
+Hibernate: select location0_.id as id1_6_, location0_.locataire_id as locatair3_6_, location0_.montant as montant2_6_ from Location location0_ where location0_.id=?
+Hibernate: select client0_.id as id2_1_0_, client0_.codeSecret as codesecr3_1_0_, client0_.numeroCB as numerocb4_1_0_, client0_1_.adresse as adresse1_3_0_, client0_1_.dateNaissance as datenais2_3_0_, client0_1_.dateSouscription as datesous3_3_0_, client0_1_.nom as nom4_3_0_, client0_1_.prenom as prenom5_3_0_, client0_1_.sexe as sexe6_3_0_, client0_.type as type1_1_0_ from Client client0_ left outer join ClientAbonne client0_1_ on client0_.id=client0_1_.id left outer join ClientNonAbonne client0_2_ on client0_.id=client0_2_.id where client0_.id=?
+Hibernate: select trajets0_.Location_id as location1_7_0_, trajets0_.trajets_id as trajets_2_7_0_, trajet1_.id as id1_11_1_, trajet1_.dateheureDebut as dateheur2_11_1_, trajet1_.duree as duree3_11_1_, trajet1_.location_id as location5_11_1_, trajet1_.prime as prime4_11_1_, trajet1_.stationDebut_id as stationd6_11_1_, trajet1_.stationFin_id as stationf7_11_1_, trajet1_.velo_numero as velo_num8_11_1_, location2_.id as id1_6_2_, location2_.locataire_id as locatair3_6_2_, location2_.montant as montant2_6_2_, client3_.id as id2_1_3_, client3_.codeSecret as codesecr3_1_3_, client3_.numeroCB as numerocb4_1_3_, client3_1_.adresse as adresse1_3_3_, client3_1_.dateNaissance as datenais2_3_3_, client3_1_.dateSouscription as datesous3_3_3_, client3_1_.nom as nom4_3_3_, client3_1_.prenom as prenom5_3_3_, client3_1_.sexe as sexe6_3_3_, client3_.type as type1_1_3_, station4_.id as id1_8_4_, station4_.adresse as adresse2_8_4_, station5_.id as id1_8_5_, station5_.adresse as adresse2_8_5_, velo6_.numero as numero1_12_6_, velo6_.bornette_numero as bornette5_12_6_, velo6_.etat as etat2_12_6_, velo6_.misEnService as misenser3_12_6_, velo6_.modele as modele4_12_6_, bornette7_.numero as numero1_0_7_, bornette7_.etat as etat2_0_7_, bornette7_.station_id as station_3_0_7_, bornette7_.veloAccroche_numero as veloaccr4_0_7_, station8_.id as id1_8_8_, station8_.adresse as adresse2_8_8_, velo9_.numero as numero1_12_9_, velo9_.bornette_numero as bornette5_12_9_, velo9_.etat as etat2_12_9_, velo9_.misEnService as misenser3_12_9_, velo9_.modele as modele4_12_9_ from Location_Trajet trajets0_ inner join Trajet trajet1_ on trajets0_.trajets_id=trajet1_.id left outer join Location location2_ on trajet1_.location_id=location2_.id left outer join Client client3_ on location2_.locataire_id=client3_.id left outer join ClientAbonne client3_1_ on client3_.id=client3_1_.id left outer join ClientNonAbonne client3_2_ on client3_.id=client3_2_.id left outer join Station station4_ on trajet1_.stationDebut_id=station4_.id left outer join Station station5_ on trajet1_.stationFin_id=station5_.id left outer join Velo velo6_ on trajet1_.velo_numero=velo6_.numero left outer join Bornette bornette7_ on velo6_.bornette_numero=bornette7_.numero left outer join Station station8_ on bornette7_.station_id=station8_.id left outer join Velo velo9_ on bornette7_.veloAccroche_numero=velo9_.numero where trajets0_.Location_id=?
 ]]></system-out>
-    <system-err><![CDATA[mars 22, 2022 11:28:40 AM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
+    <system-err><![CDATA[mars 22, 2022 12:05:11 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
 INFO: HHH000204: Processing PersistenceUnitInfo [name: TEST]
-mars 22, 2022 11:28:40 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+mars 22, 2022 12:05:11 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate ORM core version 5.6.3.Final
+mars 22, 2022 12:05:11 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+INFO: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+mars 22, 2022 12:05:11 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
 WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-mars 22, 2022 11:28:40 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+mars 22, 2022 12:05:11 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:db1;DB_CLOSE_DELAY=-1;]
-mars 22, 2022 11:28:40 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+mars 22, 2022 12:05:11 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001001: Connection properties: {password=****, user=sa}
-mars 22, 2022 11:28:40 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+mars 22, 2022 12:05:11 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001003: Autocommit mode: false
-mars 22, 2022 11:28:40 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+mars 22, 2022 12:05:11 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
 INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
-mars 22, 2022 11:28:40 AM org.hibernate.dialect.Dialect <init>
+mars 22, 2022 12:05:12 PM org.hibernate.dialect.Dialect <init>
 INFO: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-mars 22, 2022 11:28:40 AM org.hibernate.cfg.AnnotationBinder processJoinedDiscriminatorProperties
+mars 22, 2022 12:05:12 PM org.hibernate.cfg.AnnotationBinder processJoinedDiscriminatorProperties
 WARN: HHH000457: Joined inheritance hierarchy [model.Client] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
-mars 22, 2022 11:28:40 AM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
-INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4b6b5352] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-mars 22, 2022 11:28:40 AM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
-INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1d6713dd] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-mars 22, 2022 11:28:40 AM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+mars 22, 2022 12:05:13 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@629a9f26] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+mars 22, 2022 12:05:13 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@15a3b42] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+mars 22, 2022 12:05:13 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
 INFO: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
 ]]></system-err>
   </testcase>

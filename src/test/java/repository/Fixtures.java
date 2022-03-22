@@ -51,7 +51,8 @@ public class Fixtures {
         Location location = new Location();
         location.setLocataire(locataire);
         location.setMontant((float)121);
-        location.setTrajets(trajets);
+        if(trajets != null)
+            location.setTrajets(trajets);
         return location;
     }
 

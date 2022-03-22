@@ -67,7 +67,6 @@ public class LocationTest extends Base {
         final var trajet1 = Fixtures.createTrajet(now, null, null, station1, null, velo1);
         
         final var location1 = Fixtures.createLocation(client1, null) ; // deuxieme est historique donc peut rester null
-        long nombreid = location1.getId() ;
         trajet1.setLocation(location1);
         trajet1.setStationDebut(station1); // DEUXIEME STATION PEUT RESTER VIDE
 
@@ -80,7 +79,8 @@ public class LocationTest extends Base {
         veloRepository.save(velo1);
         trajetRepository.save(trajet1);
         locationRepository.save(location1);
-
+        Long nombreid = location1.getId();
+        
         // ON DETACHE LES TRUCS
         entityManager.getTransaction().commit();
         entityManager.detach(client1);
@@ -93,7 +93,8 @@ public class LocationTest extends Base {
 
 
         var plocation = locationRepository.findById(nombreid) ;
-        assertThat(plocation).isEqualTo(location1);
+        assertThat(plocation.getMontant()).isEqualTo(location1.getMontant());
+        assertThat(plocation.getTrajets().size()).isEqualTo(location1.getTrajets().size());
 
 
 

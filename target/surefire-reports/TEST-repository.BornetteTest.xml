@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="repository.BornetteTest" time="3.445" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="repository.BornetteTest" time="2.99" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
     <property name="java.specification.version" value="11"/>
@@ -15,8 +15,9 @@
     <property name="user.country" value="FR"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/jdk-11.0.12+7/lib"/>
-    <property name="sun.java.command" value="/home/aliceb/miage/bd/projet-bdsi-groupe3/target/surefire/surefirebooter15686069039049137874.jar /home/aliceb/miage/bd/projet-bdsi-groupe3/target/surefire 2022-03-22T11-28-35_102-jvmRun1 surefire15074245953722513215tmp surefire_09687543525466442480tmp"/>
+    <property name="sun.java.command" value="/home/aliceb/miage/bd/projet-bdsi-groupe3/target/surefire/surefirebooter13909627561284996149.jar /home/aliceb/miage/bd/projet-bdsi-groupe3/target/surefire 2022-03-22T11-39-16_774-jvmRun1 surefire1857915067393205946tmp surefire_011665845957970643790tmp"/>
     <property name="jdk.debug" value="release"/>
+    <property name="test" value="repository.BornetteTest"/>
     <property name="surefire.test.class.path" value="/home/aliceb/miage/bd/projet-bdsi-groupe3/target/test-classes:/home/aliceb/miage/bd/projet-bdsi-groupe3/target/classes:/home/aliceb/.m2/repository/org/hibernate/hibernate-core/5.6.3.Final/hibernate-core-5.6.3.Final.jar:/home/aliceb/.m2/repository/org/jboss/logging/jboss-logging/3.4.2.Final/jboss-logging-3.4.2.Final.jar:/home/aliceb/.m2/repository/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar:/home/aliceb/.m2/repository/net/bytebuddy/byte-buddy/1.11.20/byte-buddy-1.11.20.jar:/home/aliceb/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/home/aliceb/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.1.1.Final/jboss-transaction-api_1.2_spec-1.1.1.Final.jar:/home/aliceb/.m2/repository/org/jboss/jandex/2.2.3.Final/jandex-2.2.3.Final.jar:/home/aliceb/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/home/aliceb/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/home/aliceb/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.2.Final/hibernate-commons-annotations-5.1.2.Final.jar:/home/aliceb/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/home/aliceb/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-runtime-2.3.1.jar:/home/aliceb/.m2/repository/org/glassfish/jaxb/txw2/2.3.1/txw2-2.3.1.jar:/home/aliceb/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.7/istack-commons-runtime-3.0.7.jar:/home/aliceb/.m2/repository/org/jvnet/staxex/stax-ex/1.8/stax-ex-1.8.jar:/home/aliceb/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.15/FastInfoset-1.2.15.jar:/home/aliceb/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.2.Final/hibernate-jpa-2.1-api-1.0.2.Final.jar:/home/aliceb/.m2/repository/com/h2database/h2/2.1.210/h2-2.1.210.jar:/home/aliceb/.m2/repository/org/junit/jupiter/junit-jupiter/5.8.2/junit-jupiter-5.8.2.jar:/home/aliceb/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/home/aliceb/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/aliceb/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/home/aliceb/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/aliceb/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.2/junit-jupiter-params-5.8.2.jar:/home/aliceb/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/home/aliceb/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:/home/aliceb/.m2/repository/com/github/javafaker/javafaker/1.0.2/javafaker-1.0.2.jar:/home/aliceb/.m2/repository/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar:/home/aliceb/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23-android.jar:/home/aliceb/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/home/aliceb/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:/home/aliceb/.m2/repository/org/assertj/assertj-core/3.22.0/assertj-core-3.22.0.jar:/home/aliceb/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.4.0.0.1/ojdbc8-21.4.0.0.1.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/home/aliceb"/>
@@ -31,7 +32,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/home/aliceb/miage/bd/projet-bdsi-groupe3/target/surefire/surefirebooter15686069039049137874.jar"/>
+    <property name="surefire.real.class.path" value="/home/aliceb/miage/bd/projet-bdsi-groupe3/target/surefire/surefirebooter13909627561284996149.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.12+7"/>
     <property name="user.name" value="aliceb"/>
@@ -58,7 +59,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="bornetteAvecModele" classname="repository.BornetteTest" time="2.994">
+  <testcase name="bornetteAvecModele" classname="repository.BornetteTest" time="2.507">
     <system-out><![CDATA[Hibernate: drop table if exists Bornette CASCADE 
 Hibernate: drop table if exists Client CASCADE 
 Hibernate: drop table if exists Client_Location CASCADE 
@@ -138,35 +139,35 @@ Hibernate: select station0_.id as id1_8_0_, station0_.adresse as adresse2_8_0_ f
 Hibernate: select velo0_.numero as numero1_12_0_, velo0_.bornette_numero as bornette5_12_0_, velo0_.etat as etat2_12_0_, velo0_.misEnService as misenser3_12_0_, velo0_.modele as modele4_12_0_, bornette1_.numero as numero1_0_1_, bornette1_.etat as etat2_0_1_, bornette1_.station_id as station_3_0_1_, bornette1_.veloAccroche_numero as veloaccr4_0_1_, station2_.id as id1_8_2_, station2_.adresse as adresse2_8_2_, velo3_.numero as numero1_12_3_, velo3_.bornette_numero as bornette5_12_3_, velo3_.etat as etat2_12_3_, velo3_.misEnService as misenser3_12_3_, velo3_.modele as modele4_12_3_ from Velo velo0_ left outer join Bornette bornette1_ on velo0_.bornette_numero=bornette1_.numero left outer join Station station2_ on bornette1_.station_id=station2_.id left outer join Velo velo3_ on bornette1_.veloAccroche_numero=velo3_.numero where velo0_.numero=?
 Hibernate: select bornette0_.numero as numero1_0_, bornette0_.etat as etat2_0_, bornette0_.station_id as station_3_0_, bornette0_.veloAccroche_numero as veloaccr4_0_ from Bornette bornette0_ inner join Station station1_ on bornette0_.station_id=station1_.id inner join Velo velo2_ on bornette0_.veloAccroche_numero=velo2_.numero where bornette0_.station_id=? and velo2_.modele=? and velo2_.etat='OK' limit ?
 ]]></system-out>
-    <system-err><![CDATA[mars 22, 2022 11:28:37 AM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
+    <system-err><![CDATA[mars 22, 2022 11:39:18 AM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
 INFO: HHH000204: Processing PersistenceUnitInfo [name: TEST]
-mars 22, 2022 11:28:37 AM org.hibernate.Version logVersion
+mars 22, 2022 11:39:18 AM org.hibernate.Version logVersion
 INFO: HHH000412: Hibernate ORM core version 5.6.3.Final
-mars 22, 2022 11:28:37 AM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+mars 22, 2022 11:39:19 AM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
 INFO: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-mars 22, 2022 11:28:37 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+mars 22, 2022 11:39:19 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
 WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-mars 22, 2022 11:28:37 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+mars 22, 2022 11:39:19 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:db1;DB_CLOSE_DELAY=-1;]
-mars 22, 2022 11:28:37 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+mars 22, 2022 11:39:19 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001001: Connection properties: {password=****, user=sa}
-mars 22, 2022 11:28:37 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+mars 22, 2022 11:39:19 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001003: Autocommit mode: false
-mars 22, 2022 11:28:37 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+mars 22, 2022 11:39:19 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
 INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
-mars 22, 2022 11:28:38 AM org.hibernate.dialect.Dialect <init>
+mars 22, 2022 11:39:19 AM org.hibernate.dialect.Dialect <init>
 INFO: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-mars 22, 2022 11:28:38 AM org.hibernate.cfg.AnnotationBinder processJoinedDiscriminatorProperties
+mars 22, 2022 11:39:19 AM org.hibernate.cfg.AnnotationBinder processJoinedDiscriminatorProperties
 WARN: HHH000457: Joined inheritance hierarchy [model.Client] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
-mars 22, 2022 11:28:39 AM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
-INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2921199d] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-mars 22, 2022 11:28:39 AM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
-INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@66f5a02e] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-mars 22, 2022 11:28:39 AM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+mars 22, 2022 11:39:20 AM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@40d52be7] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+mars 22, 2022 11:39:20 AM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@72443081] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+mars 22, 2022 11:39:20 AM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
 INFO: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
 ]]></system-err>
   </testcase>
-  <testcase name="saveBornette" classname="repository.BornetteTest" time="0.415">
+  <testcase name="saveBornette" classname="repository.BornetteTest" time="0.433">
     <system-out><![CDATA[Hibernate: drop table if exists Bornette CASCADE 
 Hibernate: drop table if exists Client CASCADE 
 Hibernate: drop table if exists Client_Location CASCADE 
@@ -228,27 +229,27 @@ Hibernate: insert into Station (adresse, id) values (?, ?)
 Hibernate: insert into Bornette (etat, station_id, veloAccroche_numero, numero) values (?, ?, ?, ?)
 Hibernate: select bornette0_.numero as numero1_0_, bornette0_.etat as etat2_0_, bornette0_.station_id as station_3_0_, bornette0_.veloAccroche_numero as veloaccr4_0_ from Bornette bornette0_ where bornette0_.numero=?
 ]]></system-out>
-    <system-err><![CDATA[mars 22, 2022 11:28:39 AM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
+    <system-err><![CDATA[mars 22, 2022 11:39:21 AM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
 INFO: HHH000204: Processing PersistenceUnitInfo [name: TEST]
-mars 22, 2022 11:28:39 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+mars 22, 2022 11:39:21 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
 WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-mars 22, 2022 11:28:39 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+mars 22, 2022 11:39:21 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:db1;DB_CLOSE_DELAY=-1;]
-mars 22, 2022 11:28:39 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+mars 22, 2022 11:39:21 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001001: Connection properties: {password=****, user=sa}
-mars 22, 2022 11:28:39 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+mars 22, 2022 11:39:21 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001003: Autocommit mode: false
-mars 22, 2022 11:28:39 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+mars 22, 2022 11:39:21 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
 INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
-mars 22, 2022 11:28:39 AM org.hibernate.dialect.Dialect <init>
+mars 22, 2022 11:39:21 AM org.hibernate.dialect.Dialect <init>
 INFO: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-mars 22, 2022 11:28:39 AM org.hibernate.cfg.AnnotationBinder processJoinedDiscriminatorProperties
+mars 22, 2022 11:39:21 AM org.hibernate.cfg.AnnotationBinder processJoinedDiscriminatorProperties
 WARN: HHH000457: Joined inheritance hierarchy [model.Client] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
-mars 22, 2022 11:28:40 AM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
-INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@721bf7ad] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-mars 22, 2022 11:28:40 AM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+mars 22, 2022 11:39:21 AM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
 INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4cae66a8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-mars 22, 2022 11:28:40 AM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+mars 22, 2022 11:39:21 AM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7b8aebd0] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+mars 22, 2022 11:39:21 AM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
 INFO: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
 ]]></system-err>
   </testcase>

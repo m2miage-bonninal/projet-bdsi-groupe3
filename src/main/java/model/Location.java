@@ -26,7 +26,9 @@ import org.hibernate.annotations.GenericGenerator;
 @Entity
 public class Location {
     
-    public Location(){};
+    public Location(){
+        this.setTrajets(new ArrayList<Trajet>());
+    }
     
     public Location(Client locataire){
         this.setLocataire(locataire);
@@ -36,7 +38,7 @@ public class Location {
     @Id
     @GenericGenerator(name = "kaugen1", strategy = "increment")
     @GeneratedValue(generator = "kaugen1")
-    private int id;
+    private Long id;
     
     private Float montant;
     
@@ -46,7 +48,7 @@ public class Location {
     @OneToMany
     private List<Trajet> trajets;
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
@@ -72,6 +74,10 @@ public class Location {
 
     public void setTrajets(List<Trajet> trajets) {
         this.trajets = trajets;
+    }
+    
+    public void addTrajet(Trajet trajet){
+        this.trajets.add(trajet);
     }
     
     // TODO
