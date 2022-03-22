@@ -1,0 +1,25 @@
+-------------------------------------------------------------------------------
+Test set: repository.VeloTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.627 s <<< FAILURE! - in repository.VeloTest
+repository.VeloTest.saveVelo  Time elapsed: 0.301 s  <<< ERROR!
+java.lang.IllegalArgumentException: 
+org.hibernate.QueryException: No data type for node: org.hibernate.hql.internal.ast.tree.IdentNode 
+ \-[IDENT] IdentNode: 'v' {originalText=v}
+ [select v from model.Velo s where v.numero = :id]
+	at repository.VeloTest.saveVelo(VeloTest.java:42)
+Caused by: org.hibernate.QueryException: 
+No data type for node: org.hibernate.hql.internal.ast.tree.IdentNode 
+ \-[IDENT] IdentNode: 'v' {originalText=v}
+ [select v from model.Velo s where v.numero = :id]
+	at repository.VeloTest.saveVelo(VeloTest.java:42)
+Caused by: org.hibernate.QueryException: 
+No data type for node: org.hibernate.hql.internal.ast.tree.IdentNode 
+ \-[IDENT] IdentNode: 'v' {originalText=v}
+
+	at repository.VeloTest.saveVelo(VeloTest.java:42)
+
+repository.VeloTest.velosAtStation  Time elapsed: 0.304 s  <<< ERROR!
+javax.persistence.NoResultException: No entity found for query
+	at repository.VeloTest.velosAtStation(VeloTest.java:98)
+

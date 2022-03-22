@@ -7,12 +7,12 @@
     <persistence-unit name="JPA-HBM">
 
         <properties>
-            <property name="javax.persistence.jdbc.url" value="jdbc:mariadb://localhost:3306/ave"/>
-            <property name="javax.persistence.jdbc.user" value="admin"/>
-            <property name="javax.persistence.jdbc.password" value="changeme"/>
-            <property name="javax.persistence.jdbc.driver" value="org.mariadb.jdbc.Driver"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@im2ag-oracle.e.ujf-grenoble.fr:1521:IM2AG"/>
+            <property name="javax.persistence.jdbc.user" value="bonninal"/>
+            <property name="javax.persistence.jdbc.password" value="1c8ec153c4"/>
+            <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
             <property name="hibernate.show_sql" value="true"/>
-            <property name="hibernate.dialect" value="MariaDB106"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.Oracle12cDialect"/>
             <property name="hibernate.hbm2ddl.auto" value="update"/>
         </properties>
 

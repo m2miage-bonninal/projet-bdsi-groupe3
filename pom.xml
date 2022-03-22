@@ -27,12 +27,12 @@
             <version>1.0.2.Final</version>
         </dependency>
 
-        <dependency>
+        <!--<dependency>
             <groupId>org.mariadb.jdbc</groupId>
             <artifactId>mariadb-java-client</artifactId>
             <version>2.7.3</version>
             <scope>runtime</scope>
-        </dependency>
+        </dependency>-->
 
         <dependency>
             <groupId>com.h2database</groupId>
@@ -59,7 +59,12 @@
             <artifactId>assertj-core</artifactId>
             <version>3.22.0</version>
         </dependency>
-
+        <dependency>
+            <groupId>com.oracle.database.jdbc</groupId>
+            <artifactId>ojdbc8</artifactId>
+            <version>21.4.0.0.1</version>
+            <scope>runtime</scope>
+        </dependency>
     </dependencies>
 
     <build>
