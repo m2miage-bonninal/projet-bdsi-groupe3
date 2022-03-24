@@ -5,16 +5,10 @@ import java.time.temporal.ChronoUnit;
 import java.time.temporal.TemporalUnit;
 import java.util.HashSet;
 import java.util.List;
-import java.util.Random;
 import java.util.Scanner;
-import java.util.Set;
 
-import com.github.javafaker.Faker;
-
-import javax.imageio.stream.MemoryCacheImageInputStream;
 import javax.persistence.EntityManager;
 import javax.persistence.Persistence;
-import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
 
 import model.*;
 import model.enumeration.Etat;
@@ -52,21 +46,28 @@ public class App {
             case 1:
             System.out.println("Vous avez choisi d'emprunter un vélo. Etes-vous\n1 - Abonné\n2 - Non abonné"
                 + "\nVotre choix : ");
-                int etatAbonnement = scanner.nextInt();
-                switch(etatAbonnement) {
+            int etatAbonnement = scanner.nextInt();
+            switch(etatAbonnement) {
 
-                    case 1:
-                    System.out.println("Vous êtes abonné à nos services. Veuillez entrer votre code : ");
-                    ClientAbonne clientAbonne = clientAbonneImpl.abonneFromCode(scanner.next());
-                    Emprunt.processusEmprunt();
+                case 1:
+                System.out.println("Vous êtes abonné à nos services. Veuillez entrer votre code : ");
+                ClientAbonne clientAbonne = clientAbonneImpl.abonneFromCode(scanner.next());
+                Emprunt.processusEmprunt();
+                break;
 
-                    case 2:
-                    System.out.println("Veuillez entrer votre numéro de carte bancaire : ");
-                    String numCB = scanner.next();
-                    String codeADonner = Client.generateCode(clientImpl);
-                    ClientNonAbonne clientNonAbonne = new ClientNonAbonne(numCB, codeADonner);
-                    Emprunt.processusEmprunt();
-                }
+                case 2:
+                System.out.println("Veuillez entrer votre numéro de carte bancaire : ");
+                String numCB = scanner.next();
+                String codeADonner = Client.generateCode(clientImpl);
+                ClientNonAbonne clientNonAbonne = new ClientNonAbonne(numCB, codeADonner);
+                Emprunt.processusEmprunt();
+                break;
+
+                default:
+                System.out.println("Choix invalide");
+                break;
+            }
+            break;
 
             case 2:
             // vérifier qu'il y a au moins une borne de libre pour que le client raccroche le vélo 
@@ -100,7 +101,7 @@ public class App {
             trajetFromVeloAccroche.setPrimeFromDate(LocalDateTime.now());
             trajetFromVeloAccroche.setStationFin(stationChoisie);
 
-            System.out.println("Veuillez rentrer l'état du vélo que vous venez de raccrocher :\n1 - OK\n2 - Hors service\n"
+            System.out.println("Veuillez rentrer l'état du vélo que vous venez de raccrocher :\n1 - OK\n2 - En panne\n"
                 + "Etat : ");
             int etat = scanner.nextInt();
 
@@ -108,15 +109,34 @@ public class App {
 
                 case 1: 
                 veloAccroche.setEtat(Etat.OK);
+                DebitRetour.processusDebitMontant(locationEnCours, trajetFromVeloAccroche);
+                break;
 
                 case 2:
                 veloAccroche.setEtat(Etat.HS);
-            }
+                if (trajetFromVeloAccroche.getDuree() >= 5) {
+                    System.out.println("Votre trajet avec le vélo en panne a duré plus de 5 minutes, vous serez débité.e de la durée.");
+                    DebitRetour.processusDebitMontant(locationEnCours, trajetFromVeloAccroche);
+                }
+                else {
+                    System.out.print("Merci de nous avoir informé de l'état du vélo.\n"
+                        + "Votre trajet avec le vélo en panne a duré moins de 5 minutes, vous ne serez pas débité.e.");
+                }
+                break;
 
-            
+                default:
+                System.out.println("Choix invalide");
+                break;
+            }
+            break;
 
             case 3:
             System.out.println("Vous avez choisi de créer un abonnement.");
+            break;
+
+            default:
+            System.out.println("Choix invalide");
+            break;
 
         }
     }

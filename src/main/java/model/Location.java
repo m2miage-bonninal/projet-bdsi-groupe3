@@ -81,7 +81,7 @@ public class Location {
     }
     
     // TODO
-    boolean verifTrajetEnCours(){
+    public boolean verifTrajetEnCours(){
         boolean trouver = false;
         int i = 0;
         while(i < trajets.size() && trouver == false)

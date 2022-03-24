@@ -127,5 +127,11 @@ public class Trajet {
             this.prime = false;
         }
     }
+
+    /*TO DO*/
+    public Float calculMontantSingleTrajet() {
+        // calcul le montant du trajet seul à partir de sa durée et du modèle de vélo
+        return 0.0f;
+    }
     
 }
