@@ -80,6 +80,8 @@ public class VeloTest extends Base {
         bornetteRepository.save(bornette4);
         bornetteRepository.save(bornette5);
         
+        entityManager.getTransaction().commit();
+        
         entityManager.detach(velo1);
         entityManager.detach(velo2);
         entityManager.detach(velo3);
@@ -95,6 +97,7 @@ public class VeloTest extends Base {
         entityManager.detach(bornette4);
         entityManager.detach(bornette5);
 
+        System.err.println("###"+station1.getId());
         final Station pStation = stationRepository.findById(station1.getId());
         final Velo pVelo1 = veloRepository.findById(velo1.getNumero());
         final Velo pVelo2 = veloRepository.findById(velo2.getNumero());

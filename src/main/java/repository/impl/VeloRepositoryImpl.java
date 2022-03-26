@@ -27,7 +27,7 @@ public class VeloRepositoryImpl extends BaseRepositoryImpl implements VeloReposi
      */
     @Override
     public List<Velo> velosAtStation(Station station) {
-        String jql = "select v from Velo v join v.bornette b join b.station s where s.id = :idStation and etat != 'HS'";
+        String jql = "select v from Velo v join v.bornette b join b.station s where s.id = :idStation and v.etat != 'HS'";
         List<Velo> retour = (List<Velo>) entityManager.createQuery(jql, Velo.class)
                                 .setParameter("idStation", station.getId())
                                 .getResultList();
@@ -47,7 +47,7 @@ public class VeloRepositoryImpl extends BaseRepositoryImpl implements VeloReposi
 
     @Override
     public Velo findById(Long id) {
-        String jql = "select v from Velo s where v.numero = :id";
+        String jql = "select v from Velo v where v.numero = :id";
         Velo retour = entityManager.createQuery(jql, Velo.class)
                             .setParameter("id", id)
                             .getSingleResult();

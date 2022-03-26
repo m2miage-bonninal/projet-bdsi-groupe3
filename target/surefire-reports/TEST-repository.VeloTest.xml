@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="repository.VeloTest" time="0.627" tests="2" errors="2" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="repository.VeloTest" time="3.041" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
     <property name="java.specification.version" value="11"/>
@@ -15,8 +15,9 @@
     <property name="user.country" value="FR"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/jdk-11.0.12+7/lib"/>
-    <property name="sun.java.command" value="/home/aliceb/miage/bd/projet-bdsi-groupe3/target/surefire/surefirebooter15686069039049137874.jar /home/aliceb/miage/bd/projet-bdsi-groupe3/target/surefire 2022-03-22T11-28-35_102-jvmRun1 surefire15074245953722513215tmp surefire_09687543525466442480tmp"/>
+    <property name="sun.java.command" value="/home/aliceb/miage/bd/projet-bdsi-groupe3/target/surefire/surefirebooter3912254269985188688.jar /home/aliceb/miage/bd/projet-bdsi-groupe3/target/surefire 2022-03-26T20-05-04_684-jvmRun1 surefire6951964660517623984tmp surefire_017471301228286639493tmp"/>
     <property name="jdk.debug" value="release"/>
+    <property name="test" value="repository.VeloTest"/>
     <property name="surefire.test.class.path" value="/home/aliceb/miage/bd/projet-bdsi-groupe3/target/test-classes:/home/aliceb/miage/bd/projet-bdsi-groupe3/target/classes:/home/aliceb/.m2/repository/org/hibernate/hibernate-core/5.6.3.Final/hibernate-core-5.6.3.Final.jar:/home/aliceb/.m2/repository/org/jboss/logging/jboss-logging/3.4.2.Final/jboss-logging-3.4.2.Final.jar:/home/aliceb/.m2/repository/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar:/home/aliceb/.m2/repository/net/bytebuddy/byte-buddy/1.11.20/byte-buddy-1.11.20.jar:/home/aliceb/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/home/aliceb/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.1.1.Final/jboss-transaction-api_1.2_spec-1.1.1.Final.jar:/home/aliceb/.m2/repository/org/jboss/jandex/2.2.3.Final/jandex-2.2.3.Final.jar:/home/aliceb/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/home/aliceb/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/home/aliceb/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.2.Final/hibernate-commons-annotations-5.1.2.Final.jar:/home/aliceb/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/home/aliceb/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-runtime-2.3.1.jar:/home/aliceb/.m2/repository/org/glassfish/jaxb/txw2/2.3.1/txw2-2.3.1.jar:/home/aliceb/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.7/istack-commons-runtime-3.0.7.jar:/home/aliceb/.m2/repository/org/jvnet/staxex/stax-ex/1.8/stax-ex-1.8.jar:/home/aliceb/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.15/FastInfoset-1.2.15.jar:/home/aliceb/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.2.Final/hibernate-jpa-2.1-api-1.0.2.Final.jar:/home/aliceb/.m2/repository/com/h2database/h2/2.1.210/h2-2.1.210.jar:/home/aliceb/.m2/repository/org/junit/jupiter/junit-jupiter/5.8.2/junit-jupiter-5.8.2.jar:/home/aliceb/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/home/aliceb/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/aliceb/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/home/aliceb/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/aliceb/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.2/junit-jupiter-params-5.8.2.jar:/home/aliceb/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/home/aliceb/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:/home/aliceb/.m2/repository/com/github/javafaker/javafaker/1.0.2/javafaker-1.0.2.jar:/home/aliceb/.m2/repository/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar:/home/aliceb/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23-android.jar:/home/aliceb/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/home/aliceb/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:/home/aliceb/.m2/repository/org/assertj/assertj-core/3.22.0/assertj-core-3.22.0.jar:/home/aliceb/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.4.0.0.1/ojdbc8-21.4.0.0.1.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/home/aliceb"/>
@@ -31,17 +32,17 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/home/aliceb/miage/bd/projet-bdsi-groupe3/target/surefire/surefirebooter15686069039049137874.jar"/>
+    <property name="surefire.real.class.path" value="/home/aliceb/miage/bd/projet-bdsi-groupe3/target/surefire/surefirebooter3912254269985188688.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.12+7"/>
     <property name="user.name" value="aliceb"/>
     <property name="path.separator" value=":"/>
-    <property name="os.version" value="5.13.0-35-generic"/>
+    <property name="os.version" value="5.13.0-37-generic"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
     <property name="java.vendor.version" value="Temurin-11.0.12+7"/>
-    <property name="maven.ext.class.path" value="/home/aliceb/netbeans-12.5/netbeans/java/maven-nblib/netbeans-eventspy.jar"/>
+    <property name="maven.ext.class.path" value="/home/aliceb/netbeans-12.5/netbeans/java/maven-nblib/netbeans-eventspy.jar:/home/aliceb/netbeans-12.5/netbeans/java/maven-nblib/netbeans-eventspy.jar"/>
     <property name="localRepository" value="/home/aliceb/.m2/repository"/>
     <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
     <property name="java.io.tmpdir" value="/tmp"/>
@@ -58,23 +59,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="saveVelo" classname="repository.VeloTest" time="0.301">
-    <error type="java.lang.IllegalArgumentException"><![CDATA[java.lang.IllegalArgumentException: 
-org.hibernate.QueryException: No data type for node: org.hibernate.hql.internal.ast.tree.IdentNode 
- \-[IDENT] IdentNode: 'v' {originalText=v}
- [select v from model.Velo s where v.numero = :id]
-	at repository.VeloTest.saveVelo(VeloTest.java:42)
-Caused by: org.hibernate.QueryException: 
-No data type for node: org.hibernate.hql.internal.ast.tree.IdentNode 
- \-[IDENT] IdentNode: 'v' {originalText=v}
- [select v from model.Velo s where v.numero = :id]
-	at repository.VeloTest.saveVelo(VeloTest.java:42)
-Caused by: org.hibernate.QueryException: 
-No data type for node: org.hibernate.hql.internal.ast.tree.IdentNode 
- \-[IDENT] IdentNode: 'v' {originalText=v}
-
-	at repository.VeloTest.saveVelo(VeloTest.java:42)
-]]></error>
+  <testcase name="saveVelo" classname="repository.VeloTest" time="2.497">
     <system-out><![CDATA[Hibernate: drop table if exists Bornette CASCADE 
 Hibernate: drop table if exists Client CASCADE 
 Hibernate: drop table if exists Client_Location CASCADE 
@@ -91,18 +76,18 @@ Hibernate: drop table if exists Velo CASCADE
 Hibernate: drop table if exists Velo_Location CASCADE 
 Hibernate: create table Bornette (numero bigint not null, etat varchar(255), station_id bigint, veloAccroche_numero bigint, primary key (numero))
 Hibernate: create table Client (type varchar(31) not null, id bigint not null, codeSecret varchar(255), numeroCB varchar(255), primary key (id))
-Hibernate: create table Client_Location (Client_id bigint not null, locations_id integer not null)
+Hibernate: create table Client_Location (Client_id bigint not null, locations_id bigint not null)
 Hibernate: create table ClientAbonne (adresse varchar(255), dateNaissance varchar(255), dateSouscription varchar(255), nom varchar(255), prenom varchar(255), sexe integer, id bigint not null, primary key (id))
 Hibernate: create table ClientNonAbonne (id bigint not null, primary key (id))
 Hibernate: create table HistoriqueVType (id integer not null, dateHeureDebut timestamp, dateHeureFin timestamp, vType varchar(255), station_id bigint, primary key (id))
-Hibernate: create table Location (id integer not null, montant float, locataire_id bigint, primary key (id))
-Hibernate: create table Location_Trajet (Location_id integer not null, trajets_id integer not null)
+Hibernate: create table Location (id bigint not null, montant float, locataire_id bigint, primary key (id))
+Hibernate: create table Location_Trajet (Location_id bigint not null, trajets_id integer not null)
 Hibernate: create table Station (id bigint not null, adresse varchar(255), primary key (id))
 Hibernate: create table Station_Bornette (Station_id bigint not null, bornettes_numero bigint not null)
 Hibernate: create table Station_HistoriqueVType (Station_id bigint not null, historiques_id integer not null)
-Hibernate: create table Trajet (id integer not null, dateheureDebut timestamp, duree integer not null, prime boolean, location_id integer, stationDebut_id bigint, stationFin_id bigint, velo_numero bigint, primary key (id))
+Hibernate: create table Trajet (id integer not null, dateheureDebut timestamp, duree integer not null, prime boolean, location_id bigint, stationDebut_id bigint, stationFin_id bigint, velo_numero bigint, primary key (id))
 Hibernate: create table Velo (numero bigint not null, etat varchar(255), misEnService timestamp, modele varchar(255), bornette_numero bigint, primary key (numero))
-Hibernate: create table Velo_Location (Velo_numero bigint not null, locations_id integer not null)
+Hibernate: create table Velo_Location (Velo_numero bigint not null, locations_id bigint not null)
 Hibernate: alter table Client_Location add constraint UK_4jiuf949hhra55x7up9gwbfsc unique (locations_id)
 Hibernate: alter table Location_Trajet add constraint UK_2qfxg5ysusq9eeexb2xlfuk8w unique (trajets_id)
 Hibernate: alter table Station_Bornette add constraint UK_1kw97k75qkpnimlgn5f9cq24m unique (bornettes_numero)
@@ -130,328 +115,37 @@ Hibernate: alter table Velo_Location add constraint FK63sc6f13ta1wt5cwynmu6oetf 
 Hibernate: alter table Velo_Location add constraint FK25ixbco2aotqiogr70swb4ibm foreign key (Velo_numero) references Velo
 Hibernate: select max(numero) from Velo
 Hibernate: insert into Velo (bornette_numero, etat, misEnService, modele, numero) values (?, ?, ?, ?, ?)
+Hibernate: select velo0_.numero as numero1_12_, velo0_.bornette_numero as bornette5_12_, velo0_.etat as etat2_12_, velo0_.misEnService as misenser3_12_, velo0_.modele as modele4_12_ from Velo velo0_ where velo0_.numero=?
 ]]></system-out>
-    <system-err><![CDATA[mars 22, 2022 11:28:41 AM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
+    <system-err><![CDATA[mars 26, 2022 8:05:06 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
 INFO: HHH000204: Processing PersistenceUnitInfo [name: TEST]
-mars 22, 2022 11:28:41 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+mars 26, 2022 8:05:06 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate ORM core version 5.6.3.Final
+mars 26, 2022 8:05:06 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+INFO: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+mars 26, 2022 8:05:06 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
 WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-mars 22, 2022 11:28:41 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+mars 26, 2022 8:05:06 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:db1;DB_CLOSE_DELAY=-1;]
-mars 22, 2022 11:28:41 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+mars 26, 2022 8:05:06 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001001: Connection properties: {password=****, user=sa}
-mars 22, 2022 11:28:41 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+mars 26, 2022 8:05:06 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001003: Autocommit mode: false
-mars 22, 2022 11:28:41 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+mars 26, 2022 8:05:06 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
 INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
-mars 22, 2022 11:28:41 AM org.hibernate.dialect.Dialect <init>
+mars 26, 2022 8:05:07 PM org.hibernate.dialect.Dialect <init>
 INFO: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-mars 22, 2022 11:28:41 AM org.hibernate.cfg.AnnotationBinder processJoinedDiscriminatorProperties
+mars 26, 2022 8:05:07 PM org.hibernate.cfg.AnnotationBinder processJoinedDiscriminatorProperties
 WARN: HHH000457: Joined inheritance hierarchy [model.Client] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
-mars 22, 2022 11:28:41 AM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
-INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1dd44289] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-mars 22, 2022 11:28:41 AM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
-INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6cc56b32] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-mars 22, 2022 11:28:41 AM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+mars 26, 2022 8:05:08 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@286855ea] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+mars 26, 2022 8:05:08 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5af5d76f] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+mars 26, 2022 8:05:08 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
 INFO: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-mars 22, 2022 11:28:41 AM org.hibernate.hql.internal.ast.ErrorTracker reportError
-ERROR:  Invalid path: 'v.numero'
-mars 22, 2022 11:28:41 AM org.hibernate.hql.internal.ast.ErrorTracker reportError
-ERROR:  Invalid path: 'v.numero'
- Invalid path: 'v.numero'
-	at org.hibernate.hql.internal.ast.util.LiteralProcessor.lookupConstant(LiteralProcessor.java:111)
-	at org.hibernate.hql.internal.ast.tree.DotNode.resolve(DotNode.java:219)
-	at org.hibernate.hql.internal.ast.HqlSqlWalker.resolve(HqlSqlWalker.java:1055)
-	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.expr(HqlSqlBaseWalker.java:1308)
-	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.exprOrSubquery(HqlSqlBaseWalker.java:4778)
-	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.comparisonExpr(HqlSqlBaseWalker.java:4244)
-	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.logicalExpr(HqlSqlBaseWalker.java:2166)
-	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.whereClause(HqlSqlBaseWalker.java:832)
-	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:626)
-	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:330)
-	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:278)
-	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:276)
-	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:192)
-	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:144)
-	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:113)
-	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:73)
-	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:162)
-	at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:636)
-	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:748)
-	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:848)
-	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:23)
-	at repository.impl.VeloRepositoryImpl.findById(VeloRepositoryImpl.java:51)
-	at repository.impl.VeloRepositoryImpl.findById(VeloRepositoryImpl.java:17)
-	at repository.VeloTest.saveVelo(VeloTest.java:42)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
-	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:214)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:210)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
-	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
-	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:188)
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:154)
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:128)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
-
-mars 22, 2022 11:28:41 AM org.hibernate.hql.internal.ast.ErrorTracker reportError
-ERROR: <AST>:0:0: unexpected end of subtree
-mars 22, 2022 11:28:41 AM org.hibernate.hql.internal.ast.ErrorTracker reportError
-ERROR: <AST>:0:0: unexpected end of subtree
-<AST>:0:0: unexpected end of subtree
-	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.exprOrSubquery(HqlSqlBaseWalker.java:4860)
-	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.comparisonExpr(HqlSqlBaseWalker.java:4247)
-	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.logicalExpr(HqlSqlBaseWalker.java:2166)
-	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.whereClause(HqlSqlBaseWalker.java:832)
-	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:626)
-	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:330)
-	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:278)
-	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:276)
-	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:192)
-	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:144)
-	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:113)
-	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:73)
-	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:162)
-	at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:636)
-	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:748)
-	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:848)
-	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:23)
-	at repository.impl.VeloRepositoryImpl.findById(VeloRepositoryImpl.java:51)
-	at repository.impl.VeloRepositoryImpl.findById(VeloRepositoryImpl.java:17)
-	at repository.VeloTest.saveVelo(VeloTest.java:42)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
-	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:214)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:210)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
-	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
-	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:188)
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:154)
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:128)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
-
-mars 22, 2022 11:28:41 AM org.hibernate.hql.internal.ast.ErrorTracker reportError
-ERROR:  left-hand operand of a binary operator was null
-mars 22, 2022 11:28:41 AM org.hibernate.hql.internal.ast.ErrorTracker reportError
-ERROR:  left-hand operand of a binary operator was null
- left-hand operand of a binary operator was null
-	at org.hibernate.hql.internal.ast.tree.BinaryLogicOperatorNode.initialize(BinaryLogicOperatorNode.java:41)
-	at org.hibernate.hql.internal.ast.HqlSqlWalker.prepareLogicOperator(HqlSqlWalker.java:1478)
-	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.comparisonExpr(HqlSqlBaseWalker.java:4719)
-	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.logicalExpr(HqlSqlBaseWalker.java:2166)
-	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.whereClause(HqlSqlBaseWalker.java:832)
-	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:626)
-	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:330)
-	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:278)
-	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:276)
-	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:192)
-	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:144)
-	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:113)
-	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:73)
-	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:162)
-	at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:636)
-	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:748)
-	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:848)
-	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:23)
-	at repository.impl.VeloRepositoryImpl.findById(VeloRepositoryImpl.java:51)
-	at repository.impl.VeloRepositoryImpl.findById(VeloRepositoryImpl.java:17)
-	at repository.VeloTest.saveVelo(VeloTest.java:42)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
-	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:214)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:210)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
-	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
-	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:188)
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:154)
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:128)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
-
 ]]></system-err>
   </testcase>
-  <testcase name="velosAtStation" classname="repository.VeloTest" time="0.304">
-    <error type="javax.persistence.NoResultException"><![CDATA[javax.persistence.NoResultException: No entity found for query
-	at repository.VeloTest.velosAtStation(VeloTest.java:98)
-]]></error>
+  <testcase name="velosAtStation" classname="repository.VeloTest" time="0.511">
     <system-out><![CDATA[Hibernate: drop table if exists Bornette CASCADE 
 Hibernate: drop table if exists Client CASCADE 
 Hibernate: drop table if exists Client_Location CASCADE 
@@ -468,18 +162,18 @@ Hibernate: drop table if exists Velo CASCADE
 Hibernate: drop table if exists Velo_Location CASCADE 
 Hibernate: create table Bornette (numero bigint not null, etat varchar(255), station_id bigint, veloAccroche_numero bigint, primary key (numero))
 Hibernate: create table Client (type varchar(31) not null, id bigint not null, codeSecret varchar(255), numeroCB varchar(255), primary key (id))
-Hibernate: create table Client_Location (Client_id bigint not null, locations_id integer not null)
+Hibernate: create table Client_Location (Client_id bigint not null, locations_id bigint not null)
 Hibernate: create table ClientAbonne (adresse varchar(255), dateNaissance varchar(255), dateSouscription varchar(255), nom varchar(255), prenom varchar(255), sexe integer, id bigint not null, primary key (id))
 Hibernate: create table ClientNonAbonne (id bigint not null, primary key (id))
 Hibernate: create table HistoriqueVType (id integer not null, dateHeureDebut timestamp, dateHeureFin timestamp, vType varchar(255), station_id bigint, primary key (id))
-Hibernate: create table Location (id integer not null, montant float, locataire_id bigint, primary key (id))
-Hibernate: create table Location_Trajet (Location_id integer not null, trajets_id integer not null)
+Hibernate: create table Location (id bigint not null, montant float, locataire_id bigint, primary key (id))
+Hibernate: create table Location_Trajet (Location_id bigint not null, trajets_id integer not null)
 Hibernate: create table Station (id bigint not null, adresse varchar(255), primary key (id))
 Hibernate: create table Station_Bornette (Station_id bigint not null, bornettes_numero bigint not null)
 Hibernate: create table Station_HistoriqueVType (Station_id bigint not null, historiques_id integer not null)
-Hibernate: create table Trajet (id integer not null, dateheureDebut timestamp, duree integer not null, prime boolean, location_id integer, stationDebut_id bigint, stationFin_id bigint, velo_numero bigint, primary key (id))
+Hibernate: create table Trajet (id integer not null, dateheureDebut timestamp, duree integer not null, prime boolean, location_id bigint, stationDebut_id bigint, stationFin_id bigint, velo_numero bigint, primary key (id))
 Hibernate: create table Velo (numero bigint not null, etat varchar(255), misEnService timestamp, modele varchar(255), bornette_numero bigint, primary key (numero))
-Hibernate: create table Velo_Location (Velo_numero bigint not null, locations_id integer not null)
+Hibernate: create table Velo_Location (Velo_numero bigint not null, locations_id bigint not null)
 Hibernate: alter table Client_Location add constraint UK_4jiuf949hhra55x7up9gwbfsc unique (locations_id)
 Hibernate: alter table Location_Trajet add constraint UK_2qfxg5ysusq9eeexb2xlfuk8w unique (trajets_id)
 Hibernate: alter table Station_Bornette add constraint UK_1kw97k75qkpnimlgn5f9cq24m unique (bornettes_numero)
@@ -508,30 +202,55 @@ Hibernate: alter table Velo_Location add constraint FK25ixbco2aotqiogr70swb4ibm 
 Hibernate: select max(numero) from Velo
 Hibernate: select max(id) from Station
 Hibernate: select max(numero) from Bornette
+Hibernate: insert into Velo (bornette_numero, etat, misEnService, modele, numero) values (?, ?, ?, ?, ?)
+Hibernate: insert into Velo (bornette_numero, etat, misEnService, modele, numero) values (?, ?, ?, ?, ?)
+Hibernate: insert into Velo (bornette_numero, etat, misEnService, modele, numero) values (?, ?, ?, ?, ?)
+Hibernate: insert into Velo (bornette_numero, etat, misEnService, modele, numero) values (?, ?, ?, ?, ?)
+Hibernate: insert into Velo (bornette_numero, etat, misEnService, modele, numero) values (?, ?, ?, ?, ?)
+Hibernate: insert into Station (adresse, id) values (?, ?)
+Hibernate: insert into Station (adresse, id) values (?, ?)
+Hibernate: insert into Bornette (etat, station_id, veloAccroche_numero, numero) values (?, ?, ?, ?)
+Hibernate: insert into Bornette (etat, station_id, veloAccroche_numero, numero) values (?, ?, ?, ?)
+Hibernate: insert into Bornette (etat, station_id, veloAccroche_numero, numero) values (?, ?, ?, ?)
+Hibernate: insert into Bornette (etat, station_id, veloAccroche_numero, numero) values (?, ?, ?, ?)
+Hibernate: insert into Bornette (etat, station_id, veloAccroche_numero, numero) values (?, ?, ?, ?)
+Hibernate: update Velo set bornette_numero=?, etat=?, misEnService=?, modele=? where numero=?
+Hibernate: update Velo set bornette_numero=?, etat=?, misEnService=?, modele=? where numero=?
+Hibernate: update Velo set bornette_numero=?, etat=?, misEnService=?, modele=? where numero=?
+Hibernate: update Velo set bornette_numero=?, etat=?, misEnService=?, modele=? where numero=?
+Hibernate: update Velo set bornette_numero=?, etat=?, misEnService=?, modele=? where numero=?
 Hibernate: select station0_.id as id1_8_, station0_.adresse as adresse2_8_ from Station station0_ where station0_.id=?
+Hibernate: select velo0_.numero as numero1_12_, velo0_.bornette_numero as bornette5_12_, velo0_.etat as etat2_12_, velo0_.misEnService as misenser3_12_, velo0_.modele as modele4_12_ from Velo velo0_ where velo0_.numero=?
+Hibernate: select bornette0_.numero as numero1_0_0_, bornette0_.etat as etat2_0_0_, bornette0_.station_id as station_3_0_0_, bornette0_.veloAccroche_numero as veloaccr4_0_0_, station1_.id as id1_8_1_, station1_.adresse as adresse2_8_1_, velo2_.numero as numero1_12_2_, velo2_.bornette_numero as bornette5_12_2_, velo2_.etat as etat2_12_2_, velo2_.misEnService as misenser3_12_2_, velo2_.modele as modele4_12_2_, bornette3_.numero as numero1_0_3_, bornette3_.etat as etat2_0_3_, bornette3_.station_id as station_3_0_3_, bornette3_.veloAccroche_numero as veloaccr4_0_3_ from Bornette bornette0_ left outer join Station station1_ on bornette0_.station_id=station1_.id left outer join Velo velo2_ on bornette0_.veloAccroche_numero=velo2_.numero left outer join Bornette bornette3_ on velo2_.bornette_numero=bornette3_.numero where bornette0_.numero=?
+Hibernate: select velo0_.numero as numero1_12_, velo0_.bornette_numero as bornette5_12_, velo0_.etat as etat2_12_, velo0_.misEnService as misenser3_12_, velo0_.modele as modele4_12_ from Velo velo0_ where velo0_.numero=?
+Hibernate: select bornette0_.numero as numero1_0_0_, bornette0_.etat as etat2_0_0_, bornette0_.station_id as station_3_0_0_, bornette0_.veloAccroche_numero as veloaccr4_0_0_, station1_.id as id1_8_1_, station1_.adresse as adresse2_8_1_, velo2_.numero as numero1_12_2_, velo2_.bornette_numero as bornette5_12_2_, velo2_.etat as etat2_12_2_, velo2_.misEnService as misenser3_12_2_, velo2_.modele as modele4_12_2_, bornette3_.numero as numero1_0_3_, bornette3_.etat as etat2_0_3_, bornette3_.station_id as station_3_0_3_, bornette3_.veloAccroche_numero as veloaccr4_0_3_ from Bornette bornette0_ left outer join Station station1_ on bornette0_.station_id=station1_.id left outer join Velo velo2_ on bornette0_.veloAccroche_numero=velo2_.numero left outer join Bornette bornette3_ on velo2_.bornette_numero=bornette3_.numero where bornette0_.numero=?
+Hibernate: select velo0_.numero as numero1_12_, velo0_.bornette_numero as bornette5_12_, velo0_.etat as etat2_12_, velo0_.misEnService as misenser3_12_, velo0_.modele as modele4_12_ from Velo velo0_ where velo0_.numero=?
+Hibernate: select bornette0_.numero as numero1_0_0_, bornette0_.etat as etat2_0_0_, bornette0_.station_id as station_3_0_0_, bornette0_.veloAccroche_numero as veloaccr4_0_0_, station1_.id as id1_8_1_, station1_.adresse as adresse2_8_1_, velo2_.numero as numero1_12_2_, velo2_.bornette_numero as bornette5_12_2_, velo2_.etat as etat2_12_2_, velo2_.misEnService as misenser3_12_2_, velo2_.modele as modele4_12_2_, bornette3_.numero as numero1_0_3_, bornette3_.etat as etat2_0_3_, bornette3_.station_id as station_3_0_3_, bornette3_.veloAccroche_numero as veloaccr4_0_3_ from Bornette bornette0_ left outer join Station station1_ on bornette0_.station_id=station1_.id left outer join Velo velo2_ on bornette0_.veloAccroche_numero=velo2_.numero left outer join Bornette bornette3_ on velo2_.bornette_numero=bornette3_.numero where bornette0_.numero=?
+Hibernate: select velo0_.numero as numero1_12_, velo0_.bornette_numero as bornette5_12_, velo0_.etat as etat2_12_, velo0_.misEnService as misenser3_12_, velo0_.modele as modele4_12_ from Velo velo0_ inner join Bornette bornette1_ on velo0_.bornette_numero=bornette1_.numero inner join Station station2_ on bornette1_.station_id=station2_.id where station2_.id=? and velo0_.etat<>'HS'
 ]]></system-out>
-    <system-err><![CDATA[mars 22, 2022 11:28:41 AM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
+    <system-err><![CDATA[mars 26, 2022 8:05:08 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
 INFO: HHH000204: Processing PersistenceUnitInfo [name: TEST]
-mars 22, 2022 11:28:41 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+mars 26, 2022 8:05:08 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
 WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-mars 22, 2022 11:28:41 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+mars 26, 2022 8:05:08 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:db1;DB_CLOSE_DELAY=-1;]
-mars 22, 2022 11:28:41 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+mars 26, 2022 8:05:08 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001001: Connection properties: {password=****, user=sa}
-mars 22, 2022 11:28:41 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+mars 26, 2022 8:05:08 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001003: Autocommit mode: false
-mars 22, 2022 11:28:41 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+mars 26, 2022 8:05:08 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
 INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
-mars 22, 2022 11:28:41 AM org.hibernate.dialect.Dialect <init>
+mars 26, 2022 8:05:08 PM org.hibernate.dialect.Dialect <init>
 INFO: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-mars 22, 2022 11:28:41 AM org.hibernate.cfg.AnnotationBinder processJoinedDiscriminatorProperties
+mars 26, 2022 8:05:08 PM org.hibernate.cfg.AnnotationBinder processJoinedDiscriminatorProperties
 WARN: HHH000457: Joined inheritance hierarchy [model.Client] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
-mars 22, 2022 11:28:41 AM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
-INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6487f7f8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-mars 22, 2022 11:28:41 AM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
-INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2b62475a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-mars 22, 2022 11:28:41 AM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+mars 26, 2022 8:05:08 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@55421b8d] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+mars 26, 2022 8:05:08 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6d6039df] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+mars 26, 2022 8:05:08 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
 INFO: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+###1
 ]]></system-err>
   </testcase>
 </testsuite>
