@@ -1,6 +1,8 @@
+import model.Client;
+
 public class Emprunt {
     
-    public static void processusEmprunt() {
+    public static void processusEmprunt(Client client) {
         /*
         List<Velo> velosAtStation(Station station);
         // /!\ non endommagés /!\
@@ -12,5 +14,6 @@ public class Emprunt {
 
         // Afficher les numéros des vélos empruntés en guise de la simulation (à partir de la liste des bornettes)
         */
+        
     }
 }

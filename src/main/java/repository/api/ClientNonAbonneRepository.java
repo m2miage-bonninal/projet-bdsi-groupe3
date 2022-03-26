@@ -4,7 +4,6 @@
  */
 package repository.api;
 
-import model.Client;
 import model.ClientNonAbonne;
 
 /**

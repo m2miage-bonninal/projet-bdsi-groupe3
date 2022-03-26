@@ -7,16 +7,11 @@ package model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import java.sql.Time;
 import java.time.LocalDateTime;
-import java.util.Date;
 import javax.persistence.GeneratedValue;
-import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import model.enumeration.VType;
 import org.hibernate.annotations.GenericGenerator;
-import org.hibernate.annotations.ManyToAny;
-import repository.impl.TrajetRepositoryImpl;
 /**
  *
  * @author emerik
@@ -130,7 +125,8 @@ public class Trajet {
 
     /*TO DO*/
     public Float calculMontantSingleTrajet() {
-        // calcul le montant du trajet seul à partir de sa durée et du modèle de vélo
+        // calcul le montant du trajet seul à partir de sa durée et du modèle de vélo.
+        // par heure, toute heure entamée est due. abonnés => 30% de réduction.
         return 0.0f;
     }
     

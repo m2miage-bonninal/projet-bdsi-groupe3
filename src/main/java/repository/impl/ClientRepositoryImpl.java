@@ -7,7 +7,6 @@ package repository.impl;
 import java.util.List;
 import javax.persistence.EntityManager;
 import model.Client;
-import model.ClientAbonne;
 import repository.api.ClientRepository;
 
 /**

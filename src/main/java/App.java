@@ -1,9 +1,5 @@
-
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
-import java.time.temporal.TemporalUnit;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Scanner;
 
@@ -12,6 +8,7 @@ import javax.persistence.Persistence;
 
 import model.*;
 import model.enumeration.Etat;
+import model.enumeration.Sexe;
 import repository.impl.*;
 
 public class App {
@@ -23,6 +20,7 @@ public class App {
         StationRepositoryImpl stationImpl = new StationRepositoryImpl(entityManager);
         ClientAbonneRepositoryImpl clientAbonneImpl = new ClientAbonneRepositoryImpl(entityManager);
         ClientRepositoryImpl clientImpl = new ClientRepositoryImpl(entityManager);
+        ClientNonAbonneRepositoryImpl clientNonAbonneImpl = new ClientNonAbonneRepositoryImpl(entityManager);
         LocationRepositoryImpl locationImpl = new LocationRepositoryImpl(entityManager);
         VeloRepositoryImpl veloImpl = new VeloRepositoryImpl(entityManager);
         TrajetRepositoryImpl trajetImpl = new TrajetRepositoryImpl(entityManager);
@@ -52,7 +50,7 @@ public class App {
                 case 1:
                 System.out.println("Vous êtes abonné à nos services. Veuillez entrer votre code : ");
                 ClientAbonne clientAbonne = clientAbonneImpl.abonneFromCode(scanner.next());
-                Emprunt.processusEmprunt();
+                Emprunt.processusEmprunt(clientAbonne);
                 break;
 
                 case 2:
@@ -60,7 +58,8 @@ public class App {
                 String numCB = scanner.next();
                 String codeADonner = Client.generateCode(clientImpl);
                 ClientNonAbonne clientNonAbonne = new ClientNonAbonne(numCB, codeADonner);
-                Emprunt.processusEmprunt();
+                    clientNonAbonneImpl.save(clientNonAbonne);
+                Emprunt.processusEmprunt(clientNonAbonne);
                 break;
 
                 default:
@@ -104,7 +103,6 @@ public class App {
             System.out.println("Veuillez rentrer l'état du vélo que vous venez de raccrocher :\n1 - OK\n2 - En panne\n"
                 + "Etat : ");
             int etat = scanner.nextInt();
-
             switch(etat) {
 
                 case 1: 
@@ -132,6 +130,51 @@ public class App {
 
             case 3:
             System.out.println("Vous avez choisi de créer un abonnement.");
+            // récupérer les données, faire appel au constructeur
+            System.out.println("Quel est votre nom ?");
+            String nom = scanner.next();
+
+            System.out.println("Quel est votre prénom ?");
+            String prenom = scanner.next();
+
+            System.out.println("Sélectionnez votre genre :\n1 - Homme\n2 - Femme\n3 - Non Binaire");
+            int sexe = scanner.nextInt();
+            Sexe genre = null;
+            switch(sexe) {
+                case 1:
+                genre = Sexe.M;
+                break;
+
+                case 2:
+                genre = Sexe.F;
+                break;
+
+                case 3:
+                genre = Sexe.NB;
+                break;
+
+                default :
+                break;
+            }
+
+            System.out.println("Quel est votre date de naissance ? (format jj/mm/aaaa)");
+            String ddn = scanner.next();
+
+            System.out.println("Quel est votre adresse ?");
+            String adresse = scanner.next();
+
+            System.out.println("Veuillez entrer votre numéro de carte bancaire : ");
+            String numCBAbonne = scanner.next();
+
+            String codeAbonneDonne = Client.generateCode(clientImpl);
+            ClientAbonne clientNouvAbonne = new ClientAbonne(numCBAbonne, codeAbonneDonne, nom, prenom, ddn, adresse, genre);
+                clientAbonneImpl.save(clientNouvAbonne);
+
+            System.out.println(clientNouvAbonne.getNom() + " " + clientNouvAbonne.getPrenom() 
+                + ", votre abonnement a été créé avec succès. Il commence le " + clientNouvAbonne.getDateSouscription()
+                + " et termine dans un an."); // s'il est possible de récupérer la date de fin de souscription, 
+                                              // en ajoutant 1 an à la date de souscription, au lieu d'écrire "dans un an".
+            System.out.println("Pour vous authentifier dans nos stations, veuillez mémoriser le code suivant : " + clientNouvAbonne.getCodeSecret());
             break;
 
             default:
