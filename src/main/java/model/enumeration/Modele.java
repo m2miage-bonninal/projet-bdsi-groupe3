@@ -10,5 +10,10 @@ package model.enumeration;
  * @author emerik
  */
 public enum Modele {
-    VTT,  ROUTE
+    VTT(1.0),  ROUTE(0.8);
+    
+    private double coefficient;
+    Modele(double coef){
+        this.coefficient = coef;
+    }
 }
