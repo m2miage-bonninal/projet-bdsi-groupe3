@@ -15,7 +15,7 @@ import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 import javax.persistence.OneToMany;
 import org.hibernate.annotations.GenericGenerator;
-import repository.impl.ClientRepositoryImpl;
+import repository.api.ClientRepository;
 
 /**
  *
@@ -33,7 +33,7 @@ public abstract class Client {
         this.setNumeroCB(numCB);
     }
     
-    public static String generateCode(ClientRepositoryImpl clientRepo){
+    public static String generateCode(ClientRepository clientRepo){
         String code = Faker.instance().bothify("??????");
         
         while(clientRepo.existsCode(code)){
