@@ -98,10 +98,11 @@ public class App {
             
             bornetteChoisie.setVelo(veloAccroche);
             veloAccroche.setBornette(bornetteChoisie);
+            trajetFromVeloAccroche.setStationFin(stationChoisie);
 
             trajetFromVeloAccroche.setDuree((int) trajetFromVeloAccroche.getDateheureDebut().until(LocalDateTime.now(), ChronoUnit.MINUTES));
             trajetFromVeloAccroche.setPrimeFromDate(LocalDateTime.now());
-            trajetFromVeloAccroche.setStationFin(stationChoisie);
+            
 
             System.out.println("Veuillez rentrer l'état du vélo que vous venez de raccrocher :\n1 - OK\n2 - En panne\n"
                 + "Etat : ");
