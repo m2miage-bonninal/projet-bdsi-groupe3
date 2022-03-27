@@ -59,6 +59,7 @@ public class App {
                 String codeADonner = Client.generateCode(clientImpl);
                 ClientNonAbonne clientNonAbonne = new ClientNonAbonne(numCB, codeADonner);
                     clientNonAbonneImpl.save(clientNonAbonne);
+                System.out.println("Mémoriser le code suivant pour pouvoir rendre le vélo ultérieurement : " + clientNonAbonne.getCodeSecret());
                 Emprunt.processusEmprunt(entityManager, clientNonAbonne, stationChoisie, veloImpl, locationImpl);
                 break;
 

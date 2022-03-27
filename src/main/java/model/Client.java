@@ -87,6 +87,10 @@ public abstract class Client {
     public boolean verifLocationEnCours(){
         boolean trouver = false;
         int i = 0;
+        if(locations == null) {
+            trouver = false;
+        }
+        else
         while(i < locations.size() && trouver == false)
         {
             if(locations.get(i).verifTrajetEnCours() == true)
