@@ -73,7 +73,7 @@ public class Station {
         boolean trouve = false;
         while(i < this.getHistoriques().size() && !trouve){
             HistoriqueVType histo = this.getHistoriques().get(i);
-            if(histo.getDateHeureDebut().isBefore(ldt) && histo.getDateHeureFin().isAfter(ldt)){
+            if(histo.getDateHeureDebut().isBefore(ldt) && (histo == null || histo.getDateHeureFin().isAfter(ldt))){
                 retour = histo.getvType();
                 trouve = true;
             }
