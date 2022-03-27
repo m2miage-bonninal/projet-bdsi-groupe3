@@ -68,11 +68,11 @@ public class Fixtures {
         return trajet;
         }
 
-    public static Velo createVelo(Bornette bornette, Etat etat, List<Location> listeLocation, Date misEnService, Modele model){
+    public static Velo createVelo(Bornette bornette, Etat etat, List<Trajet> listeLocation, Date misEnService, Modele model){
         Velo velo = new Velo();
         velo.setBornette(bornette);
         velo.setEtat(etat);
-        velo.setListeLocation(listeLocation);
+        velo.setListeTrajets(listeLocation);
         velo.setMisEnService(misEnService);
         velo.setModele(model);
         return velo;
