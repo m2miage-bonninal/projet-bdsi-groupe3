@@ -21,8 +21,21 @@ public class ClientNonAbonneTest extends Base {
         if (entityManager.getTransaction().isActive()) {
             entityManager.getTransaction().rollback();
         }
+        
     }
-
-
+    
+    @Test
+    void findClientFromCode(){
+        ClientNonAbonne client = Fixtures.createClientNonAbonne(null);
+        entityManager.getTransaction().begin();
+        ClientNonAbonneRepository.save(client);
+        entityManager.getTransaction().commit();
+        
+        entityManager.detach(client);
+        
+        ClientNonAbonne pClient = ClientNonAbonneRepository.clientFromCode(client.getCodeSecret());
+        assertThat(pClient.getId()).isEqualTo(client.getId());
+    }
+    
     
 }
