@@ -50,7 +50,7 @@ public class App {
                 case 1:
                 System.out.println("Vous êtes abonné à nos services. Veuillez entrer votre code : ");
                 ClientAbonne clientAbonne = clientAbonneImpl.abonneFromCode(scanner.next());
-                Emprunt.processusEmprunt(clientAbonne);
+                Emprunt.processusEmprunt(entityManager, clientAbonne, stationChoisie, veloImpl, locationImpl);
                 break;
 
                 case 2:
@@ -59,7 +59,7 @@ public class App {
                 String codeADonner = Client.generateCode(clientImpl);
                 ClientNonAbonne clientNonAbonne = new ClientNonAbonne(numCB, codeADonner);
                     clientNonAbonneImpl.save(clientNonAbonne);
-                Emprunt.processusEmprunt(clientNonAbonne);
+                Emprunt.processusEmprunt(entityManager, clientNonAbonne, stationChoisie, veloImpl, locationImpl);
                 break;
 
                 default:
