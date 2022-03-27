@@ -63,8 +63,10 @@ public class ClientRepositoryImpl extends BaseRepositoryImpl implements ClientRe
 
     @Override
     public boolean existsCode(String code) {
-       String jql = "select count(*) from Client c where c.code = :code";
-       Integer nbCode = entityManager.createQuery(jql, Integer.class).getSingleResult();
+       String jql = "select count(*) from Client c where c.codeSecret = :code";
+       Long nbCode = entityManager.createQuery(jql, Long.class)
+            .setParameter("code", code)
+            .getSingleResult();
        
        return nbCode.intValue() > 0;
     }
