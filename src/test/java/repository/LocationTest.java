@@ -144,7 +144,7 @@ public class LocationTest extends Base {
         entityManager.detach(location1);
 
         var plocation = locationRepository.locationEnCoursFromClient(client1);
-        assertThat(plocation.getLocataire()).isEqualTo(location1.getLocataire());
+        assertThat(plocation.getLocataire().getId()).isEqualTo(location1.getLocataire().getId());
 
 
 
