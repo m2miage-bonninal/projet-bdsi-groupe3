@@ -6,7 +6,7 @@ public class DebitRetour {
     public static void processusDebitMontant(Location locationEnCours, Trajet trajetFromVeloAccroche) {
         System.out.println("Vous avez effectué un trajet de " + trajetFromVeloAccroche.getDuree() + " minutes.\n"
                 + "Le montant à débiter qui sera ajouté à votre location est de " + trajetFromVeloAccroche.calculMontantSingleTrajet() + " euros.\n");
-        locationEnCours.setMontant(locationEnCours.getMontant() + trajetFromVeloAccroche.calculMontantSingleTrajet());
+        locationEnCours.setMontant((locationEnCours.getMontant()== null ? 0.0f: locationEnCours.getMontant()) + trajetFromVeloAccroche.calculMontantSingleTrajet());
 
         if (locationEnCours.verifTrajetEnCours() == true) {
             System.out.println("Vous avez encore des trajets en cours.\nUne fois votre location terminée, vous serez débité.e d'un montant de " 
