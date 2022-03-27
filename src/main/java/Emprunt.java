@@ -36,6 +36,8 @@ public class Emprunt {
 
         MODIF : Nous avons décidé de seulement afficher tous les vélos en bon état à la station en premier lieu, 
         pour se simplifier la tâche. Le client choisit un vélo à la fois, mais peut quand même en louer plusieurs.
+        Ces plusieurs vélos qu'il a loués font partie de la même location (si une location est en cours, chaque vélo
+        loué se rajoute à la location.)
         */
 
         List<Velo> velos = veloImpl.velosAtStation(station);
@@ -58,6 +60,6 @@ public class Emprunt {
 
             trajetImpl.save(trajet);
             locationImpl.save(locationEnCours);
-            
+
     }
 }

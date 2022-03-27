@@ -17,6 +17,8 @@ public class App {
 
         Scanner scanner = new Scanner(System.in);
 
+        entityManager.getTransaction().begin();
+
         StationRepositoryImpl stationImpl = new StationRepositoryImpl(entityManager);
         ClientAbonneRepositoryImpl clientAbonneImpl = new ClientAbonneRepositoryImpl(entityManager);
         ClientRepositoryImpl clientImpl = new ClientRepositoryImpl(entityManager);
@@ -183,5 +185,7 @@ public class App {
             break;
 
         }
+        
+        entityManager.getTransaction().commit();
     }
 }

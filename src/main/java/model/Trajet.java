@@ -25,6 +25,7 @@ public class Trajet {
         this.setLocation(location);
         this.setStationDebut(stationDebut);
         this.setDateheureDebut(LocalDateTime.now());
+        this.setDuree(-1);
     }
     
     @Id
