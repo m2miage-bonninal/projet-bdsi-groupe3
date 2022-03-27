@@ -117,6 +117,9 @@ public class LocationTest extends Base {
         final var location1 = Fixtures.createLocation(client1, null) ; // deuxieme est historique donc peut rester null
         trajet1.setLocation(location1);
         trajet1.setStationDebut(station1); // DEUXIEME STATION PEUT RESTER VIDE
+        List<Location> llocations = new ArrayList<>();
+        llocations.add(location1);
+        client1.setLocations(llocations);
 
         
         entityManager.getTransaction().begin();
