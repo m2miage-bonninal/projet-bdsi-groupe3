@@ -39,7 +39,7 @@ public class Bornette {
     @ManyToOne
     private Station station;
     
-    @OneToOne
+    @OneToOne(mappedBy="bornette")
     private Velo veloAccroche;
 
     public Long getNumero() {

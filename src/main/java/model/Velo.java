@@ -49,15 +49,15 @@ public class Velo {
     @OneToOne
     private Bornette bornette;
     
-    @ManyToMany
-    private List<Location> locations;
+    @ManyToMany(mappedBy="velo")
+    private List<Trajet> trajets;
 
-    public List<Location> getListeLocation() {
-        return locations;
+    public List<Trajet> getListeTrajet() {
+        return trajets;
     }
 
-    public void setListeLocation(List<Location> listeLocation) {
-        this.locations = listeLocation;
+    public void setListeTrajets(List<Trajet> listeLocation) {
+        this.trajets = listeLocation;
     }
 
     public Bornette getBornette() {

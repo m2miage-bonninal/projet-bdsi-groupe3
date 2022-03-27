@@ -53,7 +53,7 @@ public abstract class Client {
 
     private String numeroCB;
     
-    @OneToMany
+    @OneToMany(mappedBy=("locataire"))
     private List<Location> locations;
 
     public Long getId() {

@@ -40,7 +40,7 @@ public class Location {
     @ManyToOne
     private Client locataire;
     
-    @OneToMany
+    @OneToMany(mappedBy="location")
     private List<Trajet> trajets;
 
     public Long getId() {

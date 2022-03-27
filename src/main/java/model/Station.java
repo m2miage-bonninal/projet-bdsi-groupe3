@@ -34,12 +34,12 @@ public class Station {
     @GeneratedValue(generator = "kaugen1")
     private Long id;
         
-    @OneToMany
+    @OneToMany(mappedBy="station")
     private List<Bornette> bornettes;
     
     private String adresse;    
     
-    @OneToMany
+    @OneToMany(mappedBy="station")
     private List<HistoriqueVType> historiques;
 
     public List<HistoriqueVType> getHistoriques() {
