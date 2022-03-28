@@ -9,7 +9,7 @@
         <properties>
             <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@im2ag-oracle.e.ujf-grenoble.fr:1521:IM2AG"/>
             <property name="javax.persistence.jdbc.user" value="bonninal"/>
-            <property name="javax.persistence.jdbc.password" value="1c8ec153c4"/>
+            <property name="javax.persistence.jdbc.password" value=""/>
             <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
             <property name="hibernate.show_sql" value="true"/>
             <property name="hibernate.dialect" value="org.hibernate.dialect.Oracle12cDialect"/>
