@@ -28,7 +28,7 @@ public class LocationRepositoryImpl extends BaseRepositoryImpl implements Locati
     @Override
     public Location locationEnCoursFromClient(Client client) {
 
-        String jql = "select l from Location l join l.locataire loc join l.trajets t where loc.id = :idClient and t.duree > -1";
+        String jql = "select l from Location l join l.locataire loc join l.trajets t where loc.id = :idClient and t.duree = -1";
         Location retour = entityManager.createQuery(jql, Location.class)
                             .setParameter("idClient", client.getId())
                             .getSingleResult();
